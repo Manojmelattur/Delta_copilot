@@ -1,0 +1,1 @@
+  py run_backtest.py --strategy smc --symbol ETHUSD --timeframe 15m --days 90

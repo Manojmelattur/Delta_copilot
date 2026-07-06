@@ -1,0 +1,2 @@
+py run_backtest.py  --strategy smc --symbol VELVETUSD --timeframe 15m --days 30
+py run_backtest.py --strategy ema_crossover --symbol VELVETUSD --timeframe 30m --days 30

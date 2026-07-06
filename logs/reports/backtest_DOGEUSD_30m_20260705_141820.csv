@@ -1,0 +1,8 @@
+strategy,total_trades,wins,losses,win_rate,total_pnl_btc,avg_win_btc,avg_loss_btc,max_drawdown_btc,profit_factor,sharpe_ratio,avg_duration,exit_EXIT_SL_count,exit_EXIT_SL_wins,exit_EXIT_SL_losses,exit_EXIT_SL_pnl,exit_EXIT_TP_count,exit_EXIT_TP_wins,exit_EXIT_TP_losses,exit_EXIT_TP_pnl,exit_EXIT_TRAIL_count,exit_EXIT_TRAIL_wins,exit_EXIT_TRAIL_losses,exit_EXIT_TRAIL_pnl,exit_SL_count,exit_SL_wins,exit_SL_losses,exit_SL_pnl,exit_TP_count,exit_TP_wins,exit_TP_losses,exit_TP_pnl,exit_EXIT_BAND_FLIP_count,exit_EXIT_BAND_FLIP_wins,exit_EXIT_BAND_FLIP_losses,exit_EXIT_BAND_FLIP_pnl,exit_TRAIL_SL_count,exit_TRAIL_SL_wins,exit_TRAIL_SL_losses,exit_TRAIL_SL_pnl
+OrderBlock Stra,15,6,9,40.0,-0.009724,0.002745,-0.00291,0.019241,0.629,-0.867,2h 8m,7.0,1.0,6.0,-0.014078,4.0,2.0,2.0,-0.000903,4.0,3.0,1.0,0.005257,,,,,,,,,,,,,,,,
+EMA Crossover (,13,3,10,23.1,-0.021768,0.002904,-0.003048,0.024677,0.286,-2.305,0h 30m,,,,,,,,,,,,,3.0,3.0,0.0,0.008712,10.0,0.0,10.0,-0.03048,,,,,,,,
+Bollinger Bands,19,11,8,57.9,0.00364,0.002235,-0.002618,0.013473,1.174,0.319,4h 33m,8.0,5.0,3.0,0.005124,2.0,0.0,2.0,-0.004713,7.0,4.0,3.0,0.003016,,,,,,,,,2.0,2.0,0.0,0.000213,,,,
+VWAP,71,40,31,56.3,0.026073,0.002765,-0.002726,0.012368,1.308,1.113,0h 30m,,,,,,,,,,,,,40.0,40.0,0.0,0.110594,31.0,0.0,31.0,-0.084521,,,,,,,,
+Triple EMA,37,0,37,0.0,-0.100536,0.0,-0.002717,0.098763,0.0,-32.522,0h 30m,,,,,,,,,,,,,,,,,37.0,0.0,37.0,-0.100536,,,,,,,,
+FVG Strategy(mi,31,19,12,61.3,0.01763,0.002679,-0.002773,0.01193,1.53,1.155,3h 44m,14.0,9.0,5.0,0.0083,2.0,1.0,1.0,0.000329,15.0,9.0,6.0,0.009001,,,,,,,,,,,,,,,,
+SMCStrategy,17,6,11,35.3,-0.000235,0.000131,-9.3e-05,0.000292,0.77,-0.257,9h 58m,,,,,,,,,,,,,1.0,0.0,1.0,-0.000678,13.0,3.0,10.0,-0.000292,,,,,3.0,3.0,0.0,0.000735

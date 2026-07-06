@@ -1,0 +1,15 @@
+ py run_backtest.py --strategy bollinger_bands --period 20 --std 2.2 --symbol BTCUSD --bb-stop-loss 1.0 --bb-trail 0.8 --bb-take-profit 1.5 --timeframe 30m
+ py run_backtest.py --strategy bollinger_bands --period 20 --std 2.2 --symbol ETHUSD --bb-stop-loss 1.0 --bb-trail 0.8 --bb-take-profit 1.5 --timeframe 30m
+ py run_backtest.py --strategy bollinger_bands --period 20 --std 2.2 --symbol SOLUSD --bb-stop-loss 1.0 --bb-trail 0.8 --bb-take-profit 1.5 --timeframe 30m
+ py run_backtest.py --strategy bollinger_bands --period 20 --std 2.2 --symbol XRPUSD --bb-stop-loss 1.0 --bb-trail 0.8 --bb-take-profit 1.5 --timeframe 30m
+ py run_backtest.py --strategy bollinger_bands --period 20 --std 2.2 --symbol ADAUSD --bb-stop-loss 1.0 --bb-trail 0.8 --bb-take-profit 1.5 --timeframe 30m
+ py run_backtest.py --strategy bollinger_bands --period 20 --std 2.2 --symbol BNBUSD --bb-stop-loss 1.0 --bb-trail 0.8 --bb-take-profit 1.5 --timeframe 30m
+ py run_backtest.py --strategy bollinger_bands --period 20 --std 2.2 --symbol DOGEUSD --bb-stop-loss 1.0 --bb-trail 0.8 --bb-take-profit 1.5 --timeframe 30m
+
+
+
+ Runner up
+
+ py run_backtest.py --strategy bollinger_bands --period 20 --std 2.2 --symbol DOGEUSD --bb-stop-loss 1.0 --bb-trail 0.8 --bb-take-profit 1.5 --timeframe 15m --days 90
+ py run_backtest.py --strategy bollinger_bands --period 20 --std 2.2 --symbol DOGEUSD --bb-stop-loss 1.0 --bb-trail 0.8 --bb-take-profit 1.5 --timeframe 1h --days 90
+ py run_backtest.py --strategy bollinger_bands --period 20 --std 2.2 --symbol DOGEUSD --bb-stop-loss 1.0 --bb-trail 0.8 --bb-take-profit 1.5 --timeframe 30m --days 90

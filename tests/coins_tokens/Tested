@@ -1,0 +1,1 @@
+bot.py --strategy fvg --timeframe 30m  --symbol XRPUSD  --fvg-stop-loss 1.0 --fvg-take-profit 1.5

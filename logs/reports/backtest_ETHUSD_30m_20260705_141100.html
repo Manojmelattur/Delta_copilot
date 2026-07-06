@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Backtest Report - ETHUSD 30m</title>
+    <style>
+        body { font-family: Arial, sans-serif; background: #f4f6f9; color: #222; margin: 30px; }
+        h1 { color: #1F4E79; }
+        h2 { color: #2E75B6; margin-top: 40px; }
+        h3 { color: #1F4E79; }
+        table { border-collapse: collapse; width: 100%; margin-top: 10px; background: #fff; }
+        th { background: #1F4E79; color: #fff; padding: 8px 12px; text-align: center; font-size: 13px; }
+        td { padding: 7px 12px; border-bottom: 1px solid #ddd; text-align: center; font-size: 13px; }
+        tr:hover { background: #eaf1fb; }
+        .meta { color: #555; font-size: 13px; margin-bottom: 20px; }
+        .footer { margin-top: 40px; color: #999; font-size: 12px; }
+    </style>
+</head>
+<body>
+    <h1>Backtest Report</h1>
+    <div class="meta">
+        <strong>Symbol:</strong> ETHUSD &nbsp;|&nbsp;
+        <strong>Timeframe:</strong> 30m &nbsp;|&nbsp;
+        <strong>Generated:</strong> 2026-07-05 14:11:00
+    </div>
+
+    <h2>Strategy Comparison</h2>
+    <table>
+        <thead>
+            <tr>
+                <th>Strategy</th><th>Trades</th><th>Wins</th><th>Losses</th>
+                <th>Win%</th><th>Total PnL (BTC)</th><th>Avg Win</th><th>Avg Loss</th>
+                <th>Max DD</th><th>Profit Factor</th><th>Sharpe</th><th>Avg Duration</th>
+            </tr>
+        </thead>
+        <tbody>
+        <tr>
+            <td>OrderBlock</td>
+            <td>2</td>
+            <td>2</td>
+            <td>0</td>
+            <td>100.0%</td>
+            <td style="color:#00B050;font-weight:bold">+0.000354</td>
+            <td style="color:#00B050;font-weight:bold">+0.000177</td>
+            <td style="color:#00B050;font-weight:bold">+0.000000</td>
+            <td>0.000000</td>
+            <td>inf</td>
+            <td style="color:#00B050;font-weight:bold">+1.172</td>
+            <td>4h 30m</td>
+        </tr>
+        <tr>
+            <td>EMA Crosso</td>
+            <td>0</td>
+            <td>0</td>
+            <td>0</td>
+            <td>0.0%</td>
+            <td style="color:#00B050;font-weight:bold">+0.000000</td>
+            <td style="color:#00B050;font-weight:bold">+0.000000</td>
+            <td style="color:#00B050;font-weight:bold">+0.000000</td>
+            <td>0.000000</td>
+            <td>0.000</td>
+            <td style="color:#00B050;font-weight:bold">+0.000</td>
+            <td>N/A</td>
+        </tr>
+        <tr>
+            <td>Bollinger</td>
+            <td>3</td>
+            <td>0</td>
+            <td>3</td>
+            <td>0.0%</td>
+            <td style="color:#FF0000;font-weight:bold">-0.003290</td>
+            <td style="color:#00B050;font-weight:bold">+0.000000</td>
+            <td style="color:#FF0000;font-weight:bold">-0.001097</td>
+            <td>0.002193</td>
+            <td>0.000</td>
+            <td style="color:#FF0000;font-weight:bold">-3290.000</td>
+            <td>4h 10m</td>
+        </tr>
+        <tr>
+            <td>VWAP</td>
+            <td>10</td>
+            <td>4</td>
+            <td>6</td>
+            <td>40.0%</td>
+            <td style="color:#00B050;font-weight:bold">+0.004872</td>
+            <td style="color:#00B050;font-weight:bold">+0.001700</td>
+            <td style="color:#FF0000;font-weight:bold">-0.000321</td>
+            <td>0.000612</td>
+            <td>3.530</td>
+            <td style="color:#00B050;font-weight:bold">+1.393</td>
+            <td>3h 42m</td>
+        </tr>
+        <tr>
+            <td>Triple EMA</td>
+            <td>2</td>
+            <td>0</td>
+            <td>2</td>
+            <td>0.0%</td>
+            <td style="color:#FF0000;font-weight:bold">-0.002191</td>
+            <td style="color:#00B050;font-weight:bold">+0.000000</td>
+            <td style="color:#FF0000;font-weight:bold">-0.001096</td>
+            <td>0.001093</td>
+            <td>0.000</td>
+            <td style="color:#FF0000;font-weight:bold">-438.200</td>
+            <td>6h 15m</td>
+        </tr>
+        <tr>
+            <td>FVG Strate</td>
+            <td>6</td>
+            <td>4</td>
+            <td>2</td>
+            <td>66.7%</td>
+            <td style="color:#00B050;font-weight:bold">+0.000109</td>
+            <td style="color:#00B050;font-weight:bold">+0.000579</td>
+            <td style="color:#FF0000;font-weight:bold">-0.001103</td>
+            <td>0.001670</td>
+            <td>1.049</td>
+            <td style="color:#00B050;font-weight:bold">+0.051</td>
+            <td>4h 15m</td>
+        </tr>
+        <tr>
+            <td>SMCStrateg</td>
+            <td>3</td>
+            <td>2</td>
+            <td>1</td>
+            <td>66.7%</td>
+            <td style="color:#00B050;font-weight:bold">+0.000604</td>
+            <td style="color:#00B050;font-weight:bold">+0.001420</td>
+            <td style="color:#FF0000;font-weight:bold">-0.002236</td>
+            <td>0.002236</td>
+            <td>1.270</td>
+            <td style="color:#00B050;font-weight:bold">+0.159</td>
+            <td>10h 40m</td>
+        </tr></tbody>
+    </table>
+
+    <h2>Exit Reason Breakdown</h2>
+    
+        <h3 style="color:#1F4E79;margin-top:30px">OrderBlock — Exit Reason Breakdown</h3>
+        <table>
+            <thead>
+                <tr>
+                    <th>Reason</th><th>Count</th><th>Wins</th><th>Losses</th>
+                    <th>Total PnL</th><th>Avg Win</th><th>Avg Loss</th>
+                </tr>
+            </thead>
+            <tbody>
+            <tr>
+                <td>EXIT_TRAIL</td>
+                <td>2</td>
+                <td>2</td>
+                <td>0</td>
+                <td style="color:#00B050;font-weight:bold">+0.0004</td>
+                <td style="color:#00B050;font-weight:bold">+0.0002</td>
+                <td style="">N/A</td>
+            </tr></tbody>
+        </table>
+        <h3 style="color:#1F4E79;margin-top:30px">Bollinger — Exit Reason Breakdown</h3>
+        <table>
+            <thead>
+                <tr>
+                    <th>Reason</th><th>Count</th><th>Wins</th><th>Losses</th>
+                    <th>Total PnL</th><th>Avg Win</th><th>Avg Loss</th>
+                </tr>
+            </thead>
+            <tbody>
+            <tr>
+                <td>EXIT_SL</td>
+                <td>3</td>
+                <td>0</td>
+                <td>3</td>
+                <td style="color:#FF0000;font-weight:bold">-0.0033</td>
+                <td style="">N/A</td>
+                <td style="color:#FF0000;font-weight:bold">-0.0011</td>
+            </tr></tbody>
+        </table>
+        <h3 style="color:#1F4E79;margin-top:30px">VWAP — Exit Reason Breakdown</h3>
+        <table>
+            <thead>
+                <tr>
+                    <th>Reason</th><th>Count</th><th>Wins</th><th>Losses</th>
+                    <th>Total PnL</th><th>Avg Win</th><th>Avg Loss</th>
+                </tr>
+            </thead>
+            <tbody>
+            <tr>
+                <td>SL</td>
+                <td>1</td>
+                <td>0</td>
+                <td>1</td>
+                <td style="color:#FF0000;font-weight:bold">-0.0011</td>
+                <td style="">N/A</td>
+                <td style="color:#FF0000;font-weight:bold">-0.0011</td>
+            </tr>
+            <tr>
+                <td>TP</td>
+                <td>3</td>
+                <td>3</td>
+                <td>0</td>
+                <td style="color:#00B050;font-weight:bold">+0.0056</td>
+                <td style="color:#00B050;font-weight:bold">+0.0019</td>
+                <td style="">N/A</td>
+            </tr>
+            <tr>
+                <td>signal_flip</td>
+                <td>6</td>
+                <td>1</td>
+                <td>5</td>
+                <td style="color:#00B050;font-weight:bold">+0.0003</td>
+                <td style="color:#00B050;font-weight:bold">+0.0012</td>
+                <td style="color:#FF0000;font-weight:bold">-0.0002</td>
+            </tr></tbody>
+        </table>
+        <h3 style="color:#1F4E79;margin-top:30px">Triple EMA — Exit Reason Breakdown</h3>
+        <table>
+            <thead>
+                <tr>
+                    <th>Reason</th><th>Count</th><th>Wins</th><th>Losses</th>
+                    <th>Total PnL</th><th>Avg Win</th><th>Avg Loss</th>
+                </tr>
+            </thead>
+            <tbody>
+            <tr>
+                <td>SL</td>
+                <td>2</td>
+                <td>0</td>
+                <td>2</td>
+                <td style="color:#FF0000;font-weight:bold">-0.0022</td>
+                <td style="">N/A</td>
+                <td style="color:#FF0000;font-weight:bold">-0.0011</td>
+            </tr></tbody>
+        </table>
+        <h3 style="color:#1F4E79;margin-top:30px">FVG Strate — Exit Reason Breakdown</h3>
+        <table>
+            <thead>
+                <tr>
+                    <th>Reason</th><th>Count</th><th>Wins</th><th>Losses</th>
+                    <th>Total PnL</th><th>Avg Win</th><th>Avg Loss</th>
+                </tr>
+            </thead>
+            <tbody>
+            <tr>
+                <td>EXIT_SL</td>
+                <td>2</td>
+                <td>0</td>
+                <td>2</td>
+                <td style="color:#FF0000;font-weight:bold">-0.0022</td>
+                <td style="">N/A</td>
+                <td style="color:#FF0000;font-weight:bold">-0.0011</td>
+            </tr>
+            <tr>
+                <td>EXIT_TRAIL</td>
+                <td>4</td>
+                <td>4</td>
+                <td>0</td>
+                <td style="color:#00B050;font-weight:bold">+0.0023</td>
+                <td style="color:#00B050;font-weight:bold">+0.0006</td>
+                <td style="">N/A</td>
+            </tr></tbody>
+        </table>
+        <h3 style="color:#1F4E79;margin-top:30px">SMCStrateg — Exit Reason Breakdown</h3>
+        <table>
+            <thead>
+                <tr>
+                    <th>Reason</th><th>Count</th><th>Wins</th><th>Losses</th>
+                    <th>Total PnL</th><th>Avg Win</th><th>Avg Loss</th>
+                </tr>
+            </thead>
+            <tbody>
+            <tr>
+                <td>SL</td>
+                <td>2</td>
+                <td>1</td>
+                <td>1</td>
+                <td style="color:#FF0000;font-weight:bold">-0.0014</td>
+                <td style="color:#00B050;font-weight:bold">+0.0008</td>
+                <td style="color:#FF0000;font-weight:bold">-0.0022</td>
+            </tr>
+            <tr>
+                <td>TP</td>
+                <td>1</td>
+                <td>1</td>
+                <td>0</td>
+                <td style="color:#00B050;font-weight:bold">+0.0020</td>
+                <td style="color:#00B050;font-weight:bold">+0.0020</td>
+                <td style="">N/A</td>
+            </tr></tbody>
+        </table>
+
+    <div class="footer">Generated by Delta Copilot Backtester &mdash; 2026-07-05 14:11:00</div>
+</body>
+</html>

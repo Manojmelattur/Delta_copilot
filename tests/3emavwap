@@ -1,0 +1,19 @@
+py run_backtest.py --strategy triple_ema --symbol BEATUSD --timeframe 1d --days 30
+py run_backtest.py --strategy triple_ema --symbol ETHUSD --timeframe 1d --days 30
+py run_backtest.py --strategy triple_ema --symbol BNBUSD --timeframe  1d --days 30
+py run_backtest.py --strategy triple_ema --symbol DOGEUSD --timeframe  1d --days 30
+py run_backtest.py --strategy triple_ema --symbol VELVETUSD --timeframe  1d --days 30
+py run_backtest.py --strategy triple_ema --symbol MUSD --timeframe   1d --days 30
+py run_backtest.py --strategy triple_ema --symbol SOLUSD --timeframe  1d --days 30
+py run_backtest.py --strategy triple_ema --symbol XRPUSD --timeframe  1d --days 30
+
+
+Runner ups
+
+py run_backtest.py --strategy triple_ema --symbol XRPUSD --timeframe  1h --days 30
+py run_backtest.py --strategy triple_ema --symbol BEATUSD --timeframe 1h --days 30
+
+py run_backtest.py --strategy triple_ema --symbol XRPUSD --timeframe  30m --days 30
+py run_backtest.py --strategy triple_ema --symbol MUSD --timeframe   30m --days 30
+py run_backtest.py --strategy triple_ema --symbol BEATUSD --timeframe 30m --days 30
+py run_backtest.py --strategy triple_ema --symbol XRPUSD --timeframe  15m --days 30

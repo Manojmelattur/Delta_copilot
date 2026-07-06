@@ -1,0 +1,24 @@
+py run_backtest.py --strategy ob --timeframe 15m --symbol PAXGUSD --days 30
+py run_backtest.py --strategy ob --timeframe 15m --symbol MUSD --days 30
+py run_backtest.py --strategy ob --timeframe 15m --symbol LABUSD --days 30
+py run_backtest.py --strategy ob --timeframe 15m --symbol BEATUSD --days 30
+py run_backtest.py --strategy ob --timeframe 15m --symbol SOLVONUSD --days 30
+py run_backtest.py --strategy ob --timeframe 15m --symbol HUSD --days 30
+py run_backtest.py --strategy ob --timeframe 15m --symbol ZECUSD --days 30
+py run_backtest.py --strategy ob --timeframe 15m --symbol LTCUSD --days 30
+py run_backtest.py --strategy ob --timeframe 15m --symbol ATOMUSD --days 30
+py run_backtest.py --strategy ob --timeframe 15m --symbol UNIUSD --days 30
+py run_backtest.py --strategy ob --timeframe 15m --symbol AAVEUSD --days 30
+py run_backtest.py --strategy ob --timeframe 15m --symbol MATICUSD --days 30
+
+Runner ups
+
+py run_backtest.py --strategy ob --timeframe 1h --symbol AAVEUSD --days 30
+py run_backtest.py --strategy ob --timeframe 1h --symbol HUSD --days 30
+py run_backtest.py --strategy ob --timeframe 1h --symbol MUSD --days 30
+py run_backtest.py --strategy ob --timeframe 30m --symbol BEATUSD --days 30
+py run_backtest.py --strategy ob --timeframe 30m --symbol LABUSD --days 30
+py run_backtest.py --strategy ob --timeframe 30m --symbol MUSD --days 30
+py run_backtest.py --strategy ob --timeframe 15m --symbol HUSD --days 30
+py run_backtest.py --strategy ob --timeframe 15m --symbol BEATUSD --days 30
+py run_backtest.py --strategy ob --timeframe 15m --symbol LABUSD --days 30

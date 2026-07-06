@@ -1,0 +1,87 @@
+python bot.py --strategy bollinger_bands --symbol BTCUSD --timeframe 5s --period 20 --std 1.2 --bb-stop-loss 0.3 --bb-take-profit 0.6 --bb-trail-activation 0.4 --bb-trail 0.3 --bb-tp-extension 0.2 --bb-volume-multiplier 1.0 --poll-interval 10
+5 min
+python bot.py --strategy bollinger_bands --symbol BTCUSD --timeframe 5m --period 20 --std 2.0 --bb-stop-loss 0.6 --bb-take-profit 1.2 --bb-volume-multiplier 1.2 --poll-interval 60
+15 min
+
+python bot.py --strategy bollinger_bands --symbol BTCUSD --timeframe 15m --period 20 --std 2.0 --bb-stop-loss 0.8 --bb-take-profit 1.5 --bb-volume-multiplier 1.2 --poll-interval 120
+1hr
+python bot.py --strategy bollinger_bands --symbol BTCUSD --timeframe 1h --period 20 --std 2.0 --bb-stop-loss 1.0 --bb-take-profit 2.0 --bb-volume-multiplier 1.2 --poll-interval 300
+1m
+python bot.py --strategy bollinger_bands --symbol BTCUSD --timeframe 1m --period 20 --std 2.0 --bb-stop-loss 0.5 --bb-take-profit 1.0 --bb-volume-multiplier 1.2 --poll-interval 30
+5s
+python bot.py --strategy bollinger_bands --symbol BTCUSD --timeframe 5s --period 20 --std 0.5 --bb-stop-loss 0.3 --bb-take-profit 0.6 --bb-volume-multiplier 1.0 --poll-interval 10
+
+Key differences across timeframes:
+
+Param	5m	15m	1h
+--std	2.0	2.0	2.0
+--bb-stop-loss	0.6	0.8	1.0
+--bb-take-profit	1.2	1.5	2.0
+--poll-interval	60s	120s	300s
+Wider SL/TP on higher timeframes to account for larger candle ranges. Start with 15m for the best balance of signal frequency and reliability.
+
+
+--- production settings
+
+python bot.py \
+  --symbol BTCUSD \
+  --timeframe 15m \
+  --poll 60 \
+  --bb-period 20 \
+  --bb-std 2.0 \
+  --bb-stop-loss 0.5 \
+  --bb-take-profit 1.0 \
+  --bb-trail-activation 0.5 \
+  --bb-trail-pct 0.3 \
+  --bb-tp-extension 0.3 \
+  --bb-volume-period 20 \
+  --bb-volume-multiplier 1.0
+
+What each parameter means at 15m
+Parameter	Value	Reasoning
+--bb-period	20	Standard BB period, looks back 5 hours on 15m
+--bb-std	2.0	Classic 2 std deviation bands, filters noise well
+--bb-stop-loss	0.5	0.5% SL - tight enough to limit loss, wide enough for 15m candle variance
+--bb-take-profit	1.0	2:1 reward/risk ratio
+--bb-trail-activation	0.5	Trail kicks in after 0.5% profit
+--bb-trail-pct	0.3	Trails 0.3% behind best price
+--bb-tp-extension	0.3	Extends TP by 0.3% if momentum continues
+--poll	60	Check every 60s - no need to poll faster than candle close
+
+
+Once stable - adding ETHUSD and XAUTUSD
+Run each symbol in a separate terminal / process:
+
+# Terminal 1 - BTCUSD
+python bot.py --symbol BTCUSD --timeframe 15m --poll 60 --bb-std 2.0 --bb-stop-loss 0.5 --bb-take-profit 1.0
+
+# Terminal 2 - ETHUSD (after BTCUSD is stable)
+python bot.py --symbol ETHUSD --timeframe 15m --poll 60 --bb-std 2.0 --bb-stop-loss 0.5 --bb-take-profit 1.0
+
+# Terminal 3 - XAUTUSD (after ETHUSD is stable)
+python bot.py --symbol XAUTUSD --timeframe 15m --poll 60 --bb-std 2.0 --bb-stop-loss 0.5 --bb-take-profit 1.0
+
+
+
+
+# Stop current bot, restart with std=0.8 just to verify signal logic works
+python bot.py --strategy bollinger_bands --symbol BTCUSD --timeframe 5m
+  --period 20 --std 0.8 --bb-stop-loss 0.3 --bb-take-profit 0.6
+  --bb-trail-activation 0.4 --bb-trail 0.3 --bb-tp-extension 0.2
+  --bb-volume-multiplier 1.0 --poll-interval 10
+
+
+
+back test
+
+python run_backtest.py --strategy ob --symbol BTCUSD --timeframe 15m --ob-atr-length 14 --ob-atr-mult 1.5 --ob-trail-activation 2.0 --ob-strength-period 20 --ob-strength-mult 2.0 --ob-rr-ratio 2.0 --ob-sl-buffer 0.3 --ob-max-age 30 --ob-trend-ema 0 --ob-min-atr 0.0
+
+
+
+Confirmed
+python run_backtest.py --strategy ob --symbol ETHUSD --timeframe 15m --ob-atr-length 14 --ob-atr-mult 1.5 --ob-trail-activation 2.0 --ob-strength-period 20 --ob-strength-mult 2.0 --ob-rr-ratio 2.0 --ob-sl-buffer 0.3 --ob-max-age 30 --ob-trend-ema 0 --ob-min-atr 0.0 --days 90
+
+
+
+Positive
+python run_backtest.py --strategy ob --symbol BTCUSD --timeframe 15m --ob-atr-length 14 --ob-atr-mult 1.5 --ob-trail-activation 2.0 --ob-strength-period 20 --ob-strength-mult 2.0 --ob-rr-ratio 2.0 --ob-sl-buffer 0.3 --ob-max-age 30 --ob-trend-ema 0 --ob-min-atr 0.0

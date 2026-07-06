@@ -1,0 +1,374 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Backtest Report - DOGEUSD 5m</title>
+    <style>
+        body { font-family: Arial, sans-serif; background: #f4f6f9; color: #222; margin: 30px; }
+        h1 { color: #1F4E79; }
+        h2 { color: #2E75B6; margin-top: 40px; }
+        h3 { color: #1F4E79; }
+        table { border-collapse: collapse; width: 100%; margin-top: 10px; background: #fff; }
+        th { background: #1F4E79; color: #fff; padding: 8px 12px; text-align: center; font-size: 13px; }
+        td { padding: 7px 12px; border-bottom: 1px solid #ddd; text-align: center; font-size: 13px; }
+        tr:hover { background: #eaf1fb; }
+        .meta { color: #555; font-size: 13px; margin-bottom: 20px; }
+        .footer { margin-top: 40px; color: #999; font-size: 12px; }
+    </style>
+</head>
+<body>
+    <h1>Backtest Report</h1>
+    <div class="meta">
+        <strong>Symbol:</strong> DOGEUSD &nbsp;|&nbsp;
+        <strong>Timeframe:</strong> 5m &nbsp;|&nbsp;
+        <strong>Generated:</strong> 2026-07-05 13:19:03
+    </div>
+
+    <h2>Strategy Comparison</h2>
+    <table>
+        <thead>
+            <tr>
+                <th>Strategy</th><th>Trades</th><th>Wins</th><th>Losses</th>
+                <th>Win%</th><th>Total PnL (BTC)</th><th>Avg Win</th><th>Avg Loss</th>
+                <th>Max DD</th><th>Profit Factor</th><th>Sharpe</th><th>Avg Duration</th>
+            </tr>
+        </thead>
+        <tbody>
+        <tr>
+            <td><bound method OrderBlockStrategy.name of <strategies.ob_strategy.OrderBlockStrategy object at 0x000001CA66B76C50>></td>
+            <td>162</td>
+            <td>74</td>
+            <td>88</td>
+            <td>45.7%</td>
+            <td style="color:#FF0000;font-weight:bold">-0.035539</td>
+            <td style="color:#00B050;font-weight:bold">+0.002116</td>
+            <td style="color:#FF0000;font-weight:bold">-0.002183</td>
+            <td>0.057387</td>
+            <td>0.815</td>
+            <td style="color:#FF0000;font-weight:bold">-1.245</td>
+            <td>0h 23m</td>
+        </tr>
+        <tr>
+            <td><bound method EMACrossoverStrategy.name of <strategies.ema_crossover.EMACrossoverStrategy object at 0x000001CA660B5F90>></td>
+            <td>210</td>
+            <td>101</td>
+            <td>109</td>
+            <td>48.1%</td>
+            <td style="color:#FF0000;font-weight:bold">-0.047019</td>
+            <td style="color:#00B050;font-weight:bold">+0.001915</td>
+            <td style="color:#FF0000;font-weight:bold">-0.002206</td>
+            <td>0.117980</td>
+            <td>0.804</td>
+            <td style="color:#FF0000;font-weight:bold">-1.496</td>
+            <td>0h 5m</td>
+        </tr>
+        <tr>
+            <td><bound method BollingerBandsStrategy.name of <strategies.bollinger_bands.BollingerBandsStrategy object at 0x000001CA66A65810>></td>
+            <td>158</td>
+            <td>119</td>
+            <td>39</td>
+            <td>75.3%</td>
+            <td style="color:#00B050;font-weight:bold">+0.053536</td>
+            <td style="color:#00B050;font-weight:bold">+0.001006</td>
+            <td style="color:#FF0000;font-weight:bold">-0.001696</td>
+            <td>0.030038</td>
+            <td>1.809</td>
+            <td style="color:#00B050;font-weight:bold">+2.651</td>
+            <td>2h 10m</td>
+        </tr>
+        <tr>
+            <td>VWAP</td>
+            <td>944</td>
+            <td>480</td>
+            <td>464</td>
+            <td>50.8%</td>
+            <td style="color:#00B050;font-weight:bold">+0.034143</td>
+            <td style="color:#00B050;font-weight:bold">+0.002107</td>
+            <td style="color:#FF0000;font-weight:bold">-0.002106</td>
+            <td>0.025609</td>
+            <td>1.035</td>
+            <td style="color:#00B050;font-weight:bold">+0.502</td>
+            <td>0h 5m</td>
+        </tr>
+        <tr>
+            <td>Triple EMA</td>
+            <td>431</td>
+            <td>0</td>
+            <td>431</td>
+            <td>0.0%</td>
+            <td style="color:#FF0000;font-weight:bold">-0.903288</td>
+            <td style="color:#00B050;font-weight:bold">+0.000000</td>
+            <td style="color:#FF0000;font-weight:bold">-0.002096</td>
+            <td>0.901669</td>
+            <td>0.000</td>
+            <td style="color:#FF0000;font-weight:bold">-63.714</td>
+            <td>0h 5m</td>
+        </tr>
+        <tr>
+            <td><bound method FVGStrategy.name of <strategies.fv_strategy.FVGStrategy object at 0x000001CA66626690>></td>
+            <td>189</td>
+            <td>103</td>
+            <td>86</td>
+            <td>54.5%</td>
+            <td style="color:#00B050;font-weight:bold">+0.048130</td>
+            <td style="color:#00B050;font-weight:bold">+0.002204</td>
+            <td style="color:#FF0000;font-weight:bold">-0.002080</td>
+            <td>0.017369</td>
+            <td>1.269</td>
+            <td style="color:#00B050;font-weight:bold">+1.560</td>
+            <td>2h 51m</td>
+        </tr>
+        <tr>
+            <td><bound method SMCStrategy.name of SMCStrategy(swing_lookback=5, atr_length=14, atr_multiplier=1.5, trail_activation_atr=2.0, sl_atr_buffer=0.3, ob_strength_period=20, ob_strength_mult=0.3, max_ob_age_candles=30, rr_ratio=2.0, trend_ema_period=50, bos_type=close, choch_type=close, ob_proximity_atr=3.0)></td>
+            <td>105</td>
+            <td>39</td>
+            <td>66</td>
+            <td>37.1%</td>
+            <td style="color:#FF0000;font-weight:bold">-0.000633</td>
+            <td style="color:#00B050;font-weight:bold">+0.000087</td>
+            <td style="color:#FF0000;font-weight:bold">-0.000061</td>
+            <td>0.001268</td>
+            <td>0.842</td>
+            <td style="color:#FF0000;font-weight:bold">-0.420</td>
+            <td>5h 13m</td>
+        </tr></tbody>
+    </table>
+
+    <h2>Exit Reason Breakdown</h2>
+    
+        <h3 style="color:#1F4E79;margin-top:30px"><bound method OrderBlockStrategy.name of <strategies.ob_strategy.OrderBlockStrategy object at 0x000001CA66B76C50>> — Exit Reason Breakdown</h3>
+        <table>
+            <thead>
+                <tr>
+                    <th>Reason</th><th>Count</th><th>Wins</th><th>Losses</th>
+                    <th>Total PnL</th><th>Avg Win</th><th>Avg Loss</th>
+                </tr>
+            </thead>
+            <tbody>
+            <tr>
+                <td>EXIT_SL</td>
+                <td>94</td>
+                <td>39</td>
+                <td>55</td>
+                <td style="color:#FF0000;font-weight:bold">-0.0387</td>
+                <td style="color:#00B050;font-weight:bold">+0.0020</td>
+                <td style="color:#FF0000;font-weight:bold">-0.0021</td>
+            </tr>
+            <tr>
+                <td>EXIT_TP</td>
+                <td>26</td>
+                <td>13</td>
+                <td>13</td>
+                <td style="color:#00B050;font-weight:bold">+0.0025</td>
+                <td style="color:#00B050;font-weight:bold">+0.0024</td>
+                <td style="color:#FF0000;font-weight:bold">-0.0022</td>
+            </tr>
+            <tr>
+                <td>EXIT_TRAIL</td>
+                <td>42</td>
+                <td>22</td>
+                <td>20</td>
+                <td style="color:#00B050;font-weight:bold">+0.0006</td>
+                <td style="color:#00B050;font-weight:bold">+0.0021</td>
+                <td style="color:#FF0000;font-weight:bold">-0.0023</td>
+            </tr></tbody>
+        </table>
+        <h3 style="color:#1F4E79;margin-top:30px"><bound method EMACrossoverStrategy.name of <strategies.ema_crossover.EMACrossoverStrategy object at 0x000001CA660B5F90>> — Exit Reason Breakdown</h3>
+        <table>
+            <thead>
+                <tr>
+                    <th>Reason</th><th>Count</th><th>Wins</th><th>Losses</th>
+                    <th>Total PnL</th><th>Avg Win</th><th>Avg Loss</th>
+                </tr>
+            </thead>
+            <tbody>
+            <tr>
+                <td>SL</td>
+                <td>101</td>
+                <td>101</td>
+                <td>0</td>
+                <td style="color:#00B050;font-weight:bold">+0.1934</td>
+                <td style="color:#00B050;font-weight:bold">+0.0019</td>
+                <td style="">N/A</td>
+            </tr>
+            <tr>
+                <td>TP</td>
+                <td>109</td>
+                <td>0</td>
+                <td>109</td>
+                <td style="color:#FF0000;font-weight:bold">-0.2404</td>
+                <td style="">N/A</td>
+                <td style="color:#FF0000;font-weight:bold">-0.0022</td>
+            </tr></tbody>
+        </table>
+        <h3 style="color:#1F4E79;margin-top:30px"><bound method BollingerBandsStrategy.name of <strategies.bollinger_bands.BollingerBandsStrategy object at 0x000001CA66A65810>> — Exit Reason Breakdown</h3>
+        <table>
+            <thead>
+                <tr>
+                    <th>Reason</th><th>Count</th><th>Wins</th><th>Losses</th>
+                    <th>Total PnL</th><th>Avg Win</th><th>Avg Loss</th>
+                </tr>
+            </thead>
+            <tbody>
+            <tr>
+                <td>EXIT_BAND_FLIP</td>
+                <td>72</td>
+                <td>65</td>
+                <td>7</td>
+                <td style="color:#00B050;font-weight:bold">+0.0037</td>
+                <td style="color:#00B050;font-weight:bold">+0.0001</td>
+                <td style="color:#FF0000;font-weight:bold">-0.0000</td>
+            </tr>
+            <tr>
+                <td>EXIT_SL</td>
+                <td>62</td>
+                <td>36</td>
+                <td>26</td>
+                <td style="color:#00B050;font-weight:bold">+0.0207</td>
+                <td style="color:#00B050;font-weight:bold">+0.0021</td>
+                <td style="color:#FF0000;font-weight:bold">-0.0021</td>
+            </tr>
+            <tr>
+                <td>EXIT_TP</td>
+                <td>2</td>
+                <td>1</td>
+                <td>1</td>
+                <td style="color:#00B050;font-weight:bold">+0.0011</td>
+                <td style="color:#00B050;font-weight:bold">+0.0023</td>
+                <td style="color:#FF0000;font-weight:bold">-0.0012</td>
+            </tr>
+            <tr>
+                <td>EXIT_TRAIL</td>
+                <td>22</td>
+                <td>17</td>
+                <td>5</td>
+                <td style="color:#00B050;font-weight:bold">+0.0281</td>
+                <td style="color:#00B050;font-weight:bold">+0.0022</td>
+                <td style="color:#FF0000;font-weight:bold">-0.0018</td>
+            </tr></tbody>
+        </table>
+        <h3 style="color:#1F4E79;margin-top:30px">VWAP — Exit Reason Breakdown</h3>
+        <table>
+            <thead>
+                <tr>
+                    <th>Reason</th><th>Count</th><th>Wins</th><th>Losses</th>
+                    <th>Total PnL</th><th>Avg Win</th><th>Avg Loss</th>
+                </tr>
+            </thead>
+            <tbody>
+            <tr>
+                <td>SL</td>
+                <td>480</td>
+                <td>480</td>
+                <td>0</td>
+                <td style="color:#00B050;font-weight:bold">+1.0112</td>
+                <td style="color:#00B050;font-weight:bold">+0.0021</td>
+                <td style="">N/A</td>
+            </tr>
+            <tr>
+                <td>TP</td>
+                <td>464</td>
+                <td>0</td>
+                <td>464</td>
+                <td style="color:#FF0000;font-weight:bold">-0.9770</td>
+                <td style="">N/A</td>
+                <td style="color:#FF0000;font-weight:bold">-0.0021</td>
+            </tr></tbody>
+        </table>
+        <h3 style="color:#1F4E79;margin-top:30px">Triple EMA — Exit Reason Breakdown</h3>
+        <table>
+            <thead>
+                <tr>
+                    <th>Reason</th><th>Count</th><th>Wins</th><th>Losses</th>
+                    <th>Total PnL</th><th>Avg Win</th><th>Avg Loss</th>
+                </tr>
+            </thead>
+            <tbody>
+            <tr>
+                <td>TP</td>
+                <td>431</td>
+                <td>0</td>
+                <td>431</td>
+                <td style="color:#FF0000;font-weight:bold">-0.9033</td>
+                <td style="">N/A</td>
+                <td style="color:#FF0000;font-weight:bold">-0.0021</td>
+            </tr></tbody>
+        </table>
+        <h3 style="color:#1F4E79;margin-top:30px"><bound method FVGStrategy.name of <strategies.fv_strategy.FVGStrategy object at 0x000001CA66626690>> — Exit Reason Breakdown</h3>
+        <table>
+            <thead>
+                <tr>
+                    <th>Reason</th><th>Count</th><th>Wins</th><th>Losses</th>
+                    <th>Total PnL</th><th>Avg Win</th><th>Avg Loss</th>
+                </tr>
+            </thead>
+            <tbody>
+            <tr>
+                <td>EXIT_SL</td>
+                <td>88</td>
+                <td>48</td>
+                <td>40</td>
+                <td style="color:#00B050;font-weight:bold">+0.0190</td>
+                <td style="color:#00B050;font-weight:bold">+0.0021</td>
+                <td style="color:#FF0000;font-weight:bold">-0.0021</td>
+            </tr>
+            <tr>
+                <td>EXIT_TP</td>
+                <td>10</td>
+                <td>5</td>
+                <td>5</td>
+                <td style="color:#FF0000;font-weight:bold">-0.0021</td>
+                <td style="color:#00B050;font-weight:bold">+0.0024</td>
+                <td style="color:#FF0000;font-weight:bold">-0.0028</td>
+            </tr>
+            <tr>
+                <td>EXIT_TRAIL</td>
+                <td>91</td>
+                <td>50</td>
+                <td>41</td>
+                <td style="color:#00B050;font-weight:bold">+0.0312</td>
+                <td style="color:#00B050;font-weight:bold">+0.0023</td>
+                <td style="color:#FF0000;font-weight:bold">-0.0020</td>
+            </tr></tbody>
+        </table>
+        <h3 style="color:#1F4E79;margin-top:30px"><bound method SMCStrategy.name of SMCStrategy(swing_lookback=5, atr_length=14, atr_multiplier=1.5, trail_activation_atr=2.0, sl_atr_buffer=0.3, ob_strength_period=20, ob_strength_mult=0.3, max_ob_age_candles=30, rr_ratio=2.0, trend_ema_period=50, bos_type=close, choch_type=close, ob_proximity_atr=3.0)> — Exit Reason Breakdown</h3>
+        <table>
+            <thead>
+                <tr>
+                    <th>Reason</th><th>Count</th><th>Wins</th><th>Losses</th>
+                    <th>Total PnL</th><th>Avg Win</th><th>Avg Loss</th>
+                </tr>
+            </thead>
+            <tbody>
+            <tr>
+                <td>SL</td>
+                <td>14</td>
+                <td>0</td>
+                <td>14</td>
+                <td style="color:#FF0000;font-weight:bold">-0.0031</td>
+                <td style="">N/A</td>
+                <td style="color:#FF0000;font-weight:bold">-0.0002</td>
+            </tr>
+            <tr>
+                <td>TP</td>
+                <td>72</td>
+                <td>20</td>
+                <td>52</td>
+                <td style="color:#FF0000;font-weight:bold">-0.0005</td>
+                <td style="color:#00B050;font-weight:bold">+0.0000</td>
+                <td style="color:#FF0000;font-weight:bold">-0.0000</td>
+            </tr>
+            <tr>
+                <td>TRAIL_SL</td>
+                <td>19</td>
+                <td>19</td>
+                <td>0</td>
+                <td style="color:#00B050;font-weight:bold">+0.0030</td>
+                <td style="color:#00B050;font-weight:bold">+0.0002</td>
+                <td style="">N/A</td>
+            </tr></tbody>
+        </table>
+
+    <div class="footer">Generated by Delta Copilot Backtester &mdash; 2026-07-05 13:19:03</div>
+</body>
+</html>

@@ -1,0 +1,24 @@
+py run_backtest.py --strategy ob --symbol ETHUSD --timeframe 15m --days 90
+py run_backtest.py --strategy ob --symbol ETHUSD --timeframe 30m --days 90
+py run_backtest.py --strategy ob --symbol ETHUSD --timeframe 1h --days 90
+py run_backtest.py --strategy ob --symbol ETHUSD --timeframe 4h --days 90
+
+
+
+py run_backtest.py --strategy ob --symbol BTCUSD --timeframe 15m --days 90
+py run_backtest.py --strategy ob --symbol BTCUSD --timeframe 30m --days 90
+py run_backtest.py --strategy ob --symbol BTCUSD --timeframe 1h --days 90
+py run_backtest.py --strategy ob --symbol BTCUSD --timeframe 4h --days 90\
+
+
+py run_backtest.py --strategy ob --symbol XAUTUSD --timeframe 15m --days 75
+py run_backtest.py --strategy ob --symbol XAUTUSD --timeframe 30m --days 75
+py run_backtest.py --strategy ob --symbol XAUTUSD --timeframe 1h --days 75
+py run_backtest.py --strategy ob --symbol XAUTUSD --timeframe 4h --days 75
+
+
+py run_backtest.py --strategy ob --symbol XAUTUSD --timeframe 1h --days 75 --sl_atr_buffer 0.0 --atr_multiplier 1.2 --ob_strength_mult 2.0
+
+py run_backtest.py --strategy ob --symbol XAUTUSD --timeframe 30m --days 75 --trail_activation_atr 2.0 --rr_ratio 2.5 --ob_strength_mult 2.0
+
+py run_backtest.py --strategy bollinger_bands --symbol XAUTUSD --timeframe 15m --bb-stop_loss_pct 2.0

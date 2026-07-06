@@ -1,0 +1,24 @@
+py run_backtest.py --strategy triple_ema_vwap_macd_tsl --symbol BEATUSD --timeframe 1h --days 30
+py run_backtest.py --strategy triple_ema_vwap_macd_tsl --symbol ETHUSD --timeframe 1h --days 30
+py run_backtest.py --strategy triple_ema_vwap_macd_tsl --symbol BNBUSD --timeframe  1h --days 30
+py run_backtest.py --strategy triple_ema_vwap_macd_tsl --symbol DOGEUSD --timeframe  1h --days 30
+py run_backtest.py --strategy triple_ema_vwap_macd_tsl --symbol VELVETUSD --timeframe  1h --days 30
+py run_backtest.py --strategy triple_ema_vwap_macd_tsl --symbol MUSD --timeframe   1h --days 30
+py run_backtest.py --strategy triple_ema_vwap_macd_tsl --symbol SOLUSD --timeframe  1h --days 30
+py run_backtest.py --strategy triple_ema_vwap_macd_tsl --symbol XRPUSD --timeframe  1h --days 30
+
+
+RUNNER UP
+py run_backtest.py --strategy triple_ema_vwap_macd_tsl --symbol VELVETUSD --timeframe 15m --days 30
+py run_backtest.py --strategy triple_ema_vwap_macd_tsl --symbol DOGEUSD --timeframe 15m --days 30
+py run_backtest.py --strategy triple_ema_vwap_macd_tsl --symbol BEATUSD --timeframe 15m --days 30
+
+py run_backtest.py --strategy triple_ema_vwap_macd_tsl --symbol XRPUSD --timeframe  30m --days 30
+py run_backtest.py --strategy triple_ema_vwap_macd_tsl --symbol MUSD --timeframe   30m --days 30
+py run_backtest.py --strategy triple_ema_vwap_macd_tsl --symbol VELVETUSD --timeframe  30m --days 30
+py run_backtest.py --strategy triple_ema_vwap_macd_tsl --symbol BEATUSD --timeframe 30m --days 30
+
+py run_backtest.py --strategy triple_ema_vwap_macd_tsl --symbol XRPUSD --timeframe  1h --days 30
+py run_backtest.py --strategy triple_ema_vwap_macd_tsl --symbol MUSD --timeframe   1h --days 30
+py run_backtest.py --strategy triple_ema_vwap_macd_tsl --symbol ETHUSD --timeframe 1h --days 30
+py run_backtest.py --strategy triple_ema_vwap_macd_tsl --symbol BEATUSD --timeframe 1h --days 30

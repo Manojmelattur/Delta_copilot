@@ -1,0 +1,23 @@
+ py run_backtest.py --strategy ob --symbol ETHUSD --timeframe 1h --days 30
+ py run_backtest.py --strategy ob --symbol BTCUSD --timeframe 1h --days 30
+ py run_backtest.py --strategy ob --symbol XRPUSD --timeframe 1h --days 30
+ py run_backtest.py --strategy ob --symbol SOLUSD --timeframe 1h --days 30
+
+ py run_backtest.py --strategy ob --symbol DOGEUSD --timeframe 1h --days 30
+ py run_backtest.py --strategy ob --symbol BNBUSD --timeframe 1h --days 30
+ py run_backtest.py --strategy ob --symbol AVAXUSD --timeframe 1h --days 30
+
+
+
+
+
+ Runner up
+
+ py run_backtest.py --strategy ob --symbol XRPUSD --timeframe 15m --days 30
+ py run_backtest.py --strategy ob --symbol DOGEUSD --timeframe 15m --days 30
+ py run_backtest.py --strategy ob --symbol AVAXUSD --timeframe 15m --days 30
+
+ py run_backtest.py --strategy ob --symbol AVAXUSD --timeframe 30m --days 30
+ py run_backtest.py --strategy ob --symbol SOLUSD --timeframe 30m --days 30
+ py run_backtest.py --strategy ob --symbol XRPUSD --timeframe 30m --days 30
+ py run_backtest.py --all ob --symbol ETHUSD --timeframe 30m --days 30

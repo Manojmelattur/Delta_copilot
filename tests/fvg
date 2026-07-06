@@ -1,0 +1,27 @@
+    py run_backtest.py --strategy fvg --timeframe 1d  --symbol BTCUSD  --fvg-stop-loss 1.0 --fvg-take-profit 1.5
+    py run_backtest.py --strategy fvg --timeframe 1d  --symbol ETHUSD  --fvg-stop-loss 1.0 --fvg-take-profit 1.5
+    py run_backtest.py --strategy fvg --timeframe 1d  --symbol XRPUSD  --fvg-stop-loss 1.0 --fvg-take-profit 1.5
+    py run_backtest.py --strategy fvg --timeframe 1d  --symbol SOLUSD  --fvg-stop-loss 1.0 --fvg-take-profit 1.5
+    py run_backtest.py --strategy fvg --timeframe 1d  --symbol XAUTUSD  --fvg-stop-loss 1.0 --fvg-take-profit 1.5
+
+
+    py run_backtest.py --strategy fvg --timeframe 1d  --symbol BNBUSD  --fvg-stop-loss 1.0 --fvg-take-profit 1.5
+    py run_backtest.py --strategy fvg --timeframe 1d  --symbol ADAUSD  --fvg-stop-loss 1.0 --fvg-take-profit 1.5
+    py run_backtest.py --strategy fvg --timeframe 1d          --symbol AVAXUSD  --fvg-stop-loss 1.0 --fvg-take-profit 1.5
+    py run_backtest.py --strategy fvg --timeframe 1d  --symbol DOTUSD  --fvg-stop-loss 1.0 --fvg-take-profit 1.5
+    py run_backtest.py --strategy fvg --timeframe 1d  --symbol LINKUSD  --fvg-stop-loss 1.0 --fvg-take-profit 1.5
+
+
+
+
+
+Runn up
+py run_backtest.py --strategy fvg --timeframe 15m  --symbol XRPUSD  --fvg-stop-loss 1.0 --fvg-take-profit 1.5
+py run_backtest.py --strategy fvg --timeframe 30m  --symbol XRPUSD  --fvg-stop-loss 1.0 --fvg-take-profit 1.5
+py run_backtest.py --strategy fvg --timeframe 1d  --symbol BTCUSD  --fvg-stop-loss 1.0 --fvg-take-profit 1.5
+
+
+py run_backtest.py --strategy fvg --timeframe 1d  --symbol AVAXUSD  --fvg-stop-loss 1.0 --fvg-take-profit 1.5
+py run_backtest.py --strategy fvg --timeframe 1d  --symbol BNBUSD  --fvg-stop-loss 1.0 --fvg-take-profit 1.5
+py run_backtest.py --strategy fvg --timeframe 30m  --symbol ADAUSD  --fvg-stop-loss 1.0 --fvg-take-profit 1.5
+py run_backtest.py --strategy fvg --timeframe 1h  --symbol ADAUSD  --fvg-stop-loss 1.0 --fvg-take-profit 1.5
