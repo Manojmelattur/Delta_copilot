@@ -49,13 +49,7 @@ class EMACrossoverStrategy(BaseStrategy):
         self._entry_idx: int | None = None
 
     def name(self) -> str:
-        parts = []
-        if self.trend_ema > 0:
-            parts.append(f"trend={self.trend_ema}")
-        if self.min_hold_candles > 0:
-            parts.append(f"hold={self.min_hold_candles}")
-        if parts:
-            return f"EMA Crossover ({', '.join(parts)})"
+
         return "EMA Crossover"
 
     def notify_entry(self, idx: int) -> None:

@@ -21872,3 +21872,1733 @@
 2026-07-06 18:02:29 | DEBUG    | backtester | Fetched 336 candles (batch_end=1783341148)
 2026-07-06 18:02:29 | INFO     | backtester | Total candles fetched: 336
 2026-07-06 18:02:29 | INFO     | backtester | Running backtest: <bound method SMCStrategy.name of SMCStrategy(swing_lookback=5, atr_length=14, atr_multiplier=1.5, trail_activation_atr=2.0, sl_atr_buffer=0.3, ob_strength_period=20, ob_strength_mult=0.3, max_ob_age_candles=30, rr_ratio=2.0, trend_ema_period=50, bos_type=close, choch_type=close, ob_proximity_atr=3.0)> | symbol=ETHUSD | timeframe=1h
+2026-07-06 21:01:54 | INFO     | backtester | Fetching 90 days of 15m candles for DOGEUSD in batches of 1900...
+2026-07-06 21:01:54 | DEBUG    | backtester | Fetched 1900 candles (batch_end=1783351914)
+2026-07-06 21:01:55 | DEBUG    | backtester | Fetched 1900 candles (batch_end=1781641014)
+2026-07-06 21:01:56 | DEBUG    | backtester | Fetched 1900 candles (batch_end=1779930114)
+2026-07-06 21:01:57 | DEBUG    | backtester | Fetched 1900 candles (batch_end=1778219214)
+2026-07-06 21:01:58 | DEBUG    | backtester | Fetched 1036 candles (batch_end=1776508314)
+2026-07-06 21:01:58 | INFO     | backtester | Total candles fetched: 8636
+2026-07-06 21:01:58 | INFO     | backtester | Running backtest: <bound method BollingerBandsStrategy.name of <strategies.bollinger_bands.BollingerBandsStrategy object at 0x000001CC8337FB10>> | symbol=DOGEUSD | timeframe=15m
+2026-07-07 10:19:27 | INFO     | __main__ | =======================================================
+2026-07-07 10:19:27 | INFO     | __main__ |   Strategy Bot Starting: <bound method BollingerBandsStrategy.name of <strategies.bollinger_bands.BollingerBandsStrategy object at 0x000001D166B74F90>>
+2026-07-07 10:19:27 | INFO     | __main__ |   Symbol       : DOGEUSD
+2026-07-07 10:19:27 | INFO     | __main__ |   Poll Interval: 60s
+2026-07-07 10:19:27 | INFO     | __main__ |   Timeframe    : 15m
+2026-07-07 10:19:27 | INFO     | __main__ | =======================================================
+2026-07-07 10:19:27 | INFO     | __main__ |   Lot Size    : 12
+2026-07-07 10:19:27 | INFO     | __main__ | Mode           :paper
+2026-07-07 10:19:28 | ERROR    | position_manager | Error fetching position: 401 Client Error: Unauthorized for url: https://api.india.delta.exchange/v2/positions?product_id=27
+2026-07-07 10:19:29 | DEBUG    | market_data | [DOGEUSD] Fetched 200 candles: 2026-07-05 03:00:00+00:00 to 2026-07-07 04:45:00+00:00
+2026-07-07 10:19:29 | INFO     | __main__ | [DOGEUSD] No signal. Waiting for next candle.
+2026-07-07 10:19:29 | DEBUG    | __main__ | Sleeping for 59.0s
+2026-07-07 10:20:04 | INFO     | __main__ | =======================================================
+2026-07-07 10:20:04 | INFO     | __main__ |   Strategy Bot Starting: <bound method BollingerBandsStrategy.name of <strategies.bollinger_bands.BollingerBandsStrategy object at 0x0000021A185657D0>>
+2026-07-07 10:20:04 | INFO     | __main__ |   Symbol       : BTCUSD
+2026-07-07 10:20:04 | INFO     | __main__ |   Poll Interval: 60s
+2026-07-07 10:20:04 | INFO     | __main__ |   Timeframe    : 15m
+2026-07-07 10:20:04 | INFO     | __main__ | =======================================================
+2026-07-07 10:20:04 | INFO     | __main__ |   Lot Size    : 12
+2026-07-07 10:20:04 | INFO     | __main__ | Mode           :paper
+2026-07-07 10:20:05 | ERROR    | position_manager | Error fetching position: 401 Client Error: Unauthorized for url: https://api.india.delta.exchange/v2/positions?product_id=27
+2026-07-07 10:20:05 | DEBUG    | market_data | [BTCUSD] Fetched 200 candles: 2026-07-05 03:00:00+00:00 to 2026-07-07 04:45:00+00:00
+2026-07-07 10:20:05 | INFO     | __main__ | [BTCUSD] No signal. Waiting for next candle.
+2026-07-07 10:20:05 | DEBUG    | __main__ | Sleeping for 59.3s
+2026-07-07 10:21:06 | DEBUG    | market_data | [BTCUSD] Fetched 200 candles: 2026-07-05 03:00:00+00:00 to 2026-07-07 04:45:00+00:00
+2026-07-07 10:21:06 | DEBUG    | __main__ | [BTCUSD] Candle unchanged (2026-07-07 04:30:00+00:00). Skipping evaluation.
+2026-07-07 10:21:06 | DEBUG    | __main__ | Sleeping for 59.0s
+2026-07-07 10:22:06 | DEBUG    | market_data | [BTCUSD] Fetched 200 candles: 2026-07-05 03:00:00+00:00 to 2026-07-07 04:45:00+00:00
+2026-07-07 10:22:06 | DEBUG    | __main__ | [BTCUSD] Candle unchanged (2026-07-07 04:30:00+00:00). Skipping evaluation.
+2026-07-07 10:22:06 | DEBUG    | __main__ | Sleeping for 58.9s
+2026-07-07 10:23:06 | DEBUG    | market_data | [BTCUSD] Fetched 200 candles: 2026-07-05 03:00:00+00:00 to 2026-07-07 04:45:00+00:00
+2026-07-07 10:23:06 | DEBUG    | __main__ | [BTCUSD] Candle unchanged (2026-07-07 04:30:00+00:00). Skipping evaluation.
+2026-07-07 10:23:06 | DEBUG    | __main__ | Sleeping for 58.9s
+2026-07-07 10:24:06 | DEBUG    | market_data | [BTCUSD] Fetched 200 candles: 2026-07-05 03:00:00+00:00 to 2026-07-07 04:45:00+00:00
+2026-07-07 10:24:06 | DEBUG    | __main__ | [BTCUSD] Candle unchanged (2026-07-07 04:30:00+00:00). Skipping evaluation.
+2026-07-07 10:24:06 | DEBUG    | __main__ | Sleeping for 58.9s
+2026-07-07 10:25:06 | DEBUG    | market_data | [BTCUSD] Fetched 200 candles: 2026-07-05 03:00:00+00:00 to 2026-07-07 04:45:00+00:00
+2026-07-07 10:25:06 | DEBUG    | __main__ | [BTCUSD] Candle unchanged (2026-07-07 04:30:00+00:00). Skipping evaluation.
+2026-07-07 10:25:06 | DEBUG    | __main__ | Sleeping for 58.8s
+2026-07-07 10:26:06 | DEBUG    | market_data | [BTCUSD] Fetched 200 candles: 2026-07-05 03:00:00+00:00 to 2026-07-07 04:45:00+00:00
+2026-07-07 10:26:06 | DEBUG    | __main__ | [BTCUSD] Candle unchanged (2026-07-07 04:30:00+00:00). Skipping evaluation.
+2026-07-07 10:26:06 | DEBUG    | __main__ | Sleeping for 59.2s
+2026-07-07 10:27:06 | DEBUG    | market_data | [BTCUSD] Fetched 200 candles: 2026-07-05 03:00:00+00:00 to 2026-07-07 04:45:00+00:00
+2026-07-07 10:27:06 | DEBUG    | __main__ | [BTCUSD] Candle unchanged (2026-07-07 04:30:00+00:00). Skipping evaluation.
+2026-07-07 10:27:06 | DEBUG    | __main__ | Sleeping for 58.9s
+2026-07-07 10:28:06 | DEBUG    | market_data | [BTCUSD] Fetched 200 candles: 2026-07-05 03:00:00+00:00 to 2026-07-07 04:45:00+00:00
+2026-07-07 10:28:06 | DEBUG    | __main__ | [BTCUSD] Candle unchanged (2026-07-07 04:30:00+00:00). Skipping evaluation.
+2026-07-07 10:28:06 | DEBUG    | __main__ | Sleeping for 59.1s
+2026-07-07 10:29:06 | DEBUG    | market_data | [BTCUSD] Fetched 200 candles: 2026-07-05 03:00:00+00:00 to 2026-07-07 04:45:00+00:00
+2026-07-07 10:29:06 | DEBUG    | __main__ | [BTCUSD] Candle unchanged (2026-07-07 04:30:00+00:00). Skipping evaluation.
+2026-07-07 10:29:06 | DEBUG    | __main__ | Sleeping for 59.1s
+2026-07-07 10:30:06 | DEBUG    | market_data | [BTCUSD] Fetched 200 candles: 2026-07-05 03:15:00+00:00 to 2026-07-07 05:00:00+00:00
+2026-07-07 10:30:06 | INFO     | __main__ | [BTCUSD] No signal. Waiting for next candle.
+2026-07-07 10:30:06 | DEBUG    | __main__ | Sleeping for 58.9s
+2026-07-07 10:31:06 | DEBUG    | market_data | [BTCUSD] Fetched 200 candles: 2026-07-05 03:15:00+00:00 to 2026-07-07 05:00:00+00:00
+2026-07-07 10:31:06 | DEBUG    | __main__ | [BTCUSD] Candle unchanged (2026-07-07 04:45:00+00:00). Skipping evaluation.
+2026-07-07 10:31:06 | DEBUG    | __main__ | Sleeping for 59.0s
+2026-07-07 10:31:35 | WARNING  | __main__ | [BTCUSD] Bot stopped by user. Closing open position if any...
+2026-07-07 10:32:26 | INFO     | __main__ | =======================================================
+2026-07-07 10:32:26 | INFO     | __main__ |   Strategy Bot Starting: <bound method BollingerBandsStrategy.name of <strategies.bollinger_bands.BollingerBandsStrategy object at 0x000001840F765890>>
+2026-07-07 10:32:26 | INFO     | __main__ |   Symbol       : BTCUSD
+2026-07-07 10:32:26 | INFO     | __main__ |   Poll Interval: 60s
+2026-07-07 10:32:26 | INFO     | __main__ |   Timeframe    : 15m
+2026-07-07 10:32:26 | INFO     | __main__ | =======================================================
+2026-07-07 10:32:26 | INFO     | __main__ |   Lot Size    : 12
+2026-07-07 10:32:26 | INFO     | __main__ | Mode           :paper
+2026-07-07 10:32:29 | ERROR    | position_manager | Error fetching position: 401 Client Error: Unauthorized for url: https://api.india.delta.exchange/v2/positions?product_id=27
+2026-07-07 10:32:30 | DEBUG    | market_data | [BTCUSD] Fetched 200 candles: 2026-07-05 03:15:00+00:00 to 2026-07-07 05:00:00+00:00
+2026-07-07 10:32:30 | INFO     | __main__ | [BTCUSD] No signal. Waiting for next candle.
+2026-07-07 10:32:30 | DEBUG    | __main__ | Sleeping for 58.1s
+2026-07-07 10:33:05 | INFO     | __main__ | =======================================================
+2026-07-07 10:33:05 | INFO     | __main__ |   Strategy Bot Starting: <bound method BollingerBandsStrategy.name of <strategies.bollinger_bands.BollingerBandsStrategy object at 0x000001CCCB905550>>
+2026-07-07 10:33:05 | INFO     | __main__ |   Symbol       : BTCUSD
+2026-07-07 10:33:05 | INFO     | __main__ |   Poll Interval: 60s
+2026-07-07 10:33:05 | INFO     | __main__ |   Timeframe    : 15m
+2026-07-07 10:33:05 | INFO     | __main__ | =======================================================
+2026-07-07 10:33:05 | INFO     | __main__ |   Lot Size    : 12
+2026-07-07 10:33:05 | INFO     | __main__ | Mode           :paper
+2026-07-07 10:33:05 | ERROR    | position_manager | Error fetching position: 401 Client Error: Unauthorized for url: https://api.india.delta.exchange/v2/positions?product_id=27
+2026-07-07 10:33:06 | DEBUG    | market_data | [BTCUSD] Fetched 200 candles: 2026-07-05 03:15:00+00:00 to 2026-07-07 05:00:00+00:00
+2026-07-07 10:33:06 | INFO     | __main__ | [BTCUSD] No signal. Waiting for next candle.
+2026-07-07 10:33:06 | DEBUG    | __main__ | Sleeping for 59.3s
+2026-07-07 10:34:07 | DEBUG    | market_data | [BTCUSD] Fetched 200 candles: 2026-07-05 03:15:00+00:00 to 2026-07-07 05:00:00+00:00
+2026-07-07 10:34:07 | DEBUG    | __main__ | [BTCUSD] Candle unchanged (2026-07-07 04:45:00+00:00). Skipping evaluation.
+2026-07-07 10:34:07 | DEBUG    | __main__ | Sleeping for 59.0s
+2026-07-07 10:34:20 | WARNING  | __main__ | [BTCUSD] Bot stopped by user. Closing open position if any...
+2026-07-07 10:34:24 | INFO     | __main__ | =======================================================
+2026-07-07 10:34:24 | INFO     | __main__ |   Strategy Bot Starting: <bound method BollingerBandsStrategy.name of <strategies.bollinger_bands.BollingerBandsStrategy object at 0x00000201C11552D0>>
+2026-07-07 10:34:24 | INFO     | __main__ |   Symbol       : BTCUSD
+2026-07-07 10:34:24 | INFO     | __main__ |   Poll Interval: 60s
+2026-07-07 10:34:24 | INFO     | __main__ |   Timeframe    : 15m
+2026-07-07 10:34:24 | INFO     | __main__ |   Lot Size    : 12
+2026-07-07 10:34:24 | INFO     | __main__ | Mode           :paper
+2026-07-07 10:34:24 | INFO     | __main__ | =======================================================
+2026-07-07 10:34:25 | ERROR    | position_manager | Error fetching position: 401 Client Error: Unauthorized for url: https://api.india.delta.exchange/v2/positions?product_id=27
+2026-07-07 10:34:26 | DEBUG    | market_data | [BTCUSD] Fetched 200 candles: 2026-07-05 03:15:00+00:00 to 2026-07-07 05:00:00+00:00
+2026-07-07 10:34:26 | INFO     | __main__ | [BTCUSD] No signal. Waiting for next candle.
+2026-07-07 10:34:26 | DEBUG    | __main__ | Sleeping for 59.1s
+2026-07-07 10:35:37 | INFO     | __main__ | =======================================================
+2026-07-07 10:35:37 | INFO     | __main__ |   Strategy Bot Starting: <bound method BollingerBandsStrategy.name of <strategies.bollinger_bands.BollingerBandsStrategy object at 0x000002273EA65810>>
+2026-07-07 10:35:37 | INFO     | __main__ |   Symbol       : BTCUSD
+2026-07-07 10:35:37 | INFO     | __main__ |   Poll Interval: 60s
+2026-07-07 10:35:37 | INFO     | __main__ |   Timeframe    : 15m
+2026-07-07 10:35:37 | INFO     | __main__ |   Lot Size    : 12
+2026-07-07 10:35:37 | INFO     | __main__ | Mode           :paper
+2026-07-07 10:35:37 | INFO     | __main__ | =======================================================
+2026-07-07 10:35:37 | INFO     | __main__ | papertrade     : True
+2026-07-07 10:35:38 | ERROR    | position_manager | Error fetching position: 401 Client Error: Unauthorized for url: https://api.india.delta.exchange/v2/positions?product_id=27
+2026-07-07 10:35:39 | DEBUG    | market_data | [BTCUSD] Fetched 200 candles: 2026-07-05 03:15:00+00:00 to 2026-07-07 05:00:00+00:00
+2026-07-07 10:35:39 | INFO     | __main__ | [BTCUSD] No signal. Waiting for next candle.
+2026-07-07 10:35:39 | DEBUG    | __main__ | Sleeping for 59.1s
+2026-07-07 10:36:06 | INFO     | __main__ | =======================================================
+2026-07-07 10:36:06 | INFO     | __main__ |   Strategy Bot Starting: <bound method BollingerBandsStrategy.name of <strategies.bollinger_bands.BollingerBandsStrategy object at 0x0000025CD3FF5350>>
+2026-07-07 10:36:06 | INFO     | __main__ |   Symbol       : BTCUSD
+2026-07-07 10:36:06 | INFO     | __main__ |   Poll Interval: 60s
+2026-07-07 10:36:06 | INFO     | __main__ |   Timeframe    : 15m
+2026-07-07 10:36:06 | INFO     | __main__ |   Lot Size    : 12
+2026-07-07 10:36:06 | INFO     | __main__ | Mode           :paper
+2026-07-07 10:36:06 | INFO     | __main__ | =======================================================
+2026-07-07 10:36:06 | INFO     | __main__ | papertrade     : True
+2026-07-07 10:36:06 | INFO     | __main__ |   API Key     : Iq55cC0tAFh3XfF5CnEOCWFWcQnFBH
+2026-07-07 10:36:06 | INFO     | __main__ |   API Secret  : kNoyZWnfdYOLc0VE67hpQkVDcTnczjyNb7aPH8xNkbxFwSAUj8n7a5XVer8R
+2026-07-07 10:36:07 | ERROR    | position_manager | Error fetching position: 401 Client Error: Unauthorized for url: https://api.india.delta.exchange/v2/positions?product_id=27
+2026-07-07 10:36:07 | DEBUG    | market_data | [BTCUSD] Fetched 200 candles: 2026-07-05 03:15:00+00:00 to 2026-07-07 05:00:00+00:00
+2026-07-07 10:36:07 | INFO     | __main__ | [BTCUSD] No signal. Waiting for next candle.
+2026-07-07 10:36:07 | DEBUG    | __main__ | Sleeping for 59.2s
+2026-07-07 10:37:08 | DEBUG    | market_data | [BTCUSD] Fetched 200 candles: 2026-07-05 03:15:00+00:00 to 2026-07-07 05:00:00+00:00
+2026-07-07 10:37:08 | DEBUG    | __main__ | [BTCUSD] Candle unchanged (2026-07-07 04:45:00+00:00). Skipping evaluation.
+2026-07-07 10:37:08 | DEBUG    | __main__ | Sleeping for 58.9s
+2026-07-07 10:38:07 | DEBUG    | market_data | [BTCUSD] Fetched 200 candles: 2026-07-05 03:15:00+00:00 to 2026-07-07 05:00:00+00:00
+2026-07-07 10:38:07 | DEBUG    | __main__ | [BTCUSD] Candle unchanged (2026-07-07 04:45:00+00:00). Skipping evaluation.
+2026-07-07 10:38:07 | DEBUG    | __main__ | Sleeping for 59.1s
+2026-07-07 10:39:08 | DEBUG    | market_data | [BTCUSD] Fetched 200 candles: 2026-07-05 03:15:00+00:00 to 2026-07-07 05:00:00+00:00
+2026-07-07 10:39:08 | DEBUG    | __main__ | [BTCUSD] Candle unchanged (2026-07-07 04:45:00+00:00). Skipping evaluation.
+2026-07-07 10:39:08 | DEBUG    | __main__ | Sleeping for 59.0s
+2026-07-07 10:40:08 | DEBUG    | market_data | [BTCUSD] Fetched 200 candles: 2026-07-05 03:15:00+00:00 to 2026-07-07 05:00:00+00:00
+2026-07-07 10:40:08 | DEBUG    | __main__ | [BTCUSD] Candle unchanged (2026-07-07 04:45:00+00:00). Skipping evaluation.
+2026-07-07 10:40:08 | DEBUG    | __main__ | Sleeping for 59.0s
+2026-07-07 10:41:07 | DEBUG    | market_data | [BTCUSD] Fetched 200 candles: 2026-07-05 03:15:00+00:00 to 2026-07-07 05:00:00+00:00
+2026-07-07 10:41:07 | DEBUG    | __main__ | [BTCUSD] Candle unchanged (2026-07-07 04:45:00+00:00). Skipping evaluation.
+2026-07-07 10:41:07 | DEBUG    | __main__ | Sleeping for 59.2s
+2026-07-07 10:42:08 | DEBUG    | market_data | [BTCUSD] Fetched 200 candles: 2026-07-05 03:15:00+00:00 to 2026-07-07 05:00:00+00:00
+2026-07-07 10:42:08 | DEBUG    | __main__ | [BTCUSD] Candle unchanged (2026-07-07 04:45:00+00:00). Skipping evaluation.
+2026-07-07 10:42:08 | DEBUG    | __main__ | Sleeping for 59.0s
+2026-07-07 10:43:08 | DEBUG    | market_data | [BTCUSD] Fetched 200 candles: 2026-07-05 03:15:00+00:00 to 2026-07-07 05:00:00+00:00
+2026-07-07 10:43:08 | DEBUG    | __main__ | [BTCUSD] Candle unchanged (2026-07-07 04:45:00+00:00). Skipping evaluation.
+2026-07-07 10:43:08 | DEBUG    | __main__ | Sleeping for 59.1s
+2026-07-07 10:44:08 | DEBUG    | market_data | [BTCUSD] Fetched 200 candles: 2026-07-05 03:15:00+00:00 to 2026-07-07 05:00:00+00:00
+2026-07-07 10:44:08 | DEBUG    | __main__ | [BTCUSD] Candle unchanged (2026-07-07 04:45:00+00:00). Skipping evaluation.
+2026-07-07 10:44:08 | DEBUG    | __main__ | Sleeping for 59.0s
+2026-07-07 10:44:25 | WARNING  | __main__ | [BTCUSD] Bot stopped by user. Closing open position if any...
+2026-07-07 10:48:27 | INFO     | __main__ | =======================================================
+2026-07-07 10:48:27 | INFO     | __main__ |   Strategy Bot Starting: <bound method BollingerBandsStrategy.name of <strategies.bollinger_bands.BollingerBandsStrategy object at 0x000002B4D2658BD0>>
+2026-07-07 10:48:27 | INFO     | __main__ |   Symbol       : BTCUSD
+2026-07-07 10:48:27 | INFO     | __main__ |   Poll Interval: 60s
+2026-07-07 10:48:27 | INFO     | __main__ |   Timeframe    : 15m
+2026-07-07 10:48:27 | INFO     | __main__ |   Lot Size    : 12
+2026-07-07 10:48:27 | INFO     | __main__ | Mode           :paper
+2026-07-07 10:48:27 | INFO     | __main__ | =======================================================
+2026-07-07 10:48:27 | INFO     | __main__ | papertrade     : True
+2026-07-07 10:48:27 | INFO     | __main__ |   API Key     : 
+2026-07-07 10:48:27 | INFO     | __main__ |   API Secret  : 
+2026-07-07 10:48:28 | ERROR    | position_manager | Error fetching position: 401 Client Error: Unauthorized for url: https://api.india.delta.exchange/v2/positions?product_id=27
+2026-07-07 10:48:29 | DEBUG    | market_data | [BTCUSD] Fetched 200 candles: 2026-07-05 03:30:00+00:00 to 2026-07-07 05:15:00+00:00
+2026-07-07 10:48:29 | INFO     | __main__ | [BTCUSD] No signal. Waiting for next candle.
+2026-07-07 10:48:29 | DEBUG    | __main__ | Sleeping for 59.1s
+2026-07-07 10:49:29 | DEBUG    | market_data | [BTCUSD] Fetched 200 candles: 2026-07-05 03:30:00+00:00 to 2026-07-07 05:15:00+00:00
+2026-07-07 10:49:29 | DEBUG    | __main__ | [BTCUSD] Candle unchanged (2026-07-07 05:00:00+00:00). Skipping evaluation.
+2026-07-07 10:49:29 | DEBUG    | __main__ | Sleeping for 59.1s
+2026-07-07 10:50:29 | DEBUG    | market_data | [BTCUSD] Fetched 200 candles: 2026-07-05 03:30:00+00:00 to 2026-07-07 05:15:00+00:00
+2026-07-07 10:50:29 | DEBUG    | __main__ | [BTCUSD] Candle unchanged (2026-07-07 05:00:00+00:00). Skipping evaluation.
+2026-07-07 10:50:29 | DEBUG    | __main__ | Sleeping for 59.2s
+2026-07-07 10:50:33 | WARNING  | __main__ | [BTCUSD] Bot stopped by user. Closing open position if any...
+2026-07-07 10:50:39 | INFO     | __main__ | =======================================================
+2026-07-07 10:50:39 | INFO     | __main__ |   Strategy Bot Starting: <bound method BollingerBandsStrategy.name of <strategies.bollinger_bands.BollingerBandsStrategy object at 0x00000175189B33D0>>
+2026-07-07 10:50:39 | INFO     | __main__ |   Symbol       : BTCUSD
+2026-07-07 10:50:39 | INFO     | __main__ |   Poll Interval: 60s
+2026-07-07 10:50:39 | INFO     | __main__ |   Timeframe    : 15m
+2026-07-07 10:50:39 | INFO     | __main__ |   Lot Size    : 12
+2026-07-07 10:50:39 | INFO     | __main__ | Mode           :paper
+2026-07-07 10:50:39 | INFO     | __main__ | =======================================================
+2026-07-07 10:50:39 | INFO     | __main__ | papertrade     : True
+2026-07-07 10:50:39 | INFO     | __main__ |   API Key     : Iq55cC0tAFh3XfF5CnEOCWFWcQnFBH
+2026-07-07 10:50:39 | INFO     | __main__ |   API Secret  : kNoyZWnfdYOLc0VE67hpQkVDcTnczjyNb7aPH8xNkbxFwSAUj8n7a5XVer8R
+2026-07-07 10:50:40 | ERROR    | position_manager | Error fetching position: 401 Client Error: Unauthorized for url: https://api.india.delta.exchange/v2/positions?product_id=27
+2026-07-07 10:50:40 | DEBUG    | market_data | [BTCUSD] Fetched 200 candles: 2026-07-05 03:30:00+00:00 to 2026-07-07 05:15:00+00:00
+2026-07-07 10:50:40 | INFO     | __main__ | [BTCUSD] No signal. Waiting for next candle.
+2026-07-07 10:50:40 | DEBUG    | __main__ | Sleeping for 59.3s
+2026-07-07 10:56:22 | INFO     | __main__ | =======================================================
+2026-07-07 10:56:22 | INFO     | __main__ |   Strategy Bot Starting: <bound method BollingerBandsStrategy.name of <strategies.bollinger_bands.BollingerBandsStrategy object at 0x000001DA70508490>>
+2026-07-07 10:56:22 | INFO     | __main__ |   Symbol       : BTCUSD
+2026-07-07 10:56:22 | INFO     | __main__ |   Poll Interval: 60s
+2026-07-07 10:56:22 | INFO     | __main__ |   Timeframe    : 15m
+2026-07-07 10:56:22 | INFO     | __main__ |   Lot Size    : 1
+2026-07-07 10:56:22 | INFO     | __main__ | Mode           :paper
+2026-07-07 10:56:22 | INFO     | __main__ | =======================================================
+2026-07-07 10:56:22 | INFO     | __main__ | papertrade     : False
+2026-07-07 10:56:22 | INFO     | __main__ |   API Key     : Iq55cC0tAFh3XfF5CnEOCWFWcQnFBH
+2026-07-07 10:56:22 | INFO     | __main__ |   API Secret  : kNoyZWnfdYOLc0VE67hpQkVDcTnczjyNb7aPH8xNkbxFwSAUj8n7a5XVer8R
+2026-07-07 10:56:23 | ERROR    | position_manager | Error fetching position: 401 Client Error: Unauthorized for url: https://api.india.delta.exchange/v2/positions?product_id=27
+2026-07-07 10:56:24 | DEBUG    | market_data | [BTCUSD] Fetched 200 candles: 2026-07-05 03:30:00+00:00 to 2026-07-07 05:15:00+00:00
+2026-07-07 10:56:24 | INFO     | __main__ | [BTCUSD] No signal. Waiting for next candle.
+2026-07-07 10:56:24 | DEBUG    | __main__ | Sleeping for 59.1s
+2026-07-07 10:57:24 | DEBUG    | market_data | [BTCUSD] Fetched 200 candles: 2026-07-05 03:30:00+00:00 to 2026-07-07 05:15:00+00:00
+2026-07-07 10:57:24 | DEBUG    | __main__ | [BTCUSD] Candle unchanged (2026-07-07 05:00:00+00:00). Skipping evaluation.
+2026-07-07 10:57:24 | DEBUG    | __main__ | Sleeping for 58.7s
+2026-07-07 10:58:09 | WARNING  | __main__ | [BTCUSD] Bot stopped by user. Closing open position if any...
+2026-07-07 10:58:17 | INFO     | __main__ | =======================================================
+2026-07-07 10:58:17 | INFO     | __main__ |   Strategy Bot Starting: <bound method BollingerBandsStrategy.name of <strategies.bollinger_bands.BollingerBandsStrategy object at 0x00000240ACE48D10>>
+2026-07-07 10:58:17 | INFO     | __main__ |   Symbol       : BTCUSD
+2026-07-07 10:58:17 | INFO     | __main__ |   Poll Interval: 60s
+2026-07-07 10:58:17 | INFO     | __main__ |   Timeframe    : 15m
+2026-07-07 10:58:17 | INFO     | __main__ |   Lot Size    : 1
+2026-07-07 10:58:17 | INFO     | __main__ | Mode           :paper
+2026-07-07 10:58:17 | INFO     | __main__ | =======================================================
+2026-07-07 10:58:17 | INFO     | __main__ | papertrade     : False
+2026-07-07 10:58:17 | INFO     | __main__ |   API Key     : 
+2026-07-07 10:58:17 | INFO     | __main__ |   API Secret  : 
+2026-07-07 10:58:18 | ERROR    | position_manager | Error fetching position: 401 Client Error: Unauthorized for url: https://api.india.delta.exchange/v2/positions?product_id=27
+2026-07-07 10:58:19 | DEBUG    | market_data | [BTCUSD] Fetched 200 candles: 2026-07-05 03:30:00+00:00 to 2026-07-07 05:15:00+00:00
+2026-07-07 10:58:19 | INFO     | __main__ | [BTCUSD] No signal. Waiting for next candle.
+2026-07-07 10:58:19 | DEBUG    | __main__ | Sleeping for 59.3s
+2026-07-07 10:58:59 | INFO     | __main__ | =======================================================
+2026-07-07 10:58:59 | INFO     | __main__ |   Strategy Bot Starting: <bound method BollingerBandsStrategy.name of <strategies.bollinger_bands.BollingerBandsStrategy object at 0x00000250FF839610>>
+2026-07-07 10:58:59 | INFO     | __main__ |   Symbol       : BTCUSD
+2026-07-07 10:58:59 | INFO     | __main__ |   Poll Interval: 60s
+2026-07-07 10:58:59 | INFO     | __main__ |   Timeframe    : 15m
+2026-07-07 10:58:59 | INFO     | __main__ |   Lot Size    : 1
+2026-07-07 10:58:59 | INFO     | __main__ | Mode           :paper
+2026-07-07 10:58:59 | INFO     | __main__ | =======================================================
+2026-07-07 10:58:59 | INFO     | __main__ | papertrade     : True
+2026-07-07 10:58:59 | INFO     | __main__ |   API Key     : 
+2026-07-07 10:58:59 | INFO     | __main__ |   API Secret  : 
+2026-07-07 10:59:00 | ERROR    | position_manager | Error fetching position: 401 Client Error: Unauthorized for url: https://api.india.delta.exchange/v2/positions?product_id=27
+2026-07-07 10:59:01 | DEBUG    | market_data | [BTCUSD] Fetched 200 candles: 2026-07-05 03:30:00+00:00 to 2026-07-07 05:15:00+00:00
+2026-07-07 10:59:01 | INFO     | __main__ | [BTCUSD] No signal. Waiting for next candle.
+2026-07-07 10:59:01 | DEBUG    | __main__ | Sleeping for 59.2s
+2026-07-07 12:04:33 | INFO     | __main__ | =======================================================
+2026-07-07 12:04:33 | INFO     | __main__ |   Strategy Bot Starting: <bound method BollingerBandsStrategy.name of <strategies.bollinger_bands.BollingerBandsStrategy object at 0x0000024E0D564150>>
+2026-07-07 12:04:33 | INFO     | __main__ |   Symbol       : BTCUSD
+2026-07-07 12:04:33 | INFO     | __main__ |   Poll Interval: 60s
+2026-07-07 12:04:33 | INFO     | __main__ |   Timeframe    : 15m
+2026-07-07 12:04:33 | INFO     | __main__ |   Lot Size    : 1
+2026-07-07 12:04:33 | INFO     | __main__ | Mode           :paper
+2026-07-07 12:04:33 | INFO     | __main__ | =======================================================
+2026-07-07 12:04:33 | INFO     | __main__ | papertrade     : True
+2026-07-07 12:04:33 | ERROR    | position_manager | Error fetching position: HTTPSConnectionPool(host='api.india.delta.exchange', port=443): Max retries exceeded with url: /v2/positions?product_id=27 (Caused by NameResolutionError("HTTPSConnection(host='api.india.delta.exchange', port=443): Failed to resolve 'api.india.delta.exchange' ([Errno 11001] getaddrinfo failed)"))
+2026-07-07 12:04:33 | ERROR    | market_data | [BTCUSD] Error fetching candles: HTTPSConnectionPool(host='api.india.delta.exchange', port=443): Max retries exceeded with url: /v2/history/candles?resolution=15m&symbol=BTCUSD&start=1783046073&end=1783406073 (Caused by NameResolutionError("HTTPSConnection(host='api.india.delta.exchange', port=443): Failed to resolve 'api.india.delta.exchange' ([Errno 11001] getaddrinfo failed)"))
+2026-07-07 12:04:33 | WARNING  | __main__ | [BTCUSD] No candle data. Skipping iteration. (consecutive failures: 1/3)
+2026-07-07 12:04:33 | DEBUG    | __main__ | Sleeping for 60.0s
+2026-07-07 12:05:09 | WARNING  | __main__ | [BTCUSD] Bot stopped by user. Closing open position if any...
+2026-07-07 12:05:35 | INFO     | __main__ | =======================================================
+2026-07-07 12:05:35 | INFO     | __main__ |   Strategy Bot Starting: <bound method BollingerBandsStrategy.name of <strategies.bollinger_bands.BollingerBandsStrategy object at 0x0000025322644DD0>>
+2026-07-07 12:05:35 | INFO     | __main__ |   Symbol       : BTCUSD
+2026-07-07 12:05:35 | INFO     | __main__ |   Poll Interval: 60s
+2026-07-07 12:05:35 | INFO     | __main__ |   Timeframe    : 15m
+2026-07-07 12:05:35 | INFO     | __main__ |   Lot Size    : 1
+2026-07-07 12:05:35 | INFO     | __main__ | Mode           :live
+2026-07-07 12:05:35 | INFO     | __main__ | =======================================================
+2026-07-07 12:05:35 | ERROR    | position_manager | Error fetching position: HTTPSConnectionPool(host='api.india.delta.exchange', port=443): Max retries exceeded with url: /v2/positions?product_id=27 (Caused by NameResolutionError("HTTPSConnection(host='api.india.delta.exchange', port=443): Failed to resolve 'api.india.delta.exchange' ([Errno 11001] getaddrinfo failed)"))
+2026-07-07 12:05:35 | ERROR    | market_data | [BTCUSD] Error fetching candles: HTTPSConnectionPool(host='api.india.delta.exchange', port=443): Max retries exceeded with url: /v2/history/candles?resolution=15m&symbol=BTCUSD&start=1783046135&end=1783406135 (Caused by NameResolutionError("HTTPSConnection(host='api.india.delta.exchange', port=443): Failed to resolve 'api.india.delta.exchange' ([Errno 11001] getaddrinfo failed)"))
+2026-07-07 12:05:35 | WARNING  | __main__ | [BTCUSD] No candle data. Skipping iteration. (consecutive failures: 1/3)
+2026-07-07 12:05:35 | DEBUG    | __main__ | Sleeping for 60.0s
+2026-07-07 12:06:35 | ERROR    | market_data | [BTCUSD] Error fetching candles: HTTPSConnectionPool(host='api.india.delta.exchange', port=443): Max retries exceeded with url: /v2/history/candles?resolution=15m&symbol=BTCUSD&start=1783046195&end=1783406195 (Caused by NameResolutionError("HTTPSConnection(host='api.india.delta.exchange', port=443): Failed to resolve 'api.india.delta.exchange' ([Errno 11001] getaddrinfo failed)"))
+2026-07-07 12:06:35 | WARNING  | __main__ | [BTCUSD] No candle data. Skipping iteration. (consecutive failures: 2/3)
+2026-07-07 12:06:35 | DEBUG    | __main__ | Sleeping for 60.0s
+2026-07-07 12:06:37 | WARNING  | __main__ | [BTCUSD] Bot stopped by user. Closing open position if any...
+2026-07-07 12:08:11 | INFO     | __main__ | =======================================================
+2026-07-07 12:08:11 | INFO     | __main__ |   Strategy Bot Starting: <bound method BollingerBandsStrategy.name of <strategies.bollinger_bands.BollingerBandsStrategy object at 0x000001F124E78710>>
+2026-07-07 12:08:11 | INFO     | __main__ |   Symbol       : BTCUSD
+2026-07-07 12:08:11 | INFO     | __main__ |   Poll Interval: 60s
+2026-07-07 12:08:11 | INFO     | __main__ |   Timeframe    : 15m
+2026-07-07 12:08:11 | INFO     | __main__ |   Lot Size     : 1
+2026-07-07 12:08:11 | INFO     | __main__ | Mode           :live
+2026-07-07 12:08:11 | INFO     | __main__ | =======================================================
+2026-07-07 12:08:11 | INFO     | __main__ |   API Key     : Iq55cC0tAFh3XfF5CnEOCWFWcQnFBH
+2026-07-07 12:08:11 | INFO     | __main__ |   API Secret  : kNoyZWnfdYOLc0VE67hpQkVDcTnczjyNb7aPH8xNkbxFwSAUj8n7a5XVer8R
+2026-07-07 12:08:11 | ERROR    | position_manager | Error fetching position: HTTPSConnectionPool(host='api.india.delta.exchange', port=443): Max retries exceeded with url: /v2/positions?product_id=27 (Caused by NameResolutionError("HTTPSConnection(host='api.india.delta.exchange', port=443): Failed to resolve 'api.india.delta.exchange' ([Errno 11001] getaddrinfo failed)"))
+2026-07-07 12:08:11 | ERROR    | market_data | [BTCUSD] Error fetching candles: HTTPSConnectionPool(host='api.india.delta.exchange', port=443): Max retries exceeded with url: /v2/history/candles?resolution=15m&symbol=BTCUSD&start=1783046291&end=1783406291 (Caused by NameResolutionError("HTTPSConnection(host='api.india.delta.exchange', port=443): Failed to resolve 'api.india.delta.exchange' ([Errno 11001] getaddrinfo failed)"))
+2026-07-07 12:08:11 | WARNING  | __main__ | [BTCUSD] No candle data. Skipping iteration. (consecutive failures: 1/3)
+2026-07-07 12:08:11 | DEBUG    | __main__ | Sleeping for 60.0s
+2026-07-07 12:08:23 | WARNING  | __main__ | [BTCUSD] Bot stopped by user. Closing open position if any...
+2026-07-07 12:08:25 | INFO     | pnl_tracker | PnL chart saved to logs/pnl_chart.png
+2026-07-07 12:08:25 | WARNING  | notifier | Telegram not configured. Skipping notification.
+2026-07-07 12:08:25 | INFO     | pnl_tracker | Daily report sent for 2026-07-07: {'total_pnl': 0, 'num_trades': 0, 'wins': 0, 'win_rate': 0}
+2026-07-07 12:08:34 | INFO     | __main__ | =======================================================
+2026-07-07 12:08:34 | INFO     | __main__ |   Strategy Bot Starting: <bound method BollingerBandsStrategy.name of <strategies.bollinger_bands.BollingerBandsStrategy object at 0x000002B061A24090>>
+2026-07-07 12:08:34 | INFO     | __main__ |   Symbol       : BTCUSD
+2026-07-07 12:08:34 | INFO     | __main__ |   Poll Interval: 60s
+2026-07-07 12:08:34 | INFO     | __main__ |   Timeframe    : 15m
+2026-07-07 12:08:34 | INFO     | __main__ |   Lot Size     : 1
+2026-07-07 12:08:34 | INFO     | __main__ | Mode           :paper
+2026-07-07 12:08:34 | INFO     | __main__ | =======================================================
+2026-07-07 12:08:34 | INFO     | __main__ |   API Key     : Iq55cC0tAFh3XfF5CnEOCWFWcQnFBH
+2026-07-07 12:08:34 | INFO     | __main__ |   API Secret  : kNoyZWnfdYOLc0VE67hpQkVDcTnczjyNb7aPH8xNkbxFwSAUj8n7a5XVer8R
+2026-07-07 12:08:34 | ERROR    | position_manager | Error fetching position: HTTPSConnectionPool(host='api.india.delta.exchange', port=443): Max retries exceeded with url: /v2/positions?product_id=27 (Caused by NameResolutionError("HTTPSConnection(host='api.india.delta.exchange', port=443): Failed to resolve 'api.india.delta.exchange' ([Errno 11001] getaddrinfo failed)"))
+2026-07-07 12:08:34 | ERROR    | market_data | [BTCUSD] Error fetching candles: HTTPSConnectionPool(host='api.india.delta.exchange', port=443): Max retries exceeded with url: /v2/history/candles?resolution=15m&symbol=BTCUSD&start=1783046314&end=1783406314 (Caused by NameResolutionError("HTTPSConnection(host='api.india.delta.exchange', port=443): Failed to resolve 'api.india.delta.exchange' ([Errno 11001] getaddrinfo failed)"))
+2026-07-07 12:08:34 | WARNING  | __main__ | [BTCUSD] No candle data. Skipping iteration. (consecutive failures: 1/3)
+2026-07-07 12:08:34 | DEBUG    | __main__ | Sleeping for 60.0s
+2026-07-07 12:08:37 | WARNING  | __main__ | [BTCUSD] Bot stopped by user. Closing open position if any...
+2026-07-07 12:10:15 | INFO     | __main__ | =======================================================
+2026-07-07 12:10:15 | INFO     | __main__ |   Strategy Bot Starting: <bound method BollingerBandsStrategy.name of <strategies.bollinger_bands.BollingerBandsStrategy object at 0x000001EEE19F8690>>
+2026-07-07 12:10:15 | INFO     | __main__ |   Symbol       : BTCUSD
+2026-07-07 12:10:15 | INFO     | __main__ |   Poll Interval: 60s
+2026-07-07 12:10:15 | INFO     | __main__ |   Timeframe    : 15m
+2026-07-07 12:10:15 | INFO     | __main__ |   Lot Size     : 1
+2026-07-07 12:10:15 | INFO     | __main__ | Mode           :paper
+2026-07-07 12:10:15 | INFO     | __main__ | =======================================================
+2026-07-07 12:10:15 | INFO     | __main__ |   API Key     : 
+2026-07-07 12:10:15 | INFO     | __main__ |   API Secret  : 
+2026-07-07 12:10:15 | ERROR    | position_manager | Error fetching position: HTTPSConnectionPool(host='api.india.delta.exchange', port=443): Max retries exceeded with url: /v2/positions?product_id=27 (Caused by NameResolutionError("HTTPSConnection(host='api.india.delta.exchange', port=443): Failed to resolve 'api.india.delta.exchange' ([Errno 11001] getaddrinfo failed)"))
+2026-07-07 12:10:15 | ERROR    | market_data | [BTCUSD] Error fetching candles: HTTPSConnectionPool(host='api.india.delta.exchange', port=443): Max retries exceeded with url: /v2/history/candles?resolution=15m&symbol=BTCUSD&start=1783046415&end=1783406415 (Caused by NameResolutionError("HTTPSConnection(host='api.india.delta.exchange', port=443): Failed to resolve 'api.india.delta.exchange' ([Errno 11001] getaddrinfo failed)"))
+2026-07-07 12:10:15 | WARNING  | __main__ | [BTCUSD] No candle data. Skipping iteration. (consecutive failures: 1/3)
+2026-07-07 12:10:15 | DEBUG    | __main__ | Sleeping for 60.0s
+2026-07-07 12:10:21 | WARNING  | __main__ | [BTCUSD] Bot stopped by user. Closing open position if any...
+2026-07-07 12:15:46 | INFO     | __main__ | =======================================================
+2026-07-07 12:15:46 | INFO     | __main__ |   Strategy Bot Starting: <bound method BollingerBandsStrategy.name of <strategies.bollinger_bands.BollingerBandsStrategy object at 0x0000028962D993D0>>
+2026-07-07 12:15:46 | INFO     | __main__ |   Symbol       : BTCUSD
+2026-07-07 12:15:46 | INFO     | __main__ |   Poll Interval: 60s
+2026-07-07 12:15:46 | INFO     | __main__ |   Timeframe    : 15m
+2026-07-07 12:15:46 | INFO     | __main__ |   Lot Size     : 1
+2026-07-07 12:15:46 | INFO     | __main__ | Live/Paper     :paper
+2026-07-07 12:15:46 | INFO     | __main__ | =======================================================
+2026-07-07 12:15:47 | ERROR    | position_manager | Error fetching position: HTTPSConnectionPool(host='api.india.delta.exchange', port=443): Max retries exceeded with url: /v2/positions?product_id=27 (Caused by NameResolutionError("HTTPSConnection(host='api.india.delta.exchange', port=443): Failed to resolve 'api.india.delta.exchange' ([Errno 11001] getaddrinfo failed)"))
+2026-07-07 12:15:47 | ERROR    | market_data | [BTCUSD] Error fetching candles: HTTPSConnectionPool(host='api.india.delta.exchange', port=443): Max retries exceeded with url: /v2/history/candles?resolution=15m&symbol=BTCUSD&start=1783046747&end=1783406747 (Caused by NameResolutionError("HTTPSConnection(host='api.india.delta.exchange', port=443): Failed to resolve 'api.india.delta.exchange' ([Errno 11001] getaddrinfo failed)"))
+2026-07-07 12:15:47 | WARNING  | __main__ | [BTCUSD] No candle data. Skipping iteration. (consecutive failures: 1/3)
+2026-07-07 12:15:47 | DEBUG    | __main__ | Sleeping for 60.0s
+2026-07-07 12:15:59 | WARNING  | __main__ | [BTCUSD] Bot stopped by user. Closing open position if any...
+2026-07-07 12:16:20 | INFO     | __main__ | =======================================================
+2026-07-07 12:16:20 | INFO     | __main__ |   Strategy Bot Starting: <bound method BollingerBandsStrategy.name of <strategies.bollinger_bands.BollingerBandsStrategy object at 0x000001C7BB7A8450>>
+2026-07-07 12:16:20 | INFO     | __main__ |   Symbol       : BTCUSD
+2026-07-07 12:16:20 | INFO     | __main__ |   Poll Interval: 60s
+2026-07-07 12:16:20 | INFO     | __main__ |   Timeframe    : 15m
+2026-07-07 12:16:20 | INFO     | __main__ |   Lot Size     : 1
+2026-07-07 12:16:20 | INFO     | __main__ |   Live/Paper   : paper
+2026-07-07 12:16:20 | INFO     | __main__ | =======================================================
+2026-07-07 12:16:20 | ERROR    | position_manager | Error fetching position: HTTPSConnectionPool(host='api.india.delta.exchange', port=443): Max retries exceeded with url: /v2/positions?product_id=27 (Caused by NameResolutionError("HTTPSConnection(host='api.india.delta.exchange', port=443): Failed to resolve 'api.india.delta.exchange' ([Errno 11001] getaddrinfo failed)"))
+2026-07-07 12:16:20 | ERROR    | market_data | [BTCUSD] Error fetching candles: HTTPSConnectionPool(host='api.india.delta.exchange', port=443): Max retries exceeded with url: /v2/history/candles?resolution=15m&symbol=BTCUSD&start=1783046780&end=1783406780 (Caused by NameResolutionError("HTTPSConnection(host='api.india.delta.exchange', port=443): Failed to resolve 'api.india.delta.exchange' ([Errno 11001] getaddrinfo failed)"))
+2026-07-07 12:16:20 | WARNING  | __main__ | [BTCUSD] No candle data. Skipping iteration. (consecutive failures: 1/3)
+2026-07-07 12:16:20 | DEBUG    | __main__ | Sleeping for 60.0s
+2026-07-07 12:16:33 | WARNING  | __main__ | [BTCUSD] Bot stopped by user. Closing open position if any...
+2026-07-07 12:17:50 | INFO     | __main__ | =======================================================
+2026-07-07 12:17:50 | INFO     | __main__ |   Strategy Bot Starting: <bound method BollingerBandsStrategy.name of <strategies.bollinger_bands.BollingerBandsStrategy object at 0x000001D7267C9B50>>
+2026-07-07 12:17:50 | INFO     | __main__ |   Symbol       : BTCUSD
+2026-07-07 12:17:50 | INFO     | __main__ |   Poll Interval: 60s
+2026-07-07 12:17:50 | INFO     | __main__ |   Timeframe    : 15m
+2026-07-07 12:17:50 | INFO     | __main__ |   Lot Size     : 1
+2026-07-07 12:17:50 | INFO     | __main__ |   Live/Paper   : live
+2026-07-07 12:17:50 | INFO     | __main__ | =======================================================
+2026-07-07 12:17:50 | ERROR    | position_manager | Error fetching position: HTTPSConnectionPool(host='api.india.delta.exchange', port=443): Max retries exceeded with url: /v2/positions?product_id=27 (Caused by NameResolutionError("HTTPSConnection(host='api.india.delta.exchange', port=443): Failed to resolve 'api.india.delta.exchange' ([Errno 11001] getaddrinfo failed)"))
+2026-07-07 12:17:50 | ERROR    | market_data | [BTCUSD] Error fetching candles: HTTPSConnectionPool(host='api.india.delta.exchange', port=443): Max retries exceeded with url: /v2/history/candles?resolution=15m&symbol=BTCUSD&start=1783046870&end=1783406870 (Caused by NameResolutionError("HTTPSConnection(host='api.india.delta.exchange', port=443): Failed to resolve 'api.india.delta.exchange' ([Errno 11001] getaddrinfo failed)"))
+2026-07-07 12:17:50 | WARNING  | __main__ | [BTCUSD] No candle data. Skipping iteration. (consecutive failures: 1/3)
+2026-07-07 12:17:50 | DEBUG    | __main__ | Sleeping for 60.0s
+2026-07-07 12:18:34 | WARNING  | __main__ | [BTCUSD] Bot stopped by user. Closing open position if any...
+2026-07-07 12:18:40 | INFO     | __main__ | =======================================================
+2026-07-07 12:18:40 | INFO     | __main__ |   Strategy Bot Starting: <bound method BollingerBandsStrategy.name of <strategies.bollinger_bands.BollingerBandsStrategy object at 0x00000272EEC74DD0>>
+2026-07-07 12:18:40 | INFO     | __main__ |   Symbol       : BTCUSD
+2026-07-07 12:18:40 | INFO     | __main__ |   Poll Interval: 60s
+2026-07-07 12:18:40 | INFO     | __main__ |   Timeframe    : 15m
+2026-07-07 12:18:40 | INFO     | __main__ |   Lot Size     : 1
+2026-07-07 12:18:40 | INFO     | __main__ |   Live/Paper   : live
+2026-07-07 12:18:40 | INFO     | __main__ | =======================================================
+2026-07-07 12:18:40 | INFO     | __main__ | False
+2026-07-07 12:18:40 | ERROR    | position_manager | Error fetching position: HTTPSConnectionPool(host='api.india.delta.exchange', port=443): Max retries exceeded with url: /v2/positions?product_id=27 (Caused by NameResolutionError("HTTPSConnection(host='api.india.delta.exchange', port=443): Failed to resolve 'api.india.delta.exchange' ([Errno 11001] getaddrinfo failed)"))
+2026-07-07 12:18:40 | ERROR    | market_data | [BTCUSD] Error fetching candles: HTTPSConnectionPool(host='api.india.delta.exchange', port=443): Max retries exceeded with url: /v2/history/candles?resolution=15m&symbol=BTCUSD&start=1783046920&end=1783406920 (Caused by NameResolutionError("HTTPSConnection(host='api.india.delta.exchange', port=443): Failed to resolve 'api.india.delta.exchange' ([Errno 11001] getaddrinfo failed)"))
+2026-07-07 12:18:40 | WARNING  | __main__ | [BTCUSD] No candle data. Skipping iteration. (consecutive failures: 1/3)
+2026-07-07 12:18:40 | DEBUG    | __main__ | Sleeping for 60.0s
+2026-07-07 12:18:45 | WARNING  | __main__ | [BTCUSD] Bot stopped by user. Closing open position if any...
+2026-07-07 12:18:53 | INFO     | __main__ | =======================================================
+2026-07-07 12:18:53 | INFO     | __main__ |   Strategy Bot Starting: <bound method BollingerBandsStrategy.name of <strategies.bollinger_bands.BollingerBandsStrategy object at 0x00000219554DCDD0>>
+2026-07-07 12:18:53 | INFO     | __main__ |   Symbol       : BTCUSD
+2026-07-07 12:18:53 | INFO     | __main__ |   Poll Interval: 60s
+2026-07-07 12:18:53 | INFO     | __main__ |   Timeframe    : 15m
+2026-07-07 12:18:53 | INFO     | __main__ |   Lot Size     : 1
+2026-07-07 12:18:53 | INFO     | __main__ |   Live/Paper   : paper
+2026-07-07 12:18:53 | INFO     | __main__ | =======================================================
+2026-07-07 12:18:53 | INFO     | __main__ | True
+2026-07-07 12:18:53 | ERROR    | position_manager | Error fetching position: HTTPSConnectionPool(host='api.india.delta.exchange', port=443): Max retries exceeded with url: /v2/positions?product_id=27 (Caused by NameResolutionError("HTTPSConnection(host='api.india.delta.exchange', port=443): Failed to resolve 'api.india.delta.exchange' ([Errno 11001] getaddrinfo failed)"))
+2026-07-07 12:18:53 | ERROR    | market_data | [BTCUSD] Error fetching candles: HTTPSConnectionPool(host='api.india.delta.exchange', port=443): Max retries exceeded with url: /v2/history/candles?resolution=15m&symbol=BTCUSD&start=1783046933&end=1783406933 (Caused by NameResolutionError("HTTPSConnection(host='api.india.delta.exchange', port=443): Failed to resolve 'api.india.delta.exchange' ([Errno 11001] getaddrinfo failed)"))
+2026-07-07 12:18:53 | WARNING  | __main__ | [BTCUSD] No candle data. Skipping iteration. (consecutive failures: 1/3)
+2026-07-07 12:18:53 | DEBUG    | __main__ | Sleeping for 60.0s
+2026-07-07 12:18:58 | WARNING  | __main__ | [BTCUSD] Bot stopped by user. Closing open position if any...
+2026-07-07 12:21:42 | INFO     | __main__ | =======================================================
+2026-07-07 12:21:42 | INFO     | __main__ |   Strategy Bot Starting: <bound method BollingerBandsStrategy.name of <strategies.bollinger_bands.BollingerBandsStrategy object at 0x000001AAED589250>>
+2026-07-07 12:21:42 | INFO     | __main__ |   Symbol       : BTCUSD
+2026-07-07 12:21:42 | INFO     | __main__ |   Poll Interval: 60s
+2026-07-07 12:21:42 | INFO     | __main__ |   Timeframe    : 15m
+2026-07-07 12:21:42 | INFO     | __main__ |   Lot Size     : 1
+2026-07-07 12:21:42 | INFO     | __main__ |   Live/Paper   : paper
+2026-07-07 12:21:42 | INFO     | __main__ | =======================================================
+2026-07-07 12:21:44 | DEBUG    | market_data | [BTCUSD] Fetched 200 candles: 2026-07-05 05:00:00+00:00 to 2026-07-07 06:45:00+00:00
+2026-07-07 12:21:44 | INFO     | __main__ | [BTCUSD] No signal. Waiting for next candle.
+2026-07-07 12:21:44 | DEBUG    | __main__ | Sleeping for 59.1s
+2026-07-07 12:22:44 | DEBUG    | market_data | [BTCUSD] Fetched 200 candles: 2026-07-05 05:00:00+00:00 to 2026-07-07 06:45:00+00:00
+2026-07-07 12:22:44 | DEBUG    | __main__ | [BTCUSD] Candle unchanged (2026-07-07 06:30:00+00:00). Skipping evaluation.
+2026-07-07 12:22:44 | DEBUG    | __main__ | Sleeping for 58.8s
+2026-07-07 12:23:46 | DEBUG    | market_data | [BTCUSD] Fetched 200 candles: 2026-07-05 05:00:00+00:00 to 2026-07-07 06:45:00+00:00
+2026-07-07 12:23:46 | DEBUG    | __main__ | [BTCUSD] Candle unchanged (2026-07-07 06:30:00+00:00). Skipping evaluation.
+2026-07-07 12:23:46 | DEBUG    | __main__ | Sleeping for 56.7s
+2026-07-07 12:24:44 | DEBUG    | market_data | [BTCUSD] Fetched 200 candles: 2026-07-05 05:00:00+00:00 to 2026-07-07 06:45:00+00:00
+2026-07-07 12:24:44 | DEBUG    | __main__ | [BTCUSD] Candle unchanged (2026-07-07 06:30:00+00:00). Skipping evaluation.
+2026-07-07 12:24:44 | DEBUG    | __main__ | Sleeping for 59.0s
+2026-07-07 12:25:44 | DEBUG    | market_data | [BTCUSD] Fetched 200 candles: 2026-07-05 05:00:00+00:00 to 2026-07-07 06:45:00+00:00
+2026-07-07 12:25:44 | DEBUG    | __main__ | [BTCUSD] Candle unchanged (2026-07-07 06:30:00+00:00). Skipping evaluation.
+2026-07-07 12:25:44 | DEBUG    | __main__ | Sleeping for 58.9s
+2026-07-07 12:26:45 | DEBUG    | market_data | [BTCUSD] Fetched 200 candles: 2026-07-05 05:00:00+00:00 to 2026-07-07 06:45:00+00:00
+2026-07-07 12:26:45 | DEBUG    | __main__ | [BTCUSD] Candle unchanged (2026-07-07 06:30:00+00:00). Skipping evaluation.
+2026-07-07 12:26:45 | DEBUG    | __main__ | Sleeping for 57.6s
+2026-07-07 12:27:44 | DEBUG    | market_data | [BTCUSD] Fetched 200 candles: 2026-07-05 05:00:00+00:00 to 2026-07-07 06:45:00+00:00
+2026-07-07 12:27:44 | DEBUG    | __main__ | [BTCUSD] Candle unchanged (2026-07-07 06:30:00+00:00). Skipping evaluation.
+2026-07-07 12:27:44 | DEBUG    | __main__ | Sleeping for 59.1s
+2026-07-07 12:28:44 | DEBUG    | market_data | [BTCUSD] Fetched 200 candles: 2026-07-05 05:00:00+00:00 to 2026-07-07 06:45:00+00:00
+2026-07-07 12:28:44 | DEBUG    | __main__ | [BTCUSD] Candle unchanged (2026-07-07 06:30:00+00:00). Skipping evaluation.
+2026-07-07 12:28:44 | DEBUG    | __main__ | Sleeping for 59.0s
+2026-07-07 12:29:44 | DEBUG    | market_data | [BTCUSD] Fetched 200 candles: 2026-07-05 05:00:00+00:00 to 2026-07-07 06:45:00+00:00
+2026-07-07 12:29:44 | DEBUG    | __main__ | [BTCUSD] Candle unchanged (2026-07-07 06:30:00+00:00). Skipping evaluation.
+2026-07-07 12:29:44 | DEBUG    | __main__ | Sleeping for 58.9s
+2026-07-07 12:30:45 | DEBUG    | market_data | [BTCUSD] Fetched 200 candles: 2026-07-05 05:15:00+00:00 to 2026-07-07 07:00:00+00:00
+2026-07-07 12:30:45 | INFO     | __main__ | [BTCUSD] No signal. Waiting for next candle.
+2026-07-07 12:30:45 | DEBUG    | __main__ | Sleeping for 57.6s
+2026-07-07 12:31:44 | DEBUG    | market_data | [BTCUSD] Fetched 200 candles: 2026-07-05 05:15:00+00:00 to 2026-07-07 07:00:00+00:00
+2026-07-07 12:31:44 | DEBUG    | __main__ | [BTCUSD] Candle unchanged (2026-07-07 06:45:00+00:00). Skipping evaluation.
+2026-07-07 12:31:44 | DEBUG    | __main__ | Sleeping for 59.0s
+2026-07-07 12:32:44 | DEBUG    | market_data | [BTCUSD] Fetched 200 candles: 2026-07-05 05:15:00+00:00 to 2026-07-07 07:00:00+00:00
+2026-07-07 12:32:44 | DEBUG    | __main__ | [BTCUSD] Candle unchanged (2026-07-07 06:45:00+00:00). Skipping evaluation.
+2026-07-07 12:32:44 | DEBUG    | __main__ | Sleeping for 59.1s
+2026-07-07 12:33:44 | DEBUG    | market_data | [BTCUSD] Fetched 200 candles: 2026-07-05 05:15:00+00:00 to 2026-07-07 07:00:00+00:00
+2026-07-07 12:33:44 | DEBUG    | __main__ | [BTCUSD] Candle unchanged (2026-07-07 06:45:00+00:00). Skipping evaluation.
+2026-07-07 12:33:44 | DEBUG    | __main__ | Sleeping for 59.0s
+2026-07-07 12:34:44 | DEBUG    | market_data | [BTCUSD] Fetched 200 candles: 2026-07-05 05:15:00+00:00 to 2026-07-07 07:00:00+00:00
+2026-07-07 12:34:44 | DEBUG    | __main__ | [BTCUSD] Candle unchanged (2026-07-07 06:45:00+00:00). Skipping evaluation.
+2026-07-07 12:34:44 | DEBUG    | __main__ | Sleeping for 59.1s
+2026-07-07 12:35:44 | DEBUG    | market_data | [BTCUSD] Fetched 200 candles: 2026-07-05 05:15:00+00:00 to 2026-07-07 07:00:00+00:00
+2026-07-07 12:35:44 | DEBUG    | __main__ | [BTCUSD] Candle unchanged (2026-07-07 06:45:00+00:00). Skipping evaluation.
+2026-07-07 12:35:44 | DEBUG    | __main__ | Sleeping for 58.9s
+2026-07-07 12:36:44 | DEBUG    | market_data | [BTCUSD] Fetched 200 candles: 2026-07-05 05:15:00+00:00 to 2026-07-07 07:00:00+00:00
+2026-07-07 12:36:44 | DEBUG    | __main__ | [BTCUSD] Candle unchanged (2026-07-07 06:45:00+00:00). Skipping evaluation.
+2026-07-07 12:36:44 | DEBUG    | __main__ | Sleeping for 59.0s
+2026-07-07 12:37:45 | DEBUG    | market_data | [BTCUSD] Fetched 200 candles: 2026-07-05 05:15:00+00:00 to 2026-07-07 07:00:00+00:00
+2026-07-07 12:37:45 | DEBUG    | __main__ | [BTCUSD] Candle unchanged (2026-07-07 06:45:00+00:00). Skipping evaluation.
+2026-07-07 12:37:45 | DEBUG    | __main__ | Sleeping for 58.5s
+2026-07-07 12:38:44 | DEBUG    | market_data | [BTCUSD] Fetched 200 candles: 2026-07-05 05:15:00+00:00 to 2026-07-07 07:00:00+00:00
+2026-07-07 12:38:44 | DEBUG    | __main__ | [BTCUSD] Candle unchanged (2026-07-07 06:45:00+00:00). Skipping evaluation.
+2026-07-07 12:38:44 | DEBUG    | __main__ | Sleeping for 59.0s
+2026-07-07 12:39:44 | DEBUG    | market_data | [BTCUSD] Fetched 200 candles: 2026-07-05 05:15:00+00:00 to 2026-07-07 07:00:00+00:00
+2026-07-07 12:39:44 | DEBUG    | __main__ | [BTCUSD] Candle unchanged (2026-07-07 06:45:00+00:00). Skipping evaluation.
+2026-07-07 12:39:44 | DEBUG    | __main__ | Sleeping for 59.0s
+2026-07-07 12:40:44 | DEBUG    | market_data | [BTCUSD] Fetched 200 candles: 2026-07-05 05:15:00+00:00 to 2026-07-07 07:00:00+00:00
+2026-07-07 12:40:44 | DEBUG    | __main__ | [BTCUSD] Candle unchanged (2026-07-07 06:45:00+00:00). Skipping evaluation.
+2026-07-07 12:40:44 | DEBUG    | __main__ | Sleeping for 59.1s
+2026-07-07 12:41:44 | DEBUG    | market_data | [BTCUSD] Fetched 200 candles: 2026-07-05 05:15:00+00:00 to 2026-07-07 07:00:00+00:00
+2026-07-07 12:41:44 | DEBUG    | __main__ | [BTCUSD] Candle unchanged (2026-07-07 06:45:00+00:00). Skipping evaluation.
+2026-07-07 12:41:44 | DEBUG    | __main__ | Sleeping for 59.0s
+2026-07-07 12:42:44 | DEBUG    | market_data | [BTCUSD] Fetched 200 candles: 2026-07-05 05:15:00+00:00 to 2026-07-07 07:00:00+00:00
+2026-07-07 12:42:44 | DEBUG    | __main__ | [BTCUSD] Candle unchanged (2026-07-07 06:45:00+00:00). Skipping evaluation.
+2026-07-07 12:42:44 | DEBUG    | __main__ | Sleeping for 58.8s
+2026-07-07 12:43:44 | DEBUG    | market_data | [BTCUSD] Fetched 200 candles: 2026-07-05 05:15:00+00:00 to 2026-07-07 07:00:00+00:00
+2026-07-07 12:43:44 | DEBUG    | __main__ | [BTCUSD] Candle unchanged (2026-07-07 06:45:00+00:00). Skipping evaluation.
+2026-07-07 12:43:44 | DEBUG    | __main__ | Sleeping for 58.7s
+2026-07-07 12:44:44 | DEBUG    | market_data | [BTCUSD] Fetched 200 candles: 2026-07-05 05:15:00+00:00 to 2026-07-07 07:00:00+00:00
+2026-07-07 12:44:44 | DEBUG    | __main__ | [BTCUSD] Candle unchanged (2026-07-07 06:45:00+00:00). Skipping evaluation.
+2026-07-07 12:44:44 | DEBUG    | __main__ | Sleeping for 59.0s
+2026-07-07 12:45:44 | DEBUG    | market_data | [BTCUSD] Fetched 200 candles: 2026-07-05 05:30:00+00:00 to 2026-07-07 07:15:00+00:00
+2026-07-07 12:45:44 | INFO     | __main__ | [BTCUSD] No signal. Waiting for next candle.
+2026-07-07 12:45:44 | DEBUG    | __main__ | Sleeping for 58.9s
+2026-07-07 12:46:44 | DEBUG    | market_data | [BTCUSD] Fetched 200 candles: 2026-07-05 05:30:00+00:00 to 2026-07-07 07:15:00+00:00
+2026-07-07 12:46:44 | DEBUG    | __main__ | [BTCUSD] Candle unchanged (2026-07-07 07:00:00+00:00). Skipping evaluation.
+2026-07-07 12:46:44 | DEBUG    | __main__ | Sleeping for 59.1s
+2026-07-07 12:47:44 | DEBUG    | market_data | [BTCUSD] Fetched 200 candles: 2026-07-05 05:30:00+00:00 to 2026-07-07 07:15:00+00:00
+2026-07-07 12:47:44 | DEBUG    | __main__ | [BTCUSD] Candle unchanged (2026-07-07 07:00:00+00:00). Skipping evaluation.
+2026-07-07 12:47:44 | DEBUG    | __main__ | Sleeping for 58.6s
+2026-07-07 12:48:44 | DEBUG    | market_data | [BTCUSD] Fetched 200 candles: 2026-07-05 05:30:00+00:00 to 2026-07-07 07:15:00+00:00
+2026-07-07 12:48:44 | DEBUG    | __main__ | [BTCUSD] Candle unchanged (2026-07-07 07:00:00+00:00). Skipping evaluation.
+2026-07-07 12:48:44 | DEBUG    | __main__ | Sleeping for 58.8s
+2026-07-07 12:49:44 | DEBUG    | market_data | [BTCUSD] Fetched 200 candles: 2026-07-05 05:30:00+00:00 to 2026-07-07 07:15:00+00:00
+2026-07-07 12:49:44 | DEBUG    | __main__ | [BTCUSD] Candle unchanged (2026-07-07 07:00:00+00:00). Skipping evaluation.
+2026-07-07 12:49:44 | DEBUG    | __main__ | Sleeping for 58.9s
+2026-07-07 12:50:44 | DEBUG    | market_data | [BTCUSD] Fetched 200 candles: 2026-07-05 05:30:00+00:00 to 2026-07-07 07:15:00+00:00
+2026-07-07 12:50:44 | DEBUG    | __main__ | [BTCUSD] Candle unchanged (2026-07-07 07:00:00+00:00). Skipping evaluation.
+2026-07-07 12:50:44 | DEBUG    | __main__ | Sleeping for 58.8s
+2026-07-07 12:51:44 | DEBUG    | market_data | [BTCUSD] Fetched 200 candles: 2026-07-05 05:30:00+00:00 to 2026-07-07 07:15:00+00:00
+2026-07-07 12:51:44 | DEBUG    | __main__ | [BTCUSD] Candle unchanged (2026-07-07 07:00:00+00:00). Skipping evaluation.
+2026-07-07 12:51:44 | DEBUG    | __main__ | Sleeping for 58.7s
+2026-07-07 12:52:44 | DEBUG    | market_data | [BTCUSD] Fetched 200 candles: 2026-07-05 05:30:00+00:00 to 2026-07-07 07:15:00+00:00
+2026-07-07 12:52:44 | DEBUG    | __main__ | [BTCUSD] Candle unchanged (2026-07-07 07:00:00+00:00). Skipping evaluation.
+2026-07-07 12:52:44 | DEBUG    | __main__ | Sleeping for 58.9s
+2026-07-07 12:53:44 | DEBUG    | market_data | [BTCUSD] Fetched 200 candles: 2026-07-05 05:30:00+00:00 to 2026-07-07 07:15:00+00:00
+2026-07-07 12:53:44 | DEBUG    | __main__ | [BTCUSD] Candle unchanged (2026-07-07 07:00:00+00:00). Skipping evaluation.
+2026-07-07 12:53:44 | DEBUG    | __main__ | Sleeping for 58.7s
+2026-07-07 13:21:36 | ERROR    | market_data | [BTCUSD] Error fetching candles: HTTPSConnectionPool(host='api.india.delta.exchange', port=443): Max retries exceeded with url: /v2/history/candles?resolution=15m&symbol=BTCUSD&start=1783050695&end=1783410695 (Caused by NameResolutionError("HTTPSConnection(host='api.india.delta.exchange', port=443): Failed to resolve 'api.india.delta.exchange' ([Errno 11001] getaddrinfo failed)"))
+2026-07-07 13:21:36 | WARNING  | __main__ | [BTCUSD] No candle data. Skipping iteration. (consecutive failures: 1/3)
+2026-07-07 13:21:36 | DEBUG    | __main__ | Sleeping for 59.7s
+2026-07-07 13:22:41 | DEBUG    | market_data | [BTCUSD] Fetched 200 candles: 2026-07-05 06:00:00+00:00 to 2026-07-07 07:45:00+00:00
+2026-07-07 13:22:41 | INFO     | __main__ | [BTCUSD] No signal. Waiting for next candle.
+2026-07-07 13:22:41 | DEBUG    | __main__ | Sleeping for 58.9s
+2026-07-07 13:23:41 | DEBUG    | market_data | [BTCUSD] Fetched 200 candles: 2026-07-05 06:00:00+00:00 to 2026-07-07 07:45:00+00:00
+2026-07-07 13:23:41 | DEBUG    | __main__ | [BTCUSD] Candle unchanged (2026-07-07 07:30:00+00:00). Skipping evaluation.
+2026-07-07 13:23:41 | DEBUG    | __main__ | Sleeping for 59.3s
+2026-07-07 13:24:40 | DEBUG    | market_data | [BTCUSD] Fetched 200 candles: 2026-07-05 06:00:00+00:00 to 2026-07-07 07:45:00+00:00
+2026-07-07 13:24:40 | DEBUG    | __main__ | [BTCUSD] Candle unchanged (2026-07-07 07:30:00+00:00). Skipping evaluation.
+2026-07-07 13:24:40 | DEBUG    | __main__ | Sleeping for 59.5s
+2026-07-07 13:42:24 | DEBUG    | market_data | [BTCUSD] Fetched 200 candles: 2026-07-05 06:15:00+00:00 to 2026-07-07 08:00:00+00:00
+2026-07-07 13:42:24 | INFO     | __main__ | [BTCUSD] No signal. Waiting for next candle.
+2026-07-07 13:42:24 | DEBUG    | __main__ | Sleeping for 55.9s
+2026-07-07 13:43:20 | DEBUG    | market_data | [BTCUSD] Fetched 200 candles: 2026-07-05 06:15:00+00:00 to 2026-07-07 08:00:00+00:00
+2026-07-07 13:43:20 | DEBUG    | __main__ | [BTCUSD] Candle unchanged (2026-07-07 07:45:00+00:00). Skipping evaluation.
+2026-07-07 13:43:20 | DEBUG    | __main__ | Sleeping for 59.4s
+2026-07-07 13:44:20 | DEBUG    | market_data | [BTCUSD] Fetched 200 candles: 2026-07-05 06:15:00+00:00 to 2026-07-07 08:00:00+00:00
+2026-07-07 13:44:20 | DEBUG    | __main__ | [BTCUSD] Candle unchanged (2026-07-07 07:45:00+00:00). Skipping evaluation.
+2026-07-07 13:44:20 | DEBUG    | __main__ | Sleeping for 59.4s
+2026-07-07 13:45:20 | DEBUG    | market_data | [BTCUSD] Fetched 200 candles: 2026-07-05 06:30:00+00:00 to 2026-07-07 08:15:00+00:00
+2026-07-07 13:45:20 | INFO     | __main__ | [BTCUSD] No signal. Waiting for next candle.
+2026-07-07 13:45:20 | DEBUG    | __main__ | Sleeping for 59.3s
+2026-07-07 13:46:21 | DEBUG    | market_data | [BTCUSD] Fetched 200 candles: 2026-07-05 06:30:00+00:00 to 2026-07-07 08:15:00+00:00
+2026-07-07 13:46:21 | DEBUG    | __main__ | [BTCUSD] Candle unchanged (2026-07-07 08:00:00+00:00). Skipping evaluation.
+2026-07-07 13:46:21 | DEBUG    | __main__ | Sleeping for 59.1s
+2026-07-07 13:47:20 | DEBUG    | market_data | [BTCUSD] Fetched 200 candles: 2026-07-05 06:30:00+00:00 to 2026-07-07 08:15:00+00:00
+2026-07-07 13:47:20 | DEBUG    | __main__ | [BTCUSD] Candle unchanged (2026-07-07 08:00:00+00:00). Skipping evaluation.
+2026-07-07 13:47:20 | DEBUG    | __main__ | Sleeping for 59.4s
+2026-07-07 13:48:20 | DEBUG    | market_data | [BTCUSD] Fetched 200 candles: 2026-07-05 06:30:00+00:00 to 2026-07-07 08:15:00+00:00
+2026-07-07 13:48:20 | DEBUG    | __main__ | [BTCUSD] Candle unchanged (2026-07-07 08:00:00+00:00). Skipping evaluation.
+2026-07-07 13:48:20 | DEBUG    | __main__ | Sleeping for 59.1s
+2026-07-07 13:49:20 | DEBUG    | market_data | [BTCUSD] Fetched 200 candles: 2026-07-05 06:30:00+00:00 to 2026-07-07 08:15:00+00:00
+2026-07-07 13:49:20 | DEBUG    | __main__ | [BTCUSD] Candle unchanged (2026-07-07 08:00:00+00:00). Skipping evaluation.
+2026-07-07 13:49:20 | DEBUG    | __main__ | Sleeping for 59.4s
+2026-07-07 13:50:20 | DEBUG    | market_data | [BTCUSD] Fetched 200 candles: 2026-07-05 06:30:00+00:00 to 2026-07-07 08:15:00+00:00
+2026-07-07 13:50:20 | DEBUG    | __main__ | [BTCUSD] Candle unchanged (2026-07-07 08:00:00+00:00). Skipping evaluation.
+2026-07-07 13:50:20 | DEBUG    | __main__ | Sleeping for 59.4s
+2026-07-07 13:51:20 | DEBUG    | market_data | [BTCUSD] Fetched 200 candles: 2026-07-05 06:30:00+00:00 to 2026-07-07 08:15:00+00:00
+2026-07-07 13:51:20 | DEBUG    | __main__ | [BTCUSD] Candle unchanged (2026-07-07 08:00:00+00:00). Skipping evaluation.
+2026-07-07 13:51:20 | DEBUG    | __main__ | Sleeping for 59.4s
+2026-07-07 13:52:20 | DEBUG    | market_data | [BTCUSD] Fetched 200 candles: 2026-07-05 06:30:00+00:00 to 2026-07-07 08:15:00+00:00
+2026-07-07 13:52:20 | DEBUG    | __main__ | [BTCUSD] Candle unchanged (2026-07-07 08:00:00+00:00). Skipping evaluation.
+2026-07-07 13:52:20 | DEBUG    | __main__ | Sleeping for 59.5s
+2026-07-07 13:53:20 | DEBUG    | market_data | [BTCUSD] Fetched 200 candles: 2026-07-05 06:30:00+00:00 to 2026-07-07 08:15:00+00:00
+2026-07-07 13:53:20 | DEBUG    | __main__ | [BTCUSD] Candle unchanged (2026-07-07 08:00:00+00:00). Skipping evaluation.
+2026-07-07 13:53:20 | DEBUG    | __main__ | Sleeping for 59.4s
+2026-07-07 13:54:20 | DEBUG    | market_data | [BTCUSD] Fetched 200 candles: 2026-07-05 06:30:00+00:00 to 2026-07-07 08:15:00+00:00
+2026-07-07 13:54:20 | DEBUG    | __main__ | [BTCUSD] Candle unchanged (2026-07-07 08:00:00+00:00). Skipping evaluation.
+2026-07-07 13:54:20 | DEBUG    | __main__ | Sleeping for 59.5s
+2026-07-07 13:55:20 | DEBUG    | market_data | [BTCUSD] Fetched 200 candles: 2026-07-05 06:30:00+00:00 to 2026-07-07 08:15:00+00:00
+2026-07-07 13:55:20 | DEBUG    | __main__ | [BTCUSD] Candle unchanged (2026-07-07 08:00:00+00:00). Skipping evaluation.
+2026-07-07 13:55:20 | DEBUG    | __main__ | Sleeping for 59.5s
+2026-07-07 13:56:20 | DEBUG    | market_data | [BTCUSD] Fetched 200 candles: 2026-07-05 06:30:00+00:00 to 2026-07-07 08:15:00+00:00
+2026-07-07 13:56:20 | DEBUG    | __main__ | [BTCUSD] Candle unchanged (2026-07-07 08:00:00+00:00). Skipping evaluation.
+2026-07-07 13:56:20 | DEBUG    | __main__ | Sleeping for 59.5s
+2026-07-07 13:57:20 | DEBUG    | market_data | [BTCUSD] Fetched 200 candles: 2026-07-05 06:30:00+00:00 to 2026-07-07 08:15:00+00:00
+2026-07-07 13:57:20 | DEBUG    | __main__ | [BTCUSD] Candle unchanged (2026-07-07 08:00:00+00:00). Skipping evaluation.
+2026-07-07 13:57:20 | DEBUG    | __main__ | Sleeping for 59.5s
+2026-07-07 13:58:20 | DEBUG    | market_data | [BTCUSD] Fetched 200 candles: 2026-07-05 06:30:00+00:00 to 2026-07-07 08:15:00+00:00
+2026-07-07 13:58:20 | DEBUG    | __main__ | [BTCUSD] Candle unchanged (2026-07-07 08:00:00+00:00). Skipping evaluation.
+2026-07-07 13:58:20 | DEBUG    | __main__ | Sleeping for 59.5s
+2026-07-07 13:59:20 | DEBUG    | market_data | [BTCUSD] Fetched 200 candles: 2026-07-05 06:30:00+00:00 to 2026-07-07 08:15:00+00:00
+2026-07-07 13:59:20 | DEBUG    | __main__ | [BTCUSD] Candle unchanged (2026-07-07 08:00:00+00:00). Skipping evaluation.
+2026-07-07 13:59:20 | DEBUG    | __main__ | Sleeping for 59.5s
+2026-07-07 14:00:20 | DEBUG    | market_data | [BTCUSD] Fetched 200 candles: 2026-07-05 06:45:00+00:00 to 2026-07-07 08:30:00+00:00
+2026-07-07 14:00:20 | INFO     | __main__ | [BTCUSD] No signal. Waiting for next candle.
+2026-07-07 14:00:20 | DEBUG    | __main__ | Sleeping for 59.3s
+2026-07-07 14:01:20 | DEBUG    | market_data | [BTCUSD] Fetched 200 candles: 2026-07-05 06:45:00+00:00 to 2026-07-07 08:30:00+00:00
+2026-07-07 14:01:20 | DEBUG    | __main__ | [BTCUSD] Candle unchanged (2026-07-07 08:15:00+00:00). Skipping evaluation.
+2026-07-07 14:01:20 | DEBUG    | __main__ | Sleeping for 59.5s
+2026-07-07 14:02:20 | DEBUG    | market_data | [BTCUSD] Fetched 200 candles: 2026-07-05 06:45:00+00:00 to 2026-07-07 08:30:00+00:00
+2026-07-07 14:02:20 | DEBUG    | __main__ | [BTCUSD] Candle unchanged (2026-07-07 08:15:00+00:00). Skipping evaluation.
+2026-07-07 14:02:20 | DEBUG    | __main__ | Sleeping for 59.4s
+2026-07-07 14:03:20 | DEBUG    | market_data | [BTCUSD] Fetched 200 candles: 2026-07-05 06:45:00+00:00 to 2026-07-07 08:30:00+00:00
+2026-07-07 14:03:20 | DEBUG    | __main__ | [BTCUSD] Candle unchanged (2026-07-07 08:15:00+00:00). Skipping evaluation.
+2026-07-07 14:03:20 | DEBUG    | __main__ | Sleeping for 59.3s
+2026-07-07 14:04:20 | DEBUG    | market_data | [BTCUSD] Fetched 200 candles: 2026-07-05 06:45:00+00:00 to 2026-07-07 08:30:00+00:00
+2026-07-07 14:04:20 | DEBUG    | __main__ | [BTCUSD] Candle unchanged (2026-07-07 08:15:00+00:00). Skipping evaluation.
+2026-07-07 14:04:20 | DEBUG    | __main__ | Sleeping for 59.3s
+2026-07-07 14:05:20 | DEBUG    | market_data | [BTCUSD] Fetched 200 candles: 2026-07-05 06:45:00+00:00 to 2026-07-07 08:30:00+00:00
+2026-07-07 14:05:20 | DEBUG    | __main__ | [BTCUSD] Candle unchanged (2026-07-07 08:15:00+00:00). Skipping evaluation.
+2026-07-07 14:05:20 | DEBUG    | __main__ | Sleeping for 59.5s
+2026-07-07 14:06:20 | DEBUG    | market_data | [BTCUSD] Fetched 200 candles: 2026-07-05 06:45:00+00:00 to 2026-07-07 08:30:00+00:00
+2026-07-07 14:06:20 | DEBUG    | __main__ | [BTCUSD] Candle unchanged (2026-07-07 08:15:00+00:00). Skipping evaluation.
+2026-07-07 14:06:20 | DEBUG    | __main__ | Sleeping for 59.5s
+2026-07-07 14:07:20 | DEBUG    | market_data | [BTCUSD] Fetched 200 candles: 2026-07-05 06:45:00+00:00 to 2026-07-07 08:30:00+00:00
+2026-07-07 14:07:20 | DEBUG    | __main__ | [BTCUSD] Candle unchanged (2026-07-07 08:15:00+00:00). Skipping evaluation.
+2026-07-07 14:07:20 | DEBUG    | __main__ | Sleeping for 59.5s
+2026-07-07 14:08:20 | DEBUG    | market_data | [BTCUSD] Fetched 200 candles: 2026-07-05 06:45:00+00:00 to 2026-07-07 08:30:00+00:00
+2026-07-07 14:08:20 | DEBUG    | __main__ | [BTCUSD] Candle unchanged (2026-07-07 08:15:00+00:00). Skipping evaluation.
+2026-07-07 14:08:20 | DEBUG    | __main__ | Sleeping for 59.4s
+2026-07-07 14:09:20 | DEBUG    | market_data | [BTCUSD] Fetched 200 candles: 2026-07-05 06:45:00+00:00 to 2026-07-07 08:30:00+00:00
+2026-07-07 14:09:20 | DEBUG    | __main__ | [BTCUSD] Candle unchanged (2026-07-07 08:15:00+00:00). Skipping evaluation.
+2026-07-07 14:09:20 | DEBUG    | __main__ | Sleeping for 59.5s
+2026-07-07 14:10:20 | DEBUG    | market_data | [BTCUSD] Fetched 200 candles: 2026-07-05 06:45:00+00:00 to 2026-07-07 08:30:00+00:00
+2026-07-07 14:10:20 | DEBUG    | __main__ | [BTCUSD] Candle unchanged (2026-07-07 08:15:00+00:00). Skipping evaluation.
+2026-07-07 14:10:20 | DEBUG    | __main__ | Sleeping for 59.5s
+2026-07-07 14:11:20 | DEBUG    | market_data | [BTCUSD] Fetched 200 candles: 2026-07-05 06:45:00+00:00 to 2026-07-07 08:30:00+00:00
+2026-07-07 14:11:20 | DEBUG    | __main__ | [BTCUSD] Candle unchanged (2026-07-07 08:15:00+00:00). Skipping evaluation.
+2026-07-07 14:11:20 | DEBUG    | __main__ | Sleeping for 59.4s
+2026-07-07 14:12:20 | DEBUG    | market_data | [BTCUSD] Fetched 200 candles: 2026-07-05 06:45:00+00:00 to 2026-07-07 08:30:00+00:00
+2026-07-07 14:12:20 | DEBUG    | __main__ | [BTCUSD] Candle unchanged (2026-07-07 08:15:00+00:00). Skipping evaluation.
+2026-07-07 14:12:20 | DEBUG    | __main__ | Sleeping for 59.4s
+2026-07-07 14:13:20 | DEBUG    | market_data | [BTCUSD] Fetched 200 candles: 2026-07-05 06:45:00+00:00 to 2026-07-07 08:30:00+00:00
+2026-07-07 14:13:20 | DEBUG    | __main__ | [BTCUSD] Candle unchanged (2026-07-07 08:15:00+00:00). Skipping evaluation.
+2026-07-07 14:13:20 | DEBUG    | __main__ | Sleeping for 59.5s
+2026-07-07 14:14:20 | DEBUG    | market_data | [BTCUSD] Fetched 200 candles: 2026-07-05 06:45:00+00:00 to 2026-07-07 08:30:00+00:00
+2026-07-07 14:14:20 | DEBUG    | __main__ | [BTCUSD] Candle unchanged (2026-07-07 08:15:00+00:00). Skipping evaluation.
+2026-07-07 14:14:20 | DEBUG    | __main__ | Sleeping for 59.5s
+2026-07-07 14:15:20 | DEBUG    | market_data | [BTCUSD] Fetched 200 candles: 2026-07-05 07:00:00+00:00 to 2026-07-07 08:45:00+00:00
+2026-07-07 14:15:20 | INFO     | __main__ | [BTCUSD] No signal. Waiting for next candle.
+2026-07-07 14:15:20 | DEBUG    | __main__ | Sleeping for 59.5s
+2026-07-07 14:16:20 | DEBUG    | market_data | [BTCUSD] Fetched 200 candles: 2026-07-05 07:00:00+00:00 to 2026-07-07 08:45:00+00:00
+2026-07-07 14:16:20 | DEBUG    | __main__ | [BTCUSD] Candle unchanged (2026-07-07 08:30:00+00:00). Skipping evaluation.
+2026-07-07 14:16:20 | DEBUG    | __main__ | Sleeping for 59.4s
+2026-07-07 14:17:20 | DEBUG    | market_data | [BTCUSD] Fetched 200 candles: 2026-07-05 07:00:00+00:00 to 2026-07-07 08:45:00+00:00
+2026-07-07 14:17:20 | DEBUG    | __main__ | [BTCUSD] Candle unchanged (2026-07-07 08:30:00+00:00). Skipping evaluation.
+2026-07-07 14:17:20 | DEBUG    | __main__ | Sleeping for 59.3s
+2026-07-07 14:18:20 | DEBUG    | market_data | [BTCUSD] Fetched 200 candles: 2026-07-05 07:00:00+00:00 to 2026-07-07 08:45:00+00:00
+2026-07-07 14:18:20 | DEBUG    | __main__ | [BTCUSD] Candle unchanged (2026-07-07 08:30:00+00:00). Skipping evaluation.
+2026-07-07 14:18:20 | DEBUG    | __main__ | Sleeping for 59.4s
+2026-07-07 14:19:20 | DEBUG    | market_data | [BTCUSD] Fetched 200 candles: 2026-07-05 07:00:00+00:00 to 2026-07-07 08:45:00+00:00
+2026-07-07 14:19:20 | DEBUG    | __main__ | [BTCUSD] Candle unchanged (2026-07-07 08:30:00+00:00). Skipping evaluation.
+2026-07-07 14:19:20 | DEBUG    | __main__ | Sleeping for 59.5s
+2026-07-07 14:20:20 | DEBUG    | market_data | [BTCUSD] Fetched 200 candles: 2026-07-05 07:00:00+00:00 to 2026-07-07 08:45:00+00:00
+2026-07-07 14:20:20 | DEBUG    | __main__ | [BTCUSD] Candle unchanged (2026-07-07 08:30:00+00:00). Skipping evaluation.
+2026-07-07 14:20:20 | DEBUG    | __main__ | Sleeping for 59.4s
+2026-07-07 14:21:21 | DEBUG    | market_data | [BTCUSD] Fetched 200 candles: 2026-07-05 07:00:00+00:00 to 2026-07-07 08:45:00+00:00
+2026-07-07 14:21:21 | DEBUG    | __main__ | [BTCUSD] Candle unchanged (2026-07-07 08:30:00+00:00). Skipping evaluation.
+2026-07-07 14:21:21 | DEBUG    | __main__ | Sleeping for 59.0s
+2026-07-07 14:22:20 | DEBUG    | market_data | [BTCUSD] Fetched 200 candles: 2026-07-05 07:00:00+00:00 to 2026-07-07 08:45:00+00:00
+2026-07-07 14:22:20 | DEBUG    | __main__ | [BTCUSD] Candle unchanged (2026-07-07 08:30:00+00:00). Skipping evaluation.
+2026-07-07 14:22:20 | DEBUG    | __main__ | Sleeping for 59.4s
+2026-07-07 14:23:21 | DEBUG    | market_data | [BTCUSD] Fetched 200 candles: 2026-07-05 07:00:00+00:00 to 2026-07-07 08:45:00+00:00
+2026-07-07 14:23:21 | DEBUG    | __main__ | [BTCUSD] Candle unchanged (2026-07-07 08:30:00+00:00). Skipping evaluation.
+2026-07-07 14:23:21 | DEBUG    | __main__ | Sleeping for 59.2s
+2026-07-07 14:24:20 | DEBUG    | market_data | [BTCUSD] Fetched 200 candles: 2026-07-05 07:00:00+00:00 to 2026-07-07 08:45:00+00:00
+2026-07-07 14:24:20 | DEBUG    | __main__ | [BTCUSD] Candle unchanged (2026-07-07 08:30:00+00:00). Skipping evaluation.
+2026-07-07 14:24:20 | DEBUG    | __main__ | Sleeping for 59.5s
+2026-07-07 14:25:21 | DEBUG    | market_data | [BTCUSD] Fetched 200 candles: 2026-07-05 07:00:00+00:00 to 2026-07-07 08:45:00+00:00
+2026-07-07 14:25:21 | DEBUG    | __main__ | [BTCUSD] Candle unchanged (2026-07-07 08:30:00+00:00). Skipping evaluation.
+2026-07-07 14:25:21 | DEBUG    | __main__ | Sleeping for 59.1s
+2026-07-07 14:26:24 | DEBUG    | market_data | [BTCUSD] Fetched 200 candles: 2026-07-05 07:00:00+00:00 to 2026-07-07 08:45:00+00:00
+2026-07-07 14:26:24 | DEBUG    | __main__ | [BTCUSD] Candle unchanged (2026-07-07 08:30:00+00:00). Skipping evaluation.
+2026-07-07 14:26:24 | DEBUG    | __main__ | Sleeping for 56.1s
+2026-07-07 14:27:20 | DEBUG    | market_data | [BTCUSD] Fetched 200 candles: 2026-07-05 07:00:00+00:00 to 2026-07-07 08:45:00+00:00
+2026-07-07 14:27:20 | DEBUG    | __main__ | [BTCUSD] Candle unchanged (2026-07-07 08:30:00+00:00). Skipping evaluation.
+2026-07-07 14:27:20 | DEBUG    | __main__ | Sleeping for 59.5s
+2026-07-07 14:28:20 | DEBUG    | market_data | [BTCUSD] Fetched 200 candles: 2026-07-05 07:00:00+00:00 to 2026-07-07 08:45:00+00:00
+2026-07-07 14:28:20 | DEBUG    | __main__ | [BTCUSD] Candle unchanged (2026-07-07 08:30:00+00:00). Skipping evaluation.
+2026-07-07 14:28:20 | DEBUG    | __main__ | Sleeping for 59.4s
+2026-07-07 14:29:20 | DEBUG    | market_data | [BTCUSD] Fetched 200 candles: 2026-07-05 07:00:00+00:00 to 2026-07-07 08:45:00+00:00
+2026-07-07 14:29:20 | DEBUG    | __main__ | [BTCUSD] Candle unchanged (2026-07-07 08:30:00+00:00). Skipping evaluation.
+2026-07-07 14:29:20 | DEBUG    | __main__ | Sleeping for 59.5s
+2026-07-07 14:30:20 | DEBUG    | market_data | [BTCUSD] Fetched 200 candles: 2026-07-05 07:15:00+00:00 to 2026-07-07 09:00:00+00:00
+2026-07-07 14:30:20 | INFO     | __main__ | [BTCUSD] No signal. Waiting for next candle.
+2026-07-07 14:30:21 | DEBUG    | __main__ | Sleeping for 59.3s
+2026-07-07 14:31:20 | DEBUG    | market_data | [BTCUSD] Fetched 200 candles: 2026-07-05 07:15:00+00:00 to 2026-07-07 09:00:00+00:00
+2026-07-07 14:31:20 | DEBUG    | __main__ | [BTCUSD] Candle unchanged (2026-07-07 08:45:00+00:00). Skipping evaluation.
+2026-07-07 14:31:20 | DEBUG    | __main__ | Sleeping for 59.4s
+2026-07-07 14:32:20 | DEBUG    | market_data | [BTCUSD] Fetched 200 candles: 2026-07-05 07:15:00+00:00 to 2026-07-07 09:00:00+00:00
+2026-07-07 14:32:20 | DEBUG    | __main__ | [BTCUSD] Candle unchanged (2026-07-07 08:45:00+00:00). Skipping evaluation.
+2026-07-07 14:32:20 | DEBUG    | __main__ | Sleeping for 59.4s
+2026-07-07 14:33:20 | DEBUG    | market_data | [BTCUSD] Fetched 200 candles: 2026-07-05 07:15:00+00:00 to 2026-07-07 09:00:00+00:00
+2026-07-07 14:33:20 | DEBUG    | __main__ | [BTCUSD] Candle unchanged (2026-07-07 08:45:00+00:00). Skipping evaluation.
+2026-07-07 14:33:20 | DEBUG    | __main__ | Sleeping for 59.4s
+2026-07-07 14:34:20 | DEBUG    | market_data | [BTCUSD] Fetched 200 candles: 2026-07-05 07:15:00+00:00 to 2026-07-07 09:00:00+00:00
+2026-07-07 14:34:20 | DEBUG    | __main__ | [BTCUSD] Candle unchanged (2026-07-07 08:45:00+00:00). Skipping evaluation.
+2026-07-07 14:34:20 | DEBUG    | __main__ | Sleeping for 59.5s
+2026-07-07 14:35:20 | DEBUG    | market_data | [BTCUSD] Fetched 200 candles: 2026-07-05 07:15:00+00:00 to 2026-07-07 09:00:00+00:00
+2026-07-07 14:35:20 | DEBUG    | __main__ | [BTCUSD] Candle unchanged (2026-07-07 08:45:00+00:00). Skipping evaluation.
+2026-07-07 14:35:20 | DEBUG    | __main__ | Sleeping for 59.4s
+2026-07-07 14:36:20 | DEBUG    | market_data | [BTCUSD] Fetched 200 candles: 2026-07-05 07:15:00+00:00 to 2026-07-07 09:00:00+00:00
+2026-07-07 14:36:20 | DEBUG    | __main__ | [BTCUSD] Candle unchanged (2026-07-07 08:45:00+00:00). Skipping evaluation.
+2026-07-07 14:36:20 | DEBUG    | __main__ | Sleeping for 59.5s
+2026-07-07 14:37:20 | DEBUG    | market_data | [BTCUSD] Fetched 200 candles: 2026-07-05 07:15:00+00:00 to 2026-07-07 09:00:00+00:00
+2026-07-07 14:37:20 | DEBUG    | __main__ | [BTCUSD] Candle unchanged (2026-07-07 08:45:00+00:00). Skipping evaluation.
+2026-07-07 14:37:20 | DEBUG    | __main__ | Sleeping for 59.4s
+2026-07-07 14:38:20 | DEBUG    | market_data | [BTCUSD] Fetched 200 candles: 2026-07-05 07:15:00+00:00 to 2026-07-07 09:00:00+00:00
+2026-07-07 14:38:20 | DEBUG    | __main__ | [BTCUSD] Candle unchanged (2026-07-07 08:45:00+00:00). Skipping evaluation.
+2026-07-07 14:38:20 | DEBUG    | __main__ | Sleeping for 59.4s
+2026-07-07 14:38:28 | WARNING  | __main__ | [BTCUSD] Bot stopped by user. Closing open position if any...
+2026-07-07 14:42:37 | INFO     | __main__ | =======================================================
+2026-07-07 14:42:37 | INFO     | __main__ |   Strategy Bot Starting: <bound method BollingerBandsStrategy.name of <strategies.bollinger_bands.BollingerBandsStrategy object at 0x000001B056C74DD0>>
+2026-07-07 14:42:37 | INFO     | __main__ |   Symbol       : BTCUSD
+2026-07-07 14:42:37 | INFO     | __main__ |   Poll Interval: 60s
+2026-07-07 14:42:37 | INFO     | __main__ |   Timeframe    : 15m
+2026-07-07 14:42:37 | INFO     | __main__ |   Lot Size     : 1
+2026-07-07 14:42:37 | INFO     | __main__ |   Live/Paper   : paper
+2026-07-07 14:42:37 | INFO     | __main__ | =======================================================
+2026-07-07 14:42:37 | ERROR    | position_manager | Error fetching position: 401 Client Error: Unauthorized for url: https://api.india.delta.exchange/v2/positions?product_id=27
+2026-07-07 14:42:38 | DEBUG    | market_data | [BTCUSD] Fetched 200 candles: 2026-07-05 07:15:00+00:00 to 2026-07-07 09:00:00+00:00
+2026-07-07 14:42:38 | INFO     | __main__ | [BTCUSD] No signal. Waiting for next candle.
+2026-07-07 14:42:38 | DEBUG    | __main__ | Sleeping for 59.5s
+2026-07-07 14:44:58 | INFO     | __main__ | =======================================================
+2026-07-07 14:44:58 | INFO     | __main__ |   Strategy Bot Starting: <bound method BollingerBandsStrategy.name of <strategies.bollinger_bands.BollingerBandsStrategy object at 0x0000022DC37E9250>>
+2026-07-07 14:44:58 | INFO     | __main__ |   Symbol       : BTCUSD
+2026-07-07 14:44:58 | INFO     | __main__ |   Poll Interval: 60s
+2026-07-07 14:44:58 | INFO     | __main__ |   Timeframe    : 15m
+2026-07-07 14:44:58 | INFO     | __main__ |   Lot Size     : 1
+2026-07-07 14:44:58 | INFO     | __main__ |   Live/Paper   : paper
+2026-07-07 14:44:58 | INFO     | __main__ | =======================================================
+2026-07-07 14:44:59 | DEBUG    | market_data | [BTCUSD] Fetched 200 candles: 2026-07-05 07:15:00+00:00 to 2026-07-07 09:00:00+00:00
+2026-07-07 14:44:59 | INFO     | __main__ | [BTCUSD] No signal. Waiting for next candle.
+2026-07-07 14:44:59 | DEBUG    | __main__ | Sleeping for 59.5s
+2026-07-07 14:45:46 | INFO     | __main__ | =======================================================
+2026-07-07 14:45:46 | INFO     | __main__ |   Strategy Bot Starting: <bound method BollingerBandsStrategy.name of <strategies.bollinger_bands.BollingerBandsStrategy object at 0x000001BC751D9410>>
+2026-07-07 14:45:46 | INFO     | __main__ |   Symbol       : BTCUSD
+2026-07-07 14:45:46 | INFO     | __main__ |   Poll Interval: 60s
+2026-07-07 14:45:46 | INFO     | __main__ |   Timeframe    : 5s
+2026-07-07 14:45:46 | INFO     | __main__ |   Lot Size     : 1
+2026-07-07 14:45:46 | INFO     | __main__ |   Live/Paper   : paper
+2026-07-07 14:45:46 | INFO     | __main__ | =======================================================
+2026-07-07 14:45:47 | DEBUG    | market_data | [BTCUSD] Fetched 200 candles: 2026-07-07 08:59:10+00:00 to 2026-07-07 09:15:45+00:00
+2026-07-07 14:45:47 | INFO     | __main__ | [BTCUSD] No signal. Waiting for next candle.
+2026-07-07 14:45:47 | DEBUG    | __main__ | Sleeping for 59.5s
+2026-07-07 14:46:47 | DEBUG    | market_data | [BTCUSD] Fetched 200 candles: 2026-07-07 09:00:10+00:00 to 2026-07-07 09:16:45+00:00
+2026-07-07 14:46:47 | INFO     | __main__ | [BTCUSD] No signal. Waiting for next candle.
+2026-07-07 14:46:47 | DEBUG    | __main__ | Sleeping for 59.5s
+2026-07-07 14:47:47 | DEBUG    | market_data | [BTCUSD] Fetched 200 candles: 2026-07-07 09:01:10+00:00 to 2026-07-07 09:17:45+00:00
+2026-07-07 14:47:47 | INFO     | __main__ | [BTCUSD] No signal. Waiting for next candle.
+2026-07-07 14:47:47 | DEBUG    | __main__ | Sleeping for 59.5s
+2026-07-07 14:48:47 | DEBUG    | market_data | [BTCUSD] Fetched 200 candles: 2026-07-07 09:02:10+00:00 to 2026-07-07 09:18:45+00:00
+2026-07-07 14:48:47 | INFO     | __main__ | [BTCUSD] No signal. Waiting for next candle.
+2026-07-07 14:48:47 | DEBUG    | __main__ | Sleeping for 59.5s
+2026-07-07 14:49:47 | DEBUG    | market_data | [BTCUSD] Fetched 200 candles: 2026-07-07 09:03:05+00:00 to 2026-07-07 09:19:40+00:00
+2026-07-07 14:49:47 | INFO     | __main__ | [BTCUSD] No signal. Waiting for next candle.
+2026-07-07 14:49:47 | DEBUG    | __main__ | Sleeping for 59.5s
+2026-07-07 14:50:47 | DEBUG    | market_data | [BTCUSD] Fetched 200 candles: 2026-07-07 09:04:05+00:00 to 2026-07-07 09:20:40+00:00
+2026-07-07 14:50:47 | INFO     | __main__ | [BTCUSD] No signal. Waiting for next candle.
+2026-07-07 14:50:47 | DEBUG    | __main__ | Sleeping for 59.5s
+2026-07-07 14:51:47 | DEBUG    | market_data | [BTCUSD] Fetched 200 candles: 2026-07-07 09:05:05+00:00 to 2026-07-07 09:21:40+00:00
+2026-07-07 14:51:47 | INFO     | __main__ | [BTCUSD] No signal. Waiting for next candle.
+2026-07-07 14:51:47 | DEBUG    | __main__ | Sleeping for 59.5s
+2026-07-07 14:52:47 | DEBUG    | market_data | [BTCUSD] Fetched 200 candles: 2026-07-07 09:06:10+00:00 to 2026-07-07 09:22:45+00:00
+2026-07-07 14:52:47 | INFO     | __main__ | [BTCUSD] No signal. Waiting for next candle.
+2026-07-07 14:52:47 | DEBUG    | __main__ | Sleeping for 59.5s
+2026-07-07 14:53:47 | DEBUG    | market_data | [BTCUSD] Fetched 200 candles: 2026-07-07 09:07:10+00:00 to 2026-07-07 09:23:45+00:00
+2026-07-07 14:53:47 | INFO     | __main__ | [BTCUSD] No signal. Waiting for next candle.
+2026-07-07 14:53:47 | DEBUG    | __main__ | Sleeping for 59.1s
+2026-07-07 14:54:47 | DEBUG    | market_data | [BTCUSD] Fetched 200 candles: 2026-07-07 09:08:10+00:00 to 2026-07-07 09:24:45+00:00
+2026-07-07 14:54:47 | DEBUG    | market_data | [BTCUSD] product_id resolved from API (https://api.india.delta.exchange): 27
+2026-07-07 14:54:47 | DEBUG    | order_manager | [BTCUSD] Order payload: product_id=27 (int), size=1 (int), side=buy
+2026-07-07 14:54:48 | ERROR    | order_manager | [BTCUSD] Failed to place market order (buy): 400 Client Error: Bad Request for url: https://api.india.delta.exchange/v2/orders | Response body: {"error":{"code":"insufficient_margin","context":{"margin_mode":"isolated","asset_symbol":"USD","available_balance":"2.022015720000000000","required_additional_balance":"0.57878954"}},"success":false}
+2026-07-07 14:54:48 | ERROR    | __main__ | [BTCUSD] Failed to place entry order.
+2026-07-07 14:54:48 | WARNING  | notifier | Telegram not configured. Skipping notification.
+2026-07-07 14:54:48 | DEBUG    | __main__ | Sleeping for 57.9s
+2026-07-07 14:55:47 | DEBUG    | market_data | [BTCUSD] Fetched 200 candles: 2026-07-07 09:09:10+00:00 to 2026-07-07 09:25:45+00:00
+2026-07-07 14:55:47 | INFO     | __main__ | [BTCUSD] No signal. Waiting for next candle.
+2026-07-07 14:55:47 | DEBUG    | __main__ | Sleeping for 59.5s
+2026-07-07 14:56:47 | DEBUG    | market_data | [BTCUSD] Fetched 200 candles: 2026-07-07 09:10:10+00:00 to 2026-07-07 09:26:45+00:00
+2026-07-07 14:56:47 | INFO     | __main__ | [BTCUSD] No signal. Waiting for next candle.
+2026-07-07 14:56:47 | DEBUG    | __main__ | Sleeping for 59.5s
+2026-07-07 14:57:47 | DEBUG    | market_data | [BTCUSD] Fetched 200 candles: 2026-07-07 09:11:05+00:00 to 2026-07-07 09:27:40+00:00
+2026-07-07 14:57:47 | INFO     | __main__ | [BTCUSD] No signal. Waiting for next candle.
+2026-07-07 14:57:47 | DEBUG    | __main__ | Sleeping for 59.5s
+2026-07-07 14:58:47 | DEBUG    | market_data | [BTCUSD] Fetched 200 candles: 2026-07-07 09:12:10+00:00 to 2026-07-07 09:28:45+00:00
+2026-07-07 14:58:47 | INFO     | __main__ | [BTCUSD] No signal. Waiting for next candle.
+2026-07-07 14:58:47 | DEBUG    | __main__ | Sleeping for 59.5s
+2026-07-07 14:59:47 | DEBUG    | market_data | [BTCUSD] Fetched 200 candles: 2026-07-07 09:13:10+00:00 to 2026-07-07 09:29:45+00:00
+2026-07-07 14:59:47 | INFO     | __main__ | [BTCUSD] No signal. Waiting for next candle.
+2026-07-07 14:59:47 | DEBUG    | __main__ | Sleeping for 59.5s
+2026-07-07 15:00:47 | DEBUG    | market_data | [BTCUSD] Fetched 200 candles: 2026-07-07 09:14:05+00:00 to 2026-07-07 09:30:40+00:00
+2026-07-07 15:00:47 | INFO     | __main__ | [BTCUSD] No signal. Waiting for next candle.
+2026-07-07 15:00:47 | DEBUG    | __main__ | Sleeping for 59.4s
+2026-07-07 15:22:34 | INFO     | __main__ | =======================================================
+2026-07-07 15:22:34 | INFO     | __main__ |   Strategy Bot Starting: <bound method BollingerBandsStrategy.name of <strategies.bollinger_bands.BollingerBandsStrategy object at 0x00000197284B8B50>>
+2026-07-07 15:22:34 | INFO     | __main__ |   Symbol       : BTCUSD
+2026-07-07 15:22:34 | INFO     | __main__ |   Poll Interval: 60s
+2026-07-07 15:22:34 | INFO     | __main__ |   Timeframe    : 5s
+2026-07-07 15:22:34 | INFO     | __main__ |   Lot Size     : 1
+2026-07-07 15:22:34 | INFO     | __main__ |   Live/Paper   : paper
+2026-07-07 15:22:34 | INFO     | __main__ | =======================================================
+2026-07-07 15:22:34 | INFO     | __main__ |   Base URL    : https://cdn-ind.testnet.deltaex.org
+2026-07-07 15:22:35 | DEBUG    | market_data | [BTCUSD] Fetched 200 candles: 2026-07-07 09:35:55+00:00 to 2026-07-07 09:52:30+00:00
+2026-07-07 15:22:35 | INFO     | __main__ | [BTCUSD] No signal. Waiting for next candle.
+2026-07-07 15:22:35 | DEBUG    | __main__ | Sleeping for 59.4s
+2026-07-07 15:23:35 | DEBUG    | market_data | [BTCUSD] Fetched 200 candles: 2026-07-07 09:36:55+00:00 to 2026-07-07 09:53:30+00:00
+2026-07-07 15:23:35 | INFO     | __main__ | [BTCUSD] No signal. Waiting for next candle.
+2026-07-07 15:23:35 | DEBUG    | __main__ | Sleeping for 59.5s
+2026-07-07 15:24:35 | DEBUG    | market_data | [BTCUSD] Fetched 200 candles: 2026-07-07 09:37:55+00:00 to 2026-07-07 09:54:30+00:00
+2026-07-07 15:24:35 | INFO     | __main__ | [BTCUSD] No signal. Waiting for next candle.
+2026-07-07 15:24:35 | DEBUG    | __main__ | Sleeping for 59.5s
+2026-07-07 15:25:35 | DEBUG    | market_data | [BTCUSD] Fetched 200 candles: 2026-07-07 09:38:55+00:00 to 2026-07-07 09:55:30+00:00
+2026-07-07 15:25:35 | INFO     | __main__ | [BTCUSD] No signal. Waiting for next candle.
+2026-07-07 15:25:35 | DEBUG    | __main__ | Sleeping for 59.4s
+2026-07-07 15:26:35 | DEBUG    | market_data | [BTCUSD] Fetched 200 candles: 2026-07-07 09:39:55+00:00 to 2026-07-07 09:56:30+00:00
+2026-07-07 15:26:35 | INFO     | __main__ | [BTCUSD] No signal. Waiting for next candle.
+2026-07-07 15:26:35 | DEBUG    | __main__ | Sleeping for 59.5s
+2026-07-07 15:27:35 | DEBUG    | market_data | [BTCUSD] Fetched 200 candles: 2026-07-07 09:40:55+00:00 to 2026-07-07 09:57:30+00:00
+2026-07-07 15:27:35 | INFO     | __main__ | [BTCUSD] No signal. Waiting for next candle.
+2026-07-07 15:27:35 | DEBUG    | __main__ | Sleeping for 59.5s
+2026-07-07 15:28:35 | DEBUG    | market_data | [BTCUSD] Fetched 200 candles: 2026-07-07 09:41:55+00:00 to 2026-07-07 09:58:30+00:00
+2026-07-07 15:28:35 | INFO     | __main__ | [BTCUSD] No signal. Waiting for next candle.
+2026-07-07 15:28:35 | DEBUG    | __main__ | Sleeping for 59.5s
+2026-07-07 15:29:35 | DEBUG    | market_data | [BTCUSD] Fetched 200 candles: 2026-07-07 09:42:55+00:00 to 2026-07-07 09:59:30+00:00
+2026-07-07 15:29:35 | INFO     | __main__ | [BTCUSD] No signal. Waiting for next candle.
+2026-07-07 15:29:35 | DEBUG    | __main__ | Sleeping for 59.4s
+2026-07-07 15:30:35 | DEBUG    | market_data | [BTCUSD] Fetched 200 candles: 2026-07-07 09:43:55+00:00 to 2026-07-07 10:00:30+00:00
+2026-07-07 15:30:35 | INFO     | __main__ | [BTCUSD] No signal. Waiting for next candle.
+2026-07-07 15:30:35 | DEBUG    | __main__ | Sleeping for 59.5s
+2026-07-07 15:31:35 | DEBUG    | market_data | [BTCUSD] Fetched 200 candles: 2026-07-07 09:44:55+00:00 to 2026-07-07 10:01:30+00:00
+2026-07-07 15:31:35 | INFO     | __main__ | [BTCUSD] No signal. Waiting for next candle.
+2026-07-07 15:31:35 | DEBUG    | __main__ | Sleeping for 59.5s
+2026-07-07 15:32:35 | DEBUG    | market_data | [BTCUSD] Fetched 200 candles: 2026-07-07 09:45:55+00:00 to 2026-07-07 10:02:30+00:00
+2026-07-07 15:32:35 | INFO     | __main__ | [BTCUSD] No signal. Waiting for next candle.
+2026-07-07 15:32:35 | DEBUG    | __main__ | Sleeping for 59.5s
+2026-07-07 15:33:35 | DEBUG    | market_data | [BTCUSD] Fetched 200 candles: 2026-07-07 09:46:55+00:00 to 2026-07-07 10:03:30+00:00
+2026-07-07 15:33:35 | INFO     | __main__ | [BTCUSD] No signal. Waiting for next candle.
+2026-07-07 15:33:35 | DEBUG    | __main__ | Sleeping for 59.5s
+2026-07-07 15:34:35 | DEBUG    | market_data | [BTCUSD] Fetched 200 candles: 2026-07-07 09:47:55+00:00 to 2026-07-07 10:04:30+00:00
+2026-07-07 15:34:35 | INFO     | __main__ | [BTCUSD] No signal. Waiting for next candle.
+2026-07-07 15:34:35 | DEBUG    | __main__ | Sleeping for 59.5s
+2026-07-07 15:35:35 | DEBUG    | market_data | [BTCUSD] Fetched 200 candles: 2026-07-07 09:48:55+00:00 to 2026-07-07 10:05:30+00:00
+2026-07-07 15:35:35 | INFO     | __main__ | [BTCUSD] No signal. Waiting for next candle.
+2026-07-07 15:35:35 | DEBUG    | __main__ | Sleeping for 59.5s
+2026-07-07 15:36:35 | DEBUG    | market_data | [BTCUSD] Fetched 200 candles: 2026-07-07 09:49:55+00:00 to 2026-07-07 10:06:30+00:00
+2026-07-07 15:36:35 | INFO     | __main__ | [BTCUSD] No signal. Waiting for next candle.
+2026-07-07 15:36:35 | DEBUG    | __main__ | Sleeping for 59.5s
+2026-07-07 15:37:35 | DEBUG    | market_data | [BTCUSD] Fetched 200 candles: 2026-07-07 09:50:55+00:00 to 2026-07-07 10:07:30+00:00
+2026-07-07 15:37:35 | INFO     | __main__ | [BTCUSD] No signal. Waiting for next candle.
+2026-07-07 15:37:35 | DEBUG    | __main__ | Sleeping for 59.4s
+2026-07-07 15:38:35 | DEBUG    | market_data | [BTCUSD] Fetched 200 candles: 2026-07-07 09:51:55+00:00 to 2026-07-07 10:08:30+00:00
+2026-07-07 15:38:35 | INFO     | __main__ | [BTCUSD] No signal. Waiting for next candle.
+2026-07-07 15:38:35 | DEBUG    | __main__ | Sleeping for 59.5s
+2026-07-07 15:39:35 | DEBUG    | market_data | [BTCUSD] Fetched 200 candles: 2026-07-07 09:52:55+00:00 to 2026-07-07 10:09:30+00:00
+2026-07-07 15:39:35 | INFO     | __main__ | [BTCUSD] No signal. Waiting for next candle.
+2026-07-07 15:39:35 | DEBUG    | __main__ | Sleeping for 59.5s
+2026-07-07 15:40:35 | DEBUG    | market_data | [BTCUSD] Fetched 200 candles: 2026-07-07 09:53:55+00:00 to 2026-07-07 10:10:30+00:00
+2026-07-07 15:40:35 | INFO     | __main__ | [BTCUSD] No signal. Waiting for next candle.
+2026-07-07 15:40:35 | DEBUG    | __main__ | Sleeping for 59.5s
+2026-07-07 15:41:35 | DEBUG    | market_data | [BTCUSD] Fetched 200 candles: 2026-07-07 09:54:55+00:00 to 2026-07-07 10:11:30+00:00
+2026-07-07 15:41:35 | DEBUG    | market_data | [BTCUSD] product_id resolved from API (https://api.india.delta.exchange): 27
+2026-07-07 15:41:35 | DEBUG    | order_manager | [BTCUSD] Order payload: product_id=27 (int), size=1 (int), side=buy
+2026-07-07 15:41:36 | ERROR    | order_manager | [BTCUSD] Failed to place market order (buy): 400 Client Error: Bad Request for url: https://api.india.delta.exchange/v2/orders | Response body: {"error":{"code":"insufficient_margin","context":{"margin_mode":"isolated","asset_symbol":"USD","available_balance":"2.022015720000000000","required_additional_balance":"0.58661374"}},"success":false}
+2026-07-07 15:41:36 | ERROR    | __main__ | [BTCUSD] Failed to place entry order.
+2026-07-07 15:41:36 | WARNING  | notifier | Telegram not configured. Skipping notification.
+2026-07-07 15:41:36 | DEBUG    | __main__ | Sleeping for 58.0s
+2026-07-07 15:42:35 | DEBUG    | market_data | [BTCUSD] Fetched 200 candles: 2026-07-07 09:55:55+00:00 to 2026-07-07 10:12:30+00:00
+2026-07-07 15:42:35 | INFO     | __main__ | [BTCUSD] No signal. Waiting for next candle.
+2026-07-07 15:42:35 | DEBUG    | __main__ | Sleeping for 59.5s
+2026-07-07 15:43:35 | DEBUG    | market_data | [BTCUSD] Fetched 200 candles: 2026-07-07 09:56:55+00:00 to 2026-07-07 10:13:30+00:00
+2026-07-07 15:43:35 | INFO     | __main__ | [BTCUSD] No signal. Waiting for next candle.
+2026-07-07 15:43:35 | DEBUG    | __main__ | Sleeping for 59.5s
+2026-07-07 15:44:35 | DEBUG    | market_data | [BTCUSD] Fetched 200 candles: 2026-07-07 09:57:55+00:00 to 2026-07-07 10:14:30+00:00
+2026-07-07 15:44:35 | DEBUG    | market_data | [BTCUSD] product_id resolved from cache: 27
+2026-07-07 15:44:35 | DEBUG    | order_manager | [BTCUSD] Order payload: product_id=27 (int), size=1 (int), side=sell
+2026-07-07 15:44:36 | ERROR    | order_manager | [BTCUSD] Failed to place market order (sell): 400 Client Error: Bad Request for url: https://api.india.delta.exchange/v2/orders | Response body: {"error":{"code":"insufficient_margin","context":{"margin_mode":"isolated","asset_symbol":"USD","available_balance":"2.022015720000000000","required_additional_balance":"0.58761429"}},"success":false}
+2026-07-07 15:44:36 | ERROR    | __main__ | [BTCUSD] Failed to place entry order.
+2026-07-07 15:44:36 | WARNING  | notifier | Telegram not configured. Skipping notification.
+2026-07-07 15:44:36 | DEBUG    | __main__ | Sleeping for 58.4s
+2026-07-07 15:45:35 | DEBUG    | market_data | [BTCUSD] Fetched 200 candles: 2026-07-07 09:58:55+00:00 to 2026-07-07 10:15:30+00:00
+2026-07-07 15:45:35 | INFO     | __main__ | [BTCUSD] No signal. Waiting for next candle.
+2026-07-07 15:45:35 | DEBUG    | __main__ | Sleeping for 59.4s
+2026-07-07 15:46:35 | DEBUG    | market_data | [BTCUSD] Fetched 200 candles: 2026-07-07 09:59:55+00:00 to 2026-07-07 10:16:30+00:00
+2026-07-07 15:46:35 | INFO     | __main__ | [BTCUSD] No signal. Waiting for next candle.
+2026-07-07 15:46:35 | DEBUG    | __main__ | Sleeping for 59.5s
+2026-07-07 15:47:35 | DEBUG    | market_data | [BTCUSD] Fetched 200 candles: 2026-07-07 10:00:55+00:00 to 2026-07-07 10:17:30+00:00
+2026-07-07 15:47:35 | INFO     | __main__ | [BTCUSD] No signal. Waiting for next candle.
+2026-07-07 15:47:35 | DEBUG    | __main__ | Sleeping for 59.5s
+2026-07-07 15:48:35 | DEBUG    | market_data | [BTCUSD] Fetched 200 candles: 2026-07-07 10:01:55+00:00 to 2026-07-07 10:18:30+00:00
+2026-07-07 15:48:35 | INFO     | __main__ | [BTCUSD] No signal. Waiting for next candle.
+2026-07-07 15:48:35 | DEBUG    | __main__ | Sleeping for 59.5s
+2026-07-07 15:49:35 | DEBUG    | market_data | [BTCUSD] Fetched 200 candles: 2026-07-07 10:02:55+00:00 to 2026-07-07 10:19:30+00:00
+2026-07-07 15:49:35 | INFO     | __main__ | [BTCUSD] No signal. Waiting for next candle.
+2026-07-07 15:49:35 | DEBUG    | __main__ | Sleeping for 59.4s
+2026-07-07 15:50:35 | DEBUG    | market_data | [BTCUSD] Fetched 200 candles: 2026-07-07 10:03:55+00:00 to 2026-07-07 10:20:30+00:00
+2026-07-07 15:50:35 | INFO     | __main__ | [BTCUSD] No signal. Waiting for next candle.
+2026-07-07 15:50:35 | DEBUG    | __main__ | Sleeping for 59.4s
+2026-07-07 16:31:06 | INFO     | __main__ | =======================================================
+2026-07-07 16:31:06 | INFO     | __main__ |   Strategy Bot Starting: <bound method BollingerBandsStrategy.name of <strategies.bollinger_bands.BollingerBandsStrategy object at 0x0000018AB5607610>>
+2026-07-07 16:31:06 | INFO     | __main__ |   Symbol       : BTCUSD
+2026-07-07 16:31:06 | INFO     | __main__ |   Poll Interval: 60s
+2026-07-07 16:31:06 | INFO     | __main__ |   Timeframe    : 5s
+2026-07-07 16:33:34 | INFO     | __main__ | =======================================================
+2026-07-07 16:33:34 | INFO     | __main__ |   Strategy Bot Starting: <bound method BollingerBandsStrategy.name of <strategies.bollinger_bands.BollingerBandsStrategy object at 0x0000022A40C48CD0>>
+2026-07-07 16:33:34 | INFO     | __main__ |   Symbol       : BTCUSD
+2026-07-07 16:33:34 | INFO     | __main__ |   Poll Interval: 60s
+2026-07-07 16:33:34 | INFO     | __main__ |   Timeframe    : 5s
+2026-07-07 16:33:34 | INFO     | __main__ |   Lot Size     : 1
+2026-07-07 16:33:34 | INFO     | __main__ |   Live/Paper   : paper
+2026-07-07 16:33:34 | INFO     | __main__ | =======================================================
+2026-07-07 16:33:34 | INFO     | __main__ |   Base URL    : https://cdn-ind.testnet.deltaex.org
+2026-07-07 16:33:34 | INFO     | __main__ |   Base URL    : https://api.india.delta.exchange
+2026-07-07 16:33:35 | DEBUG    | market_data | [BTCUSD] Fetched 200 candles: 2026-07-07 10:46:55+00:00 to 2026-07-07 11:03:30+00:00
+2026-07-07 16:33:35 | INFO     | __main__ | [BTCUSD] No signal. Waiting for next candle.
+2026-07-07 16:33:35 | DEBUG    | __main__ | Sleeping for 59.4s
+2026-07-07 16:34:59 | INFO     | __main__ | =======================================================
+2026-07-07 16:34:59 | INFO     | __main__ |   Strategy Bot Starting: <bound method BollingerBandsStrategy.name of <strategies.bollinger_bands.BollingerBandsStrategy object at 0x0000013E9EE78750>>
+2026-07-07 16:34:59 | INFO     | __main__ |   Symbol       : BTCUSD
+2026-07-07 16:34:59 | INFO     | __main__ |   Poll Interval: 60s
+2026-07-07 16:34:59 | INFO     | __main__ |   Timeframe    : 5s
+2026-07-07 16:34:59 | INFO     | __main__ |   Lot Size     : 1
+2026-07-07 16:34:59 | INFO     | __main__ |   Live/Paper   : paper
+2026-07-07 16:34:59 | INFO     | __main__ | =======================================================
+2026-07-07 16:34:59 | INFO     | __main__ |   Base URL    : https://cdn-ind.testnet.deltaex.org
+2026-07-07 16:35:00 | DEBUG    | market_data | [BTCUSD] Fetched 200 candles: 2026-07-07 10:48:20+00:00 to 2026-07-07 11:04:55+00:00
+2026-07-07 16:35:00 | INFO     | __main__ | [BTCUSD] No signal. Waiting for next candle.
+2026-07-07 16:35:00 | DEBUG    | __main__ | Sleeping for 59.5s
+2026-07-07 16:36:01 | INFO     | __main__ | =======================================================
+2026-07-07 16:36:01 | INFO     | __main__ |   Strategy Bot Starting: <bound method BollingerBandsStrategy.name of <strategies.bollinger_bands.BollingerBandsStrategy object at 0x0000014B347F8890>>
+2026-07-07 16:36:01 | INFO     | __main__ |   Symbol       : BTCUSD
+2026-07-07 16:36:01 | INFO     | __main__ |   Poll Interval: 60s
+2026-07-07 16:36:01 | INFO     | __main__ |   Timeframe    : 5s
+2026-07-07 16:36:01 | INFO     | __main__ |   Lot Size     : 1
+2026-07-07 16:36:01 | INFO     | __main__ |   Live/Paper   : paper
+2026-07-07 16:36:01 | INFO     | __main__ | =======================================================
+2026-07-07 16:36:01 | INFO     | __main__ |   Base URL    : https://cdn-ind.testnet.deltaex.org
+2026-07-07 16:36:03 | DEBUG    | market_data | [BTCUSD] Fetched 200 candles: 2026-07-07 10:49:25+00:00 to 2026-07-07 11:06:00+00:00
+2026-07-07 16:36:03 | INFO     | __main__ | [BTCUSD] No signal. Waiting for next candle.
+2026-07-07 16:36:03 | DEBUG    | __main__ | Sleeping for 59.4s
+2026-07-07 16:37:03 | DEBUG    | market_data | [BTCUSD] Fetched 200 candles: 2026-07-07 10:50:25+00:00 to 2026-07-07 11:07:00+00:00
+2026-07-07 16:37:03 | INFO     | __main__ | [BTCUSD] No signal. Waiting for next candle.
+2026-07-07 16:37:03 | DEBUG    | __main__ | Sleeping for 59.4s
+2026-07-07 16:38:03 | DEBUG    | market_data | [BTCUSD] Fetched 200 candles: 2026-07-07 10:51:25+00:00 to 2026-07-07 11:08:00+00:00
+2026-07-07 16:38:03 | INFO     | __main__ | [BTCUSD] No signal. Waiting for next candle.
+2026-07-07 16:38:03 | DEBUG    | __main__ | Sleeping for 59.2s
+2026-07-07 16:39:03 | DEBUG    | market_data | [BTCUSD] Fetched 200 candles: 2026-07-07 10:52:25+00:00 to 2026-07-07 11:09:00+00:00
+2026-07-07 16:39:03 | INFO     | __main__ | [BTCUSD] No signal. Waiting for next candle.
+2026-07-07 16:39:03 | DEBUG    | __main__ | Sleeping for 59.4s
+2026-07-07 16:40:03 | DEBUG    | market_data | [BTCUSD] Fetched 200 candles: 2026-07-07 10:53:25+00:00 to 2026-07-07 11:10:00+00:00
+2026-07-07 16:40:03 | INFO     | __main__ | [BTCUSD] No signal. Waiting for next candle.
+2026-07-07 16:40:03 | DEBUG    | __main__ | Sleeping for 59.3s
+2026-07-07 16:41:03 | DEBUG    | market_data | [BTCUSD] Fetched 200 candles: 2026-07-07 10:54:25+00:00 to 2026-07-07 11:11:00+00:00
+2026-07-07 16:41:03 | INFO     | __main__ | [BTCUSD] No signal. Waiting for next candle.
+2026-07-07 16:41:03 | DEBUG    | __main__ | Sleeping for 59.5s
+2026-07-07 16:42:03 | DEBUG    | market_data | [BTCUSD] Fetched 200 candles: 2026-07-07 10:55:25+00:00 to 2026-07-07 11:12:00+00:00
+2026-07-07 16:42:03 | DEBUG    | market_data | [BTCUSD] product_id resolved from API (https://api.india.delta.exchange): 27
+2026-07-07 16:42:03 | DEBUG    | order_manager | [BTCUSD] Order payload: product_id=27 (int), size=1 (int), side=buy
+2026-07-07 16:42:04 | ERROR    | order_manager | [BTCUSD] Failed to place market order (buy): 400 Client Error: Bad Request for url: https://api.india.delta.exchange/v2/orders | Response body: {"error":{"code":"insufficient_margin","context":{"margin_mode":"isolated","asset_symbol":"USD","available_balance":"2.022015720000000000","required_additional_balance":"0.57788358"}},"success":false}
+2026-07-07 16:42:04 | ERROR    | __main__ | [BTCUSD] Failed to place entry order.
+2026-07-07 16:42:04 | WARNING  | notifier | Telegram not configured. Skipping notification.
+2026-07-07 16:42:04 | DEBUG    | __main__ | Sleeping for 57.7s
+2026-07-07 17:01:33 | INFO     | __main__ | =======================================================
+2026-07-07 17:01:33 | INFO     | __main__ |   Strategy Bot Starting: <bound method BollingerBandsStrategy.name of <strategies.bollinger_bands.BollingerBandsStrategy object at 0x0000028BCED98850>>
+2026-07-07 17:01:33 | INFO     | __main__ |   Symbol       : BTCUSD
+2026-07-07 17:01:33 | INFO     | __main__ |   Poll Interval: 60s
+2026-07-07 17:01:33 | INFO     | __main__ |   Timeframe    : 5s
+2026-07-07 17:01:33 | INFO     | __main__ |   Lot Size     : 1
+2026-07-07 17:01:33 | INFO     | __main__ |   Live/Paper   : paper
+2026-07-07 17:01:33 | INFO     | __main__ | =======================================================
+2026-07-07 17:01:33 | INFO     | __main__ |   Base URL    : https://cdn-ind.testnet.deltaex.org
+2026-07-07 17:01:34 | ERROR    | position_manager | Error fetching position: 401 Client Error: Unauthorized for url: https://cdn-ind.testnet.deltaex.org/v2/positions?product_id=27
+2026-07-07 17:01:35 | DEBUG    | market_data | [BTCUSD] Fetched 200 candles: 2026-07-07 11:14:55+00:00 to 2026-07-07 11:31:30+00:00
+2026-07-07 17:01:35 | INFO     | __main__ | [BTCUSD] No signal. Waiting for next candle.
+2026-07-07 17:01:35 | DEBUG    | __main__ | Sleeping for 59.4s
+2026-07-07 17:02:35 | DEBUG    | market_data | [BTCUSD] Fetched 200 candles: 2026-07-07 11:15:55+00:00 to 2026-07-07 11:32:30+00:00
+2026-07-07 17:02:35 | INFO     | __main__ | [BTCUSD] No signal. Waiting for next candle.
+2026-07-07 17:02:35 | DEBUG    | __main__ | Sleeping for 59.3s
+2026-07-07 17:03:35 | DEBUG    | market_data | [BTCUSD] Fetched 200 candles: 2026-07-07 11:16:55+00:00 to 2026-07-07 11:33:30+00:00
+2026-07-07 17:03:35 | INFO     | __main__ | [BTCUSD] No signal. Waiting for next candle.
+2026-07-07 17:03:35 | DEBUG    | __main__ | Sleeping for 59.4s
+2026-07-07 17:03:48 | INFO     | __main__ | =======================================================
+2026-07-07 17:03:48 | INFO     | __main__ |   Strategy Bot Starting: <bound method BollingerBandsStrategy.name of <strategies.bollinger_bands.BollingerBandsStrategy object at 0x000001F3B03CC650>>
+2026-07-07 17:03:48 | INFO     | __main__ |   Symbol       : BTCUSD
+2026-07-07 17:03:48 | INFO     | __main__ |   Poll Interval: 60s
+2026-07-07 17:03:48 | INFO     | __main__ |   Timeframe    : 5s
+2026-07-07 17:03:48 | INFO     | __main__ |   Lot Size     : 1
+2026-07-07 17:03:48 | INFO     | __main__ |   Live/Paper   : paper
+2026-07-07 17:03:48 | INFO     | __main__ | =======================================================
+2026-07-07 17:03:48 | INFO     | __main__ |   Base URL    : https://cdn-ind.testnet.deltaex.org
+2026-07-07 17:03:49 | ERROR    | position_manager | Error fetching position: 401 Client Error: Unauthorized for url: https://cdn-ind.testnet.deltaex.org/v2/positions?product_id=27
+2026-07-07 17:03:50 | DEBUG    | market_data | [BTCUSD] Fetched 200 candles: 2026-07-07 11:17:10+00:00 to 2026-07-07 11:33:45+00:00
+2026-07-07 17:03:50 | INFO     | __main__ | [BTCUSD] No signal. Waiting for next candle.
+2026-07-07 17:03:50 | DEBUG    | __main__ | Sleeping for 58.5s
+2026-07-07 17:07:20 | INFO     | __main__ | =======================================================
+2026-07-07 17:07:20 | INFO     | __main__ |   Strategy Bot Starting: <bound method BollingerBandsStrategy.name of <strategies.bollinger_bands.BollingerBandsStrategy object at 0x0000027032558550>>
+2026-07-07 17:07:20 | INFO     | __main__ |   Symbol       : BTCUSD
+2026-07-07 17:07:20 | INFO     | __main__ |   Poll Interval: 60s
+2026-07-07 17:07:20 | INFO     | __main__ |   Timeframe    : 5s
+2026-07-07 17:07:20 | INFO     | __main__ |   Lot Size     : 1
+2026-07-07 17:07:20 | INFO     | __main__ |   Live/Paper   : paper
+2026-07-07 17:07:20 | INFO     | __main__ | =======================================================
+2026-07-07 17:07:20 | INFO     | __main__ |   Base URL    : https://cdn-ind.testnet.deltaex.org
+2026-07-07 17:07:21 | ERROR    | position_manager | Error fetching position: 401 Client Error: Unauthorized for url: https://cdn-ind.testnet.deltaex.org/v2/positions?product_id=27
+2026-07-07 17:07:21 | DEBUG    | market_data | [BTCUSD] Fetched 200 candles: 2026-07-07 11:20:45+00:00 to 2026-07-07 11:37:20+00:00
+2026-07-07 17:07:21 | INFO     | __main__ | [BTCUSD] No signal. Waiting for next candle.
+2026-07-07 17:07:21 | DEBUG    | __main__ | Sleeping for 59.3s
+2026-07-07 17:16:18 | INFO     | __main__ | =======================================================
+2026-07-07 17:16:18 | INFO     | __main__ |   Strategy Bot Starting: <bound method BollingerBandsStrategy.name of <strategies.bollinger_bands.BollingerBandsStrategy object at 0x00000273DB538E50>>
+2026-07-07 17:16:18 | INFO     | __main__ |   Symbol       : BTCUSD
+2026-07-07 17:16:18 | INFO     | __main__ |   Poll Interval: 60s
+2026-07-07 17:16:18 | INFO     | __main__ |   Timeframe    : 5s
+2026-07-07 17:16:18 | INFO     | __main__ |   Lot Size     : 1
+2026-07-07 17:16:18 | INFO     | __main__ |   Live/Paper   : paper
+2026-07-07 17:16:18 | INFO     | __main__ | =======================================================
+2026-07-07 17:16:18 | INFO     | __main__ |   Base URL    : https://cdn-ind.testnet.deltaex.org
+2026-07-07 17:16:19 | ERROR    | position_manager | Error fetching position: 401 Client Error: Unauthorized for url: https://cdn-ind.testnet.deltaex.org/v2/positions?product_id=27
+2026-07-07 17:16:20 | DEBUG    | market_data | [BTCUSD] Fetched 200 candles: 2026-07-07 11:29:40+00:00 to 2026-07-07 11:46:15+00:00
+2026-07-07 17:16:20 | INFO     | __main__ | [BTCUSD] No signal. Waiting for next candle.
+2026-07-07 17:16:20 | DEBUG    | __main__ | Sleeping for 59.1s
+2026-07-07 17:35:47 | INFO     | __main__ | =======================================================
+2026-07-07 17:35:47 | INFO     | __main__ |   Strategy Bot Starting: <bound method BollingerBandsStrategy.name of <strategies.bollinger_bands.BollingerBandsStrategy object at 0x000001F393FA43D0>>
+2026-07-07 17:35:47 | INFO     | __main__ |   Symbol       : BTCUSD
+2026-07-07 17:35:47 | INFO     | __main__ |   Poll Interval: 60s
+2026-07-07 17:35:47 | INFO     | __main__ |   Timeframe    : 5s
+2026-07-07 17:35:47 | INFO     | __main__ |   Lot Size     : 1
+2026-07-07 17:35:47 | INFO     | __main__ |   Live/Paper   : paper
+2026-07-07 17:35:47 | INFO     | __main__ | =======================================================
+2026-07-07 17:35:47 | INFO     | __main__ |   Base URL    : https://cdn-ind.testnet.deltaex.org
+2026-07-07 17:35:48 | ERROR    | position_manager | Error fetching position: 400 Client Error: Bad Request for url: https://cdn-ind.testnet.deltaex.org/v2/positions?product_id=27
+2026-07-07 17:35:49 | DEBUG    | market_data | [BTCUSD] Fetched 200 candles: 2026-07-07 11:49:10+00:00 to 2026-07-07 12:05:45+00:00
+2026-07-07 17:35:50 | INFO     | __main__ | [BTCUSD] No signal. Waiting for next candle.
+2026-07-07 17:35:50 | DEBUG    | __main__ | Sleeping for 58.6s
+2026-07-07 17:39:31 | INFO     | __main__ | =======================================================
+2026-07-07 17:39:31 | INFO     | __main__ |   Strategy Bot Starting: <bound method BollingerBandsStrategy.name of <strategies.bollinger_bands.BollingerBandsStrategy object at 0x0000015F1CB49C10>>
+2026-07-07 17:39:31 | INFO     | __main__ |   Symbol       : BTCUSD
+2026-07-07 17:39:31 | INFO     | __main__ |   Poll Interval: 60s
+2026-07-07 17:39:31 | INFO     | __main__ |   Timeframe    : 5s
+2026-07-07 17:39:31 | INFO     | __main__ |   Lot Size     : 1
+2026-07-07 17:39:31 | INFO     | __main__ |   Live/Paper   : paper
+2026-07-07 17:39:31 | INFO     | __main__ | =======================================================
+2026-07-07 17:39:31 | INFO     | __main__ |   Base URL    : https://cdn-ind.testnet.deltaex.org
+2026-07-07 17:39:31 | ERROR    | position_manager | Error fetching position: 400 Client Error: Bad Request for url: https://cdn-ind.testnet.deltaex.org/v2/positions?product_id=27
+2026-07-07 17:39:31 | INFO     | market_data | Fetching candles from https://cdn-ind.testnet.deltaex.org/v2/history/candles
+2026-07-07 17:39:32 | DEBUG    | market_data | [BTCUSD] Fetched 200 candles: 2026-07-07 11:52:50+00:00 to 2026-07-07 12:09:25+00:00
+2026-07-07 17:39:32 | INFO     | __main__ | [BTCUSD] No signal. Waiting for next candle.
+2026-07-07 17:39:32 | DEBUG    | __main__ | Sleeping for 59.6s
+2026-07-07 17:41:33 | INFO     | __main__ | =======================================================
+2026-07-07 17:41:33 | INFO     | __main__ |   Strategy Bot Starting: <bound method BollingerBandsStrategy.name of <strategies.bollinger_bands.BollingerBandsStrategy object at 0x0000023CAB87B1D0>>
+2026-07-07 17:41:33 | INFO     | __main__ |   Symbol       : BTCUSD
+2026-07-07 17:41:33 | INFO     | __main__ |   Poll Interval: 60s
+2026-07-07 17:41:33 | INFO     | __main__ |   Timeframe    : 5s
+2026-07-07 17:41:33 | INFO     | __main__ |   Lot Size     : 1
+2026-07-07 17:41:33 | INFO     | __main__ |   Live/Paper   : paper
+2026-07-07 17:41:33 | INFO     | __main__ | =======================================================
+2026-07-07 17:41:33 | INFO     | __main__ |   Base URL    : https://cdn-ind.testnet.deltaex.org
+2026-07-07 17:41:34 | ERROR    | position_manager | Error fetching position: 400 Client Error: Bad Request for url: https://cdn-ind.testnet.deltaex.org/v2/positions?product_id=27
+2026-07-07 17:41:34 | DEBUG    | market_data | [BTCUSD] Fetched 200 candles: 2026-07-07 11:54:50+00:00 to 2026-07-07 12:11:25+00:00
+2026-07-07 17:41:34 | INFO     | __main__ | [BTCUSD] No signal. Waiting for next candle.
+2026-07-07 17:41:34 | DEBUG    | __main__ | Sleeping for 59.6s
+2026-07-07 17:52:29 | INFO     | __main__ | =======================================================
+2026-07-07 17:52:29 | INFO     | __main__ |   Strategy Bot Starting: <bound method BollingerBandsStrategy.name of <strategies.bollinger_bands.BollingerBandsStrategy object at 0x00000181038A4850>>
+2026-07-07 17:52:29 | INFO     | __main__ |   Symbol       : BTCUSD
+2026-07-07 17:52:29 | INFO     | __main__ |   Poll Interval: 60s
+2026-07-07 17:52:29 | INFO     | __main__ |   Timeframe    : 5s
+2026-07-07 17:52:29 | INFO     | __main__ |   Lot Size     : 12
+2026-07-07 17:52:29 | INFO     | __main__ |   Live/Paper   : paper
+2026-07-07 17:52:29 | INFO     | __main__ |   Base URL     : https://cdn-ind.testnet.deltaex.org
+2026-07-07 17:52:29 | INFO     | __main__ |   API Key      : 41pSKO******
+2026-07-07 17:52:29 | INFO     | __main__ | =======================================================
+2026-07-07 17:52:30 | DEBUG    | market_data | [BTCUSD] product_id resolved from API (https://cdn-ind.testnet.deltaex.org): 84
+2026-07-07 17:52:31 | DEBUG    | market_data | [BTCUSD] Fetched 200 candles: 2026-07-07 12:05:45+00:00 to 2026-07-07 12:22:20+00:00
+2026-07-07 17:52:31 | INFO     | __main__ | [BTCUSD] No signal. Waiting for next candle.
+2026-07-07 17:52:31 | DEBUG    | __main__ | Sleeping for 59.5s
+2026-07-07 17:53:31 | DEBUG    | market_data | [BTCUSD] Fetched 200 candles: 2026-07-07 12:06:50+00:00 to 2026-07-07 12:23:25+00:00
+2026-07-07 17:53:31 | INFO     | __main__ | [BTCUSD] No signal. Waiting for next candle.
+2026-07-07 17:53:31 | DEBUG    | __main__ | Sleeping for 59.5s
+2026-07-07 17:54:31 | DEBUG    | market_data | [BTCUSD] Fetched 200 candles: 2026-07-07 12:07:50+00:00 to 2026-07-07 12:24:25+00:00
+2026-07-07 17:54:31 | INFO     | __main__ | [BTCUSD] No signal. Waiting for next candle.
+2026-07-07 17:54:31 | DEBUG    | __main__ | Sleeping for 59.5s
+2026-07-07 17:55:31 | DEBUG    | market_data | [BTCUSD] Fetched 200 candles: 2026-07-07 12:08:55+00:00 to 2026-07-07 12:25:30+00:00
+2026-07-07 17:55:31 | INFO     | __main__ | [BTCUSD] No signal. Waiting for next candle.
+2026-07-07 17:55:31 | DEBUG    | __main__ | Sleeping for 59.4s
+2026-07-07 17:56:31 | DEBUG    | market_data | [BTCUSD] Fetched 200 candles: 2026-07-07 12:09:55+00:00 to 2026-07-07 12:26:30+00:00
+2026-07-07 17:56:31 | INFO     | __main__ | [BTCUSD] No signal. Waiting for next candle.
+2026-07-07 17:56:31 | DEBUG    | __main__ | Sleeping for 59.3s
+2026-07-07 17:57:31 | DEBUG    | market_data | [BTCUSD] Fetched 200 candles: 2026-07-07 12:10:50+00:00 to 2026-07-07 12:27:25+00:00
+2026-07-07 17:57:31 | INFO     | __main__ | [BTCUSD] No signal. Waiting for next candle.
+2026-07-07 17:57:31 | DEBUG    | __main__ | Sleeping for 59.4s
+2026-07-07 17:58:31 | DEBUG    | market_data | [BTCUSD] Fetched 200 candles: 2026-07-07 12:11:50+00:00 to 2026-07-07 12:28:25+00:00
+2026-07-07 17:58:31 | INFO     | __main__ | [BTCUSD] No signal. Waiting for next candle.
+2026-07-07 17:58:31 | DEBUG    | __main__ | Sleeping for 59.2s
+2026-07-07 17:59:31 | DEBUG    | market_data | [BTCUSD] Fetched 200 candles: 2026-07-07 12:12:45+00:00 to 2026-07-07 12:29:20+00:00
+2026-07-07 17:59:31 | INFO     | __main__ | [BTCUSD] No signal. Waiting for next candle.
+2026-07-07 17:59:31 | DEBUG    | __main__ | Sleeping for 59.4s
+2026-07-07 18:00:31 | DEBUG    | market_data | [BTCUSD] Fetched 200 candles: 2026-07-07 12:13:50+00:00 to 2026-07-07 12:30:25+00:00
+2026-07-07 18:00:31 | INFO     | __main__ | [BTCUSD] No signal. Waiting for next candle.
+2026-07-07 18:00:31 | DEBUG    | __main__ | Sleeping for 59.5s
+2026-07-07 18:01:32 | DEBUG    | market_data | [BTCUSD] Fetched 200 candles: 2026-07-07 12:14:55+00:00 to 2026-07-07 12:31:30+00:00
+2026-07-07 18:01:32 | INFO     | __main__ | [BTCUSD] No signal. Waiting for next candle.
+2026-07-07 18:01:32 | DEBUG    | __main__ | Sleeping for 58.7s
+2026-07-07 18:02:31 | DEBUG    | market_data | [BTCUSD] Fetched 200 candles: 2026-07-07 12:15:50+00:00 to 2026-07-07 12:32:25+00:00
+2026-07-07 18:02:31 | DEBUG    | order_manager | [BTCUSD] Order payload: product_id=27 (int), size=12 (int), side=buy
+2026-07-07 18:02:32 | ERROR    | order_manager | [BTCUSD] Failed to place market order (buy): 400 Client Error: Bad Request for url: https://cdn-ind.testnet.deltaex.org/v2/orders | Response body: {"error":{"code":"invalid_contract"},"success":false}
+2026-07-07 18:02:32 | ERROR    | __main__ | [BTCUSD] Failed to place entry order.
+2026-07-07 18:02:32 | WARNING  | notifier | Telegram not configured. Skipping notification.
+2026-07-07 18:02:32 | DEBUG    | __main__ | Sleeping for 58.6s
+2026-07-07 18:03:31 | DEBUG    | market_data | [BTCUSD] Fetched 200 candles: 2026-07-07 12:16:50+00:00 to 2026-07-07 12:33:25+00:00
+2026-07-07 18:03:31 | INFO     | __main__ | [BTCUSD] No signal. Waiting for next candle.
+2026-07-07 18:03:31 | DEBUG    | __main__ | Sleeping for 59.5s
+2026-07-07 18:04:31 | DEBUG    | market_data | [BTCUSD] Fetched 200 candles: 2026-07-07 12:17:50+00:00 to 2026-07-07 12:34:25+00:00
+2026-07-07 18:04:31 | INFO     | __main__ | [BTCUSD] No signal. Waiting for next candle.
+2026-07-07 18:04:31 | DEBUG    | __main__ | Sleeping for 59.4s
+2026-07-07 18:05:31 | DEBUG    | market_data | [BTCUSD] Fetched 200 candles: 2026-07-07 12:18:50+00:00 to 2026-07-07 12:35:25+00:00
+2026-07-07 18:05:31 | INFO     | __main__ | [BTCUSD] No signal. Waiting for next candle.
+2026-07-07 18:05:31 | DEBUG    | __main__ | Sleeping for 59.4s
+2026-07-07 18:06:31 | DEBUG    | market_data | [BTCUSD] Fetched 200 candles: 2026-07-07 12:19:50+00:00 to 2026-07-07 12:36:25+00:00
+2026-07-07 18:06:31 | INFO     | __main__ | [BTCUSD] No signal. Waiting for next candle.
+2026-07-07 18:06:31 | DEBUG    | __main__ | Sleeping for 59.2s
+2026-07-07 18:07:31 | DEBUG    | market_data | [BTCUSD] Fetched 200 candles: 2026-07-07 12:20:50+00:00 to 2026-07-07 12:37:25+00:00
+2026-07-07 18:07:31 | INFO     | __main__ | [BTCUSD] No signal. Waiting for next candle.
+2026-07-07 18:07:31 | DEBUG    | __main__ | Sleeping for 59.4s
+2026-07-07 18:08:31 | DEBUG    | market_data | [BTCUSD] Fetched 200 candles: 2026-07-07 12:21:45+00:00 to 2026-07-07 12:38:20+00:00
+2026-07-07 18:08:31 | INFO     | __main__ | [BTCUSD] No signal. Waiting for next candle.
+2026-07-07 18:08:31 | DEBUG    | __main__ | Sleeping for 59.2s
+2026-07-07 18:09:31 | DEBUG    | market_data | [BTCUSD] Fetched 200 candles: 2026-07-07 12:22:50+00:00 to 2026-07-07 12:39:25+00:00
+2026-07-07 18:09:31 | INFO     | __main__ | [BTCUSD] No signal. Waiting for next candle.
+2026-07-07 18:09:31 | DEBUG    | __main__ | Sleeping for 59.5s
+2026-07-07 18:13:18 | INFO     | __main__ | =======================================================
+2026-07-07 18:13:18 | INFO     | __main__ |   Strategy Bot Starting: <bound method BollingerBandsStrategy.name of <strategies.bollinger_bands.BollingerBandsStrategy object at 0x000002688DAC6B10>>
+2026-07-07 18:13:18 | INFO     | __main__ |   Symbol       : BTCUSD
+2026-07-07 18:13:18 | INFO     | __main__ |   Poll Interval: 60s
+2026-07-07 18:13:18 | INFO     | __main__ |   Timeframe    : 5s
+2026-07-07 18:13:18 | INFO     | __main__ |   Lot Size     : 12
+2026-07-07 18:13:18 | INFO     | __main__ |   Live/Paper   : paper
+2026-07-07 18:13:18 | INFO     | __main__ |   Base URL     : https://cdn-ind.testnet.deltaex.org
+2026-07-07 18:13:18 | INFO     | __main__ |   API Key      : 41pSKO******
+2026-07-07 18:13:18 | INFO     | __main__ | =======================================================
+2026-07-07 18:13:18 | DEBUG    | market_data | [BTCUSD] product_id resolved from API (https://cdn-ind.testnet.deltaex.org): 84
+2026-07-07 18:13:19 | DEBUG    | market_data | [BTCUSD] Fetched 200 candles: 2026-07-07 12:26:40+00:00 to 2026-07-07 12:43:15+00:00
+2026-07-07 18:13:19 | INFO     | __main__ | [BTCUSD] No signal. Waiting for next candle.
+2026-07-07 18:13:19 | DEBUG    | __main__ | Sleeping for 59.5s
+2026-07-07 18:14:20 | DEBUG    | market_data | [BTCUSD] Fetched 200 candles: 2026-07-07 12:27:35+00:00 to 2026-07-07 12:44:10+00:00
+2026-07-07 18:14:20 | INFO     | __main__ | [BTCUSD] No signal. Waiting for next candle.
+2026-07-07 18:14:20 | DEBUG    | __main__ | Sleeping for 59.3s
+2026-07-07 18:15:19 | DEBUG    | market_data | [BTCUSD] Fetched 200 candles: 2026-07-07 12:28:35+00:00 to 2026-07-07 12:45:10+00:00
+2026-07-07 18:15:19 | INFO     | __main__ | [BTCUSD] No signal. Waiting for next candle.
+2026-07-07 18:15:19 | DEBUG    | __main__ | Sleeping for 59.5s
+2026-07-07 18:16:19 | DEBUG    | market_data | [BTCUSD] Fetched 200 candles: 2026-07-07 12:29:40+00:00 to 2026-07-07 12:46:15+00:00
+2026-07-07 18:16:19 | INFO     | __main__ | [BTCUSD] No signal. Waiting for next candle.
+2026-07-07 18:16:19 | DEBUG    | __main__ | Sleeping for 59.4s
+2026-07-07 18:17:19 | DEBUG    | market_data | [BTCUSD] Fetched 200 candles: 2026-07-07 12:30:40+00:00 to 2026-07-07 12:47:15+00:00
+2026-07-07 18:17:19 | INFO     | __main__ | [BTCUSD] No signal. Waiting for next candle.
+2026-07-07 18:17:19 | DEBUG    | __main__ | Sleeping for 59.4s
+2026-07-07 18:18:19 | DEBUG    | market_data | [BTCUSD] Fetched 200 candles: 2026-07-07 12:31:40+00:00 to 2026-07-07 12:48:15+00:00
+2026-07-07 18:18:19 | INFO     | __main__ | [BTCUSD] No signal. Waiting for next candle.
+2026-07-07 18:18:19 | DEBUG    | __main__ | Sleeping for 59.4s
+2026-07-07 18:19:19 | DEBUG    | market_data | [BTCUSD] Fetched 200 candles: 2026-07-07 12:32:35+00:00 to 2026-07-07 12:49:10+00:00
+2026-07-07 18:19:19 | INFO     | __main__ | [BTCUSD] No signal. Waiting for next candle.
+2026-07-07 18:19:19 | DEBUG    | __main__ | Sleeping for 59.4s
+2026-07-07 18:20:19 | DEBUG    | market_data | [BTCUSD] Fetched 200 candles: 2026-07-07 12:33:40+00:00 to 2026-07-07 12:50:15+00:00
+2026-07-07 18:20:19 | INFO     | __main__ | [BTCUSD] No signal. Waiting for next candle.
+2026-07-07 18:20:19 | DEBUG    | __main__ | Sleeping for 59.4s
+2026-07-07 18:21:20 | DEBUG    | market_data | [BTCUSD] Fetched 200 candles: 2026-07-07 12:34:40+00:00 to 2026-07-07 12:51:15+00:00
+2026-07-07 18:21:20 | INFO     | __main__ | [BTCUSD] No signal. Waiting for next candle.
+2026-07-07 18:21:20 | DEBUG    | __main__ | Sleeping for 59.1s
+2026-07-07 18:22:19 | DEBUG    | market_data | [BTCUSD] Fetched 200 candles: 2026-07-07 12:35:30+00:00 to 2026-07-07 12:52:05+00:00
+2026-07-07 18:22:19 | INFO     | __main__ | [BTCUSD] No signal. Waiting for next candle.
+2026-07-07 18:22:19 | DEBUG    | __main__ | Sleeping for 59.4s
+2026-07-07 18:23:19 | DEBUG    | market_data | [BTCUSD] Fetched 200 candles: 2026-07-07 12:36:40+00:00 to 2026-07-07 12:53:15+00:00
+2026-07-07 18:23:19 | INFO     | __main__ | [BTCUSD] No signal. Waiting for next candle.
+2026-07-07 18:23:19 | DEBUG    | __main__ | Sleeping for 59.5s
+2026-07-07 18:24:19 | DEBUG    | market_data | [BTCUSD] Fetched 200 candles: 2026-07-07 12:37:35+00:00 to 2026-07-07 12:54:10+00:00
+2026-07-07 18:24:19 | INFO     | __main__ | [BTCUSD] No signal. Waiting for next candle.
+2026-07-07 18:24:19 | DEBUG    | __main__ | Sleeping for 59.4s
+2026-07-07 18:25:19 | DEBUG    | market_data | [BTCUSD] Fetched 200 candles: 2026-07-07 12:38:40+00:00 to 2026-07-07 12:55:15+00:00
+2026-07-07 18:25:19 | INFO     | __main__ | [BTCUSD] No signal. Waiting for next candle.
+2026-07-07 18:25:19 | DEBUG    | __main__ | Sleeping for 59.4s
+2026-07-07 18:26:19 | DEBUG    | market_data | [BTCUSD] Fetched 200 candles: 2026-07-07 12:39:40+00:00 to 2026-07-07 12:56:15+00:00
+2026-07-07 18:26:19 | INFO     | __main__ | [BTCUSD] No signal. Waiting for next candle.
+2026-07-07 18:26:19 | DEBUG    | __main__ | Sleeping for 59.4s
+2026-07-07 18:27:19 | DEBUG    | market_data | [BTCUSD] Fetched 200 candles: 2026-07-07 12:40:35+00:00 to 2026-07-07 12:57:10+00:00
+2026-07-07 18:27:19 | INFO     | __main__ | [BTCUSD] No signal. Waiting for next candle.
+2026-07-07 18:27:19 | DEBUG    | __main__ | Sleeping for 59.5s
+2026-07-07 18:28:19 | DEBUG    | market_data | [BTCUSD] Fetched 200 candles: 2026-07-07 12:41:35+00:00 to 2026-07-07 12:58:10+00:00
+2026-07-07 18:28:19 | INFO     | __main__ | [BTCUSD] No signal. Waiting for next candle.
+2026-07-07 18:28:19 | DEBUG    | __main__ | Sleeping for 59.5s
+2026-07-07 18:29:19 | DEBUG    | market_data | [BTCUSD] Fetched 200 candles: 2026-07-07 12:42:40+00:00 to 2026-07-07 12:59:15+00:00
+2026-07-07 18:29:19 | INFO     | __main__ | [BTCUSD] No signal. Waiting for next candle.
+2026-07-07 18:29:19 | DEBUG    | __main__ | Sleeping for 59.5s
+2026-07-07 18:30:20 | DEBUG    | market_data | [BTCUSD] Fetched 200 candles: 2026-07-07 12:43:35+00:00 to 2026-07-07 13:00:10+00:00
+2026-07-07 18:30:20 | INFO     | __main__ | [BTCUSD] No signal. Waiting for next candle.
+2026-07-07 18:30:20 | DEBUG    | __main__ | Sleeping for 59.3s
+2026-07-07 18:31:19 | DEBUG    | market_data | [BTCUSD] Fetched 200 candles: 2026-07-07 12:44:40+00:00 to 2026-07-07 13:01:15+00:00
+2026-07-07 18:31:19 | INFO     | __main__ | [BTCUSD] No signal. Waiting for next candle.
+2026-07-07 18:31:19 | DEBUG    | __main__ | Sleeping for 59.5s
+2026-07-07 18:32:19 | DEBUG    | market_data | [BTCUSD] Fetched 200 candles: 2026-07-07 12:45:35+00:00 to 2026-07-07 13:02:10+00:00
+2026-07-07 18:32:20 | INFO     | __main__ | [BTCUSD] No signal. Waiting for next candle.
+2026-07-07 18:32:20 | DEBUG    | __main__ | Sleeping for 59.4s
+2026-07-07 18:33:20 | DEBUG    | market_data | [BTCUSD] Fetched 200 candles: 2026-07-07 12:46:35+00:00 to 2026-07-07 13:03:10+00:00
+2026-07-07 18:33:20 | INFO     | __main__ | [BTCUSD] No signal. Waiting for next candle.
+2026-07-07 18:33:20 | DEBUG    | __main__ | Sleeping for 59.3s
+2026-07-07 18:34:20 | DEBUG    | market_data | [BTCUSD] Fetched 200 candles: 2026-07-07 12:47:40+00:00 to 2026-07-07 13:04:15+00:00
+2026-07-07 18:34:20 | INFO     | __main__ | [BTCUSD] No signal. Waiting for next candle.
+2026-07-07 18:34:20 | DEBUG    | __main__ | Sleeping for 59.3s
+2026-07-07 18:35:20 | DEBUG    | market_data | [BTCUSD] Fetched 200 candles: 2026-07-07 12:48:40+00:00 to 2026-07-07 13:05:15+00:00
+2026-07-07 18:35:20 | INFO     | __main__ | [BTCUSD] No signal. Waiting for next candle.
+2026-07-07 18:35:20 | DEBUG    | __main__ | Sleeping for 59.3s
+2026-07-07 18:36:20 | DEBUG    | market_data | [BTCUSD] Fetched 200 candles: 2026-07-07 12:49:40+00:00 to 2026-07-07 13:06:15+00:00
+2026-07-07 18:36:20 | INFO     | __main__ | [BTCUSD] No signal. Waiting for next candle.
+2026-07-07 18:36:20 | DEBUG    | __main__ | Sleeping for 59.2s
+2026-07-07 18:37:19 | DEBUG    | market_data | [BTCUSD] Fetched 200 candles: 2026-07-07 12:50:40+00:00 to 2026-07-07 13:07:15+00:00
+2026-07-07 18:37:19 | INFO     | __main__ | [BTCUSD] No signal. Waiting for next candle.
+2026-07-07 18:37:19 | DEBUG    | __main__ | Sleeping for 59.4s
+2026-07-07 18:38:19 | DEBUG    | market_data | [BTCUSD] Fetched 200 candles: 2026-07-07 12:51:40+00:00 to 2026-07-07 13:08:15+00:00
+2026-07-07 18:38:19 | INFO     | __main__ | [BTCUSD] No signal. Waiting for next candle.
+2026-07-07 18:38:19 | DEBUG    | __main__ | Sleeping for 59.4s
+2026-07-07 18:39:20 | DEBUG    | market_data | [BTCUSD] Fetched 200 candles: 2026-07-07 12:52:40+00:00 to 2026-07-07 13:09:15+00:00
+2026-07-07 18:39:20 | INFO     | __main__ | [BTCUSD] No signal. Waiting for next candle.
+2026-07-07 18:39:20 | DEBUG    | __main__ | Sleeping for 59.4s
+2026-07-07 18:40:19 | DEBUG    | market_data | [BTCUSD] Fetched 200 candles: 2026-07-07 12:53:40+00:00 to 2026-07-07 13:10:15+00:00
+2026-07-07 18:40:19 | DEBUG    | order_manager | [BTCUSD] Order payload: product_id=27 (int), size=12 (int), side=sell
+2026-07-07 18:40:20 | ERROR    | order_manager | [BTCUSD] Failed to place market order (sell): 400 Client Error: Bad Request for url: https://cdn-ind.testnet.deltaex.org/v2/orders | Response body: {"error":{"code":"invalid_contract"},"success":false}
+2026-07-07 18:40:20 | ERROR    | __main__ | [BTCUSD] Failed to place entry order.
+2026-07-07 18:40:20 | WARNING  | notifier | Telegram not configured. Skipping notification.
+2026-07-07 18:40:20 | DEBUG    | __main__ | Sleeping for 58.9s
+2026-07-07 18:41:19 | DEBUG    | market_data | [BTCUSD] Fetched 200 candles: 2026-07-07 12:54:40+00:00 to 2026-07-07 13:11:15+00:00
+2026-07-07 18:41:19 | INFO     | __main__ | [BTCUSD] No signal. Waiting for next candle.
+2026-07-07 18:41:19 | DEBUG    | __main__ | Sleeping for 59.4s
+2026-07-07 18:42:19 | DEBUG    | market_data | [BTCUSD] Fetched 200 candles: 2026-07-07 12:55:30+00:00 to 2026-07-07 13:12:05+00:00
+2026-07-07 18:42:19 | DEBUG    | order_manager | [BTCUSD] Order payload: product_id=27 (int), size=12 (int), side=buy
+2026-07-07 18:42:20 | ERROR    | order_manager | [BTCUSD] Failed to place market order (buy): 400 Client Error: Bad Request for url: https://cdn-ind.testnet.deltaex.org/v2/orders | Response body: {"error":{"code":"invalid_contract"},"success":false}
+2026-07-07 18:42:20 | ERROR    | __main__ | [BTCUSD] Failed to place entry order.
+2026-07-07 18:42:20 | WARNING  | notifier | Telegram not configured. Skipping notification.
+2026-07-07 18:42:20 | DEBUG    | __main__ | Sleeping for 58.9s
+2026-07-07 18:43:19 | DEBUG    | market_data | [BTCUSD] Fetched 200 candles: 2026-07-07 12:56:40+00:00 to 2026-07-07 13:13:15+00:00
+2026-07-07 18:43:19 | INFO     | __main__ | [BTCUSD] No signal. Waiting for next candle.
+2026-07-07 18:43:19 | DEBUG    | __main__ | Sleeping for 59.4s
+2026-07-07 18:44:20 | DEBUG    | market_data | [BTCUSD] Fetched 200 candles: 2026-07-07 12:57:40+00:00 to 2026-07-07 13:14:15+00:00
+2026-07-07 18:44:20 | INFO     | __main__ | [BTCUSD] No signal. Waiting for next candle.
+2026-07-07 18:44:20 | DEBUG    | __main__ | Sleeping for 59.3s
+2026-07-07 18:45:20 | DEBUG    | market_data | [BTCUSD] Fetched 200 candles: 2026-07-07 12:58:40+00:00 to 2026-07-07 13:15:15+00:00
+2026-07-07 18:45:20 | INFO     | __main__ | [BTCUSD] No signal. Waiting for next candle.
+2026-07-07 18:45:20 | DEBUG    | __main__ | Sleeping for 59.3s
+2026-07-07 18:46:20 | DEBUG    | market_data | [BTCUSD] Fetched 200 candles: 2026-07-07 12:59:40+00:00 to 2026-07-07 13:16:15+00:00
+2026-07-07 18:46:20 | INFO     | __main__ | [BTCUSD] No signal. Waiting for next candle.
+2026-07-07 18:46:20 | DEBUG    | __main__ | Sleeping for 59.1s
+2026-07-07 18:47:19 | DEBUG    | market_data | [BTCUSD] Fetched 200 candles: 2026-07-07 13:00:40+00:00 to 2026-07-07 13:17:15+00:00
+2026-07-07 18:47:19 | DEBUG    | order_manager | [BTCUSD] Order payload: product_id=27 (int), size=12 (int), side=buy
+2026-07-07 18:47:20 | ERROR    | order_manager | [BTCUSD] Failed to place market order (buy): 400 Client Error: Bad Request for url: https://cdn-ind.testnet.deltaex.org/v2/orders | Response body: {"error":{"code":"invalid_contract"},"success":false}
+2026-07-07 18:47:20 | ERROR    | __main__ | [BTCUSD] Failed to place entry order.
+2026-07-07 18:47:20 | WARNING  | notifier | Telegram not configured. Skipping notification.
+2026-07-07 18:47:20 | DEBUG    | __main__ | Sleeping for 58.8s
+2026-07-07 18:48:20 | DEBUG    | market_data | [BTCUSD] Fetched 200 candles: 2026-07-07 13:01:40+00:00 to 2026-07-07 13:18:15+00:00
+2026-07-07 18:48:20 | INFO     | __main__ | [BTCUSD] No signal. Waiting for next candle.
+2026-07-07 18:48:20 | DEBUG    | __main__ | Sleeping for 59.4s
+2026-07-07 18:49:19 | DEBUG    | market_data | [BTCUSD] Fetched 200 candles: 2026-07-07 13:02:35+00:00 to 2026-07-07 13:19:10+00:00
+2026-07-07 18:49:19 | INFO     | __main__ | [BTCUSD] No signal. Waiting for next candle.
+2026-07-07 18:49:19 | DEBUG    | __main__ | Sleeping for 59.4s
+2026-07-07 18:50:19 | DEBUG    | market_data | [BTCUSD] Fetched 200 candles: 2026-07-07 13:03:35+00:00 to 2026-07-07 13:20:10+00:00
+2026-07-07 18:50:19 | INFO     | __main__ | [BTCUSD] No signal. Waiting for next candle.
+2026-07-07 18:50:19 | DEBUG    | __main__ | Sleeping for 59.5s
+2026-07-07 18:51:20 | DEBUG    | market_data | [BTCUSD] Fetched 200 candles: 2026-07-07 13:04:40+00:00 to 2026-07-07 13:21:15+00:00
+2026-07-07 18:51:20 | INFO     | __main__ | [BTCUSD] No signal. Waiting for next candle.
+2026-07-07 18:51:20 | DEBUG    | __main__ | Sleeping for 59.4s
+2026-07-07 18:52:20 | DEBUG    | market_data | [BTCUSD] Fetched 200 candles: 2026-07-07 13:05:40+00:00 to 2026-07-07 13:22:15+00:00
+2026-07-07 18:52:20 | INFO     | __main__ | [BTCUSD] No signal. Waiting for next candle.
+2026-07-07 18:52:20 | DEBUG    | __main__ | Sleeping for 59.0s
+2026-07-07 18:53:19 | DEBUG    | market_data | [BTCUSD] Fetched 200 candles: 2026-07-07 13:06:40+00:00 to 2026-07-07 13:23:15+00:00
+2026-07-07 18:53:19 | INFO     | __main__ | [BTCUSD] No signal. Waiting for next candle.
+2026-07-07 18:53:19 | DEBUG    | __main__ | Sleeping for 59.4s
+2026-07-07 18:54:20 | DEBUG    | market_data | [BTCUSD] Fetched 200 candles: 2026-07-07 13:07:40+00:00 to 2026-07-07 13:24:15+00:00
+2026-07-07 18:54:20 | INFO     | __main__ | [BTCUSD] No signal. Waiting for next candle.
+2026-07-07 18:54:20 | DEBUG    | __main__ | Sleeping for 59.4s
+2026-07-07 18:54:26 | INFO     | __main__ | =======================================================
+2026-07-07 18:54:26 | INFO     | __main__ |   Strategy Bot Starting: <bound method BollingerBandsStrategy.name of <strategies.bollinger_bands.BollingerBandsStrategy object at 0x0000022C6D923910>>
+2026-07-07 18:54:26 | INFO     | __main__ |   Symbol       : BTCUSD
+2026-07-07 18:54:26 | INFO     | __main__ |   Poll Interval: 60s
+2026-07-07 18:54:26 | INFO     | __main__ |   Timeframe    : 5s
+2026-07-07 18:54:26 | INFO     | __main__ |   Lot Size     : 12
+2026-07-07 18:54:26 | INFO     | __main__ |   Live/Paper   : paper
+2026-07-07 18:54:26 | INFO     | __main__ |   Base URL     : https://cdn-ind.testnet.deltaex.org
+2026-07-07 18:54:26 | INFO     | __main__ |   API Key      : 41pSKO******
+2026-07-07 18:54:26 | INFO     | __main__ | =======================================================
+2026-07-07 18:54:26 | DEBUG    | market_data | [BTCUSD] product_id resolved from API (https://cdn-ind.testnet.deltaex.org): 84
+2026-07-07 18:54:27 | DEBUG    | market_data | [BTCUSD] Fetched 200 candles: 2026-07-07 13:07:40+00:00 to 2026-07-07 13:24:15+00:00
+2026-07-07 18:54:27 | INFO     | __main__ | [BTCUSD] No signal. Waiting for next candle.
+2026-07-07 18:54:27 | DEBUG    | __main__ | Sleeping for 59.5s
+2026-07-07 18:55:28 | DEBUG    | market_data | [BTCUSD] Fetched 200 candles: 2026-07-07 13:08:50+00:00 to 2026-07-07 13:25:25+00:00
+2026-07-07 18:55:28 | INFO     | __main__ | [BTCUSD] No signal. Waiting for next candle.
+2026-07-07 18:55:28 | DEBUG    | __main__ | Sleeping for 59.5s
+2026-07-07 18:56:21 | INFO     | __main__ | =======================================================
+2026-07-07 18:56:21 | INFO     | __main__ |   Strategy Bot Starting: <bound method BollingerBandsStrategy.name of <strategies.bollinger_bands.BollingerBandsStrategy object at 0x00000215A8D53550>>
+2026-07-07 18:56:21 | INFO     | __main__ |   Symbol       : BTCUSD
+2026-07-07 18:56:21 | INFO     | __main__ |   Poll Interval: 60s
+2026-07-07 18:56:21 | INFO     | __main__ |   Timeframe    : 5s
+2026-07-07 18:56:21 | INFO     | __main__ |   Lot Size     : 12
+2026-07-07 18:56:21 | INFO     | __main__ |   Live/Paper   : paper
+2026-07-07 18:56:21 | INFO     | __main__ |   Base URL     : https://cdn-ind.testnet.deltaex.org
+2026-07-07 18:56:21 | INFO     | __main__ |   API Key      : 41pSKO******
+2026-07-07 18:56:21 | INFO     | __main__ | =======================================================
+2026-07-07 18:56:22 | DEBUG    | market_data | [BTCUSD] product_id resolved from API (https://cdn-ind.testnet.deltaex.org): 84
+2026-07-07 18:56:23 | DEBUG    | market_data | [BTCUSD] Fetched 200 candles: 2026-07-07 13:09:45+00:00 to 2026-07-07 13:26:20+00:00
+2026-07-07 18:56:23 | INFO     | __main__ | [BTCUSD] No signal. Waiting for next candle.
+2026-07-07 18:56:23 | DEBUG    | __main__ | Sleeping for 59.5s
+2026-07-07 18:57:23 | DEBUG    | market_data | [BTCUSD] Fetched 200 candles: 2026-07-07 13:10:35+00:00 to 2026-07-07 13:27:10+00:00
+2026-07-07 18:57:23 | INFO     | __main__ | [BTCUSD] No signal. Waiting for next candle.
+2026-07-07 18:57:23 | DEBUG    | __main__ | Sleeping for 59.3s
+2026-07-07 18:58:23 | DEBUG    | market_data | [BTCUSD] Fetched 200 candles: 2026-07-07 13:11:45+00:00 to 2026-07-07 13:28:20+00:00
+2026-07-07 18:58:23 | INFO     | __main__ | [BTCUSD] No signal. Waiting for next candle.
+2026-07-07 18:58:23 | DEBUG    | __main__ | Sleeping for 59.5s
+2026-07-07 18:59:23 | DEBUG    | market_data | [BTCUSD] Fetched 200 candles: 2026-07-07 13:12:40+00:00 to 2026-07-07 13:29:15+00:00
+2026-07-07 18:59:23 | INFO     | __main__ | [BTCUSD] No signal. Waiting for next candle.
+2026-07-07 18:59:23 | DEBUG    | __main__ | Sleeping for 59.5s
+2026-07-07 19:00:23 | DEBUG    | market_data | [BTCUSD] Fetched 200 candles: 2026-07-07 13:13:45+00:00 to 2026-07-07 13:30:20+00:00
+2026-07-07 19:00:23 | INFO     | __main__ | [BTCUSD] No signal. Waiting for next candle.
+2026-07-07 19:00:23 | DEBUG    | __main__ | Sleeping for 59.4s
+2026-07-07 19:00:43 | INFO     | __main__ | =======================================================
+2026-07-07 19:00:43 | INFO     | __main__ |   Strategy Bot Starting: <bound method BollingerBandsStrategy.name of <strategies.bollinger_bands.BollingerBandsStrategy object at 0x000002E1B2632FD0>>
+2026-07-07 19:00:43 | INFO     | __main__ |   Symbol       : BTCUSD
+2026-07-07 19:00:43 | INFO     | __main__ |   Poll Interval: 60s
+2026-07-07 19:00:43 | INFO     | __main__ |   Timeframe    : 5s
+2026-07-07 19:00:43 | INFO     | __main__ |   Lot Size     : 12
+2026-07-07 19:00:43 | INFO     | __main__ |   Live/Paper   : paper
+2026-07-07 19:00:43 | INFO     | __main__ |   Base URL     : https://cdn-ind.testnet.deltaex.org
+2026-07-07 19:00:43 | INFO     | __main__ |   API Key      : 41pSKO******
+2026-07-07 19:00:43 | INFO     | __main__ | =======================================================
+2026-07-07 19:00:43 | DEBUG    | market_data | [BTCUSD] product_id resolved from API (https://cdn-ind.testnet.deltaex.org): 84
+2026-07-07 19:00:44 | DEBUG    | market_data | [BTCUSD] Fetched 200 candles: 2026-07-07 13:14:05+00:00 to 2026-07-07 13:30:40+00:00
+2026-07-07 19:00:44 | INFO     | __main__ | [BTCUSD] No signal. Waiting for next candle.
+2026-07-07 19:00:44 | DEBUG    | __main__ | Sleeping for 59.2s
+2026-07-07 19:01:44 | DEBUG    | market_data | [BTCUSD] Fetched 200 candles: 2026-07-07 13:15:00+00:00 to 2026-07-07 13:31:35+00:00
+2026-07-07 19:01:44 | INFO     | __main__ | [BTCUSD] No signal. Waiting for next candle.
+2026-07-07 19:01:44 | DEBUG    | __main__ | Sleeping for 59.4s
+2026-07-07 19:04:19 | INFO     | __main__ | =======================================================
+2026-07-07 19:04:19 | INFO     | __main__ |   Strategy Bot Starting: <bound method BollingerBandsStrategy.name of <strategies.bollinger_bands.BollingerBandsStrategy object at 0x000002883FDB63D0>>(period=20, std=2.2, trail_activation_pct=1.0, trail_pct=0.8, stop_loss_pct=1.0, take_profit_pct=1.5, tp_extension_pct=0.3, volume_period=20, volume_multiplier=1.2)
+2026-07-07 19:04:19 | INFO     | __main__ |   Symbol       : BTCUSD
+2026-07-07 19:04:19 | INFO     | __main__ |   Poll Interval: 60s
+2026-07-07 19:04:19 | INFO     | __main__ |   Timeframe    : 5s
+2026-07-07 19:04:19 | INFO     | __main__ |   Lot Size     : 12
+2026-07-07 19:04:19 | INFO     | __main__ |   Live/Paper   : paper
+2026-07-07 19:04:19 | INFO     | __main__ |   Base URL     : https://cdn-ind.testnet.deltaex.org
+2026-07-07 19:04:19 | INFO     | __main__ |   API Key      : 41pSKO******
+2026-07-07 19:04:19 | INFO     | __main__ | =======================================================
+2026-07-07 19:04:19 | DEBUG    | market_data | [BTCUSD] product_id resolved from API (https://cdn-ind.testnet.deltaex.org): 84
+2026-07-07 19:04:20 | DEBUG    | market_data | [BTCUSD] Fetched 200 candles: 2026-07-07 13:17:40+00:00 to 2026-07-07 13:34:15+00:00
+2026-07-07 19:04:20 | INFO     | __main__ | [BTCUSD] No signal. Waiting for next candle.
+2026-07-07 19:04:20 | DEBUG    | __main__ | Sleeping for 59.5s
+2026-07-07 19:04:56 | INFO     | __main__ | =======================================================
+2026-07-07 19:04:56 | INFO     | __main__ |   Strategy Bot Starting: Bollinger Bands
+2026-07-07 19:04:56 | INFO     | __main__ |   Symbol       : BTCUSD
+2026-07-07 19:04:56 | INFO     | __main__ |   Poll Interval: 60s
+2026-07-07 19:04:56 | INFO     | __main__ |   Timeframe    : 5s
+2026-07-07 19:04:56 | INFO     | __main__ |   Lot Size     : 12
+2026-07-07 19:04:56 | INFO     | __main__ |   Live/Paper   : paper
+2026-07-07 19:04:56 | INFO     | __main__ |   Base URL     : https://cdn-ind.testnet.deltaex.org
+2026-07-07 19:04:56 | INFO     | __main__ |   API Key      : 41pSKO******
+2026-07-07 19:04:56 | INFO     | __main__ | =======================================================
+2026-07-07 19:04:57 | DEBUG    | market_data | [BTCUSD] product_id resolved from API (https://cdn-ind.testnet.deltaex.org): 84
+2026-07-07 19:04:58 | DEBUG    | market_data | [BTCUSD] Fetched 200 candles: 2026-07-07 13:18:20+00:00 to 2026-07-07 13:34:55+00:00
+2026-07-07 19:04:58 | INFO     | __main__ | [BTCUSD] No signal. Waiting for next candle.
+2026-07-07 19:04:58 | DEBUG    | __main__ | Sleeping for 59.6s
+2026-07-07 19:05:58 | DEBUG    | market_data | [BTCUSD] Fetched 200 candles: 2026-07-07 13:19:20+00:00 to 2026-07-07 13:35:55+00:00
+2026-07-07 19:05:58 | INFO     | __main__ | [BTCUSD] No signal. Waiting for next candle.
+2026-07-07 19:05:58 | DEBUG    | __main__ | Sleeping for 59.5s
+2026-07-07 19:06:58 | DEBUG    | market_data | [BTCUSD] Fetched 200 candles: 2026-07-07 13:20:20+00:00 to 2026-07-07 13:36:55+00:00
+2026-07-07 19:06:58 | INFO     | __main__ | [BTCUSD] No signal. Waiting for next candle.
+2026-07-07 19:06:58 | DEBUG    | __main__ | Sleeping for 59.5s
+2026-07-07 19:07:58 | DEBUG    | market_data | [BTCUSD] Fetched 200 candles: 2026-07-07 13:21:20+00:00 to 2026-07-07 13:37:55+00:00
+2026-07-07 19:07:58 | DEBUG    | market_data | [BTCUSD] product_id resolved from cache: 84
+2026-07-07 19:07:58 | INFO     | order_manager | [BTCUSD] Placing order with product_id=84 on base_url=https://cdn-ind.testnet.deltaex.org | USE_TESTNET=True
+2026-07-07 19:07:58 | DEBUG    | order_manager | [BTCUSD] Order payload: product_id=84 (int), size=12 (int), side=buy
+2026-07-07 19:07:59 | INFO     | order_manager | [BTCUSD] Market order placed: BUY 12 lots | Response: {'meta': {}, 'success': True, 'result': {'updated_at': '2026-07-07T13:37:59.112940Z', 'bracket_stop_loss_price': None, 'stop_price': None, 'commission': '0', 'user_id': 57401446, 'meta_data': {'cashflow': '0', 'ip': '103.70.197.223', 'otc': False, 'pnl': '0', 'source': 'api'}, 'bracket_order': None, 'stop_order_type': None, 'client_order_id': None, 'order_type': 'market_order', 'mmp': 'disabled', 'side': 'buy', 'quote_size': None, 'created_at': '2026-07-07T13:37:58.993301Z', 'bracket_take_profit_limit_price': None, 'size': 12, 'average_fill_price': '63095.5', 'paid_commission': '0.44671614', 'bracket_take_profit_price': None, 'limit_price': '126184', 'reduce_only': False, 'unfilled_size': 0, 'cancellation_reason': None, 'trail_amount': None, 'stop_trigger_method': None, 'bracket_stop_loss_limit_price': None, 'bracket_trail_amount': None, 'product_symbol': 'BTCUSD', 'id': 2165369244, 'margin_mode': 'cross', 'time_in_force': 'ioc', 'state': 'closed', 'product_id': 84}}
+2026-07-07 19:07:59 | WARNING  | notifier | Telegram not configured. Skipping notification.
+2026-07-07 19:07:59 | INFO     | __main__ | [BTCUSD] Entry executed: BUY @ 63095.5 | SL=63089.2 TP=63105.0
+2026-07-07 19:07:59 | DEBUG    | __main__ | Sleeping for 58.7s
+2026-07-07 19:08:58 | DEBUG    | market_data | [BTCUSD] Fetched 200 candles: 2026-07-07 13:22:15+00:00 to 2026-07-07 13:38:50+00:00
+2026-07-07 19:08:58 | INFO     | __main__ | [BTCUSD] Holding BUY @ 63095.5 | best_price=63095.5
+2026-07-07 19:08:58 | DEBUG    | __main__ | Sleeping for 59.5s
+2026-07-07 19:09:58 | DEBUG    | market_data | [BTCUSD] Fetched 200 candles: 2026-07-07 13:23:20+00:00 to 2026-07-07 13:39:55+00:00
+2026-07-07 19:09:58 | INFO     | __main__ | [BTCUSD] Holding BUY @ 63095.5 | best_price=63095.5
+2026-07-07 19:09:58 | DEBUG    | __main__ | Sleeping for 59.4s
+2026-07-07 19:10:59 | DEBUG    | market_data | [BTCUSD] Fetched 200 candles: 2026-07-07 13:24:20+00:00 to 2026-07-07 13:40:55+00:00
+2026-07-07 19:10:59 | INFO     | __main__ | [BTCUSD] Holding BUY @ 63095.5 | best_price=63095.5
+2026-07-07 19:10:59 | DEBUG    | __main__ | Sleeping for 59.3s
+2026-07-07 19:11:58 | DEBUG    | market_data | [BTCUSD] Fetched 200 candles: 2026-07-07 13:25:15+00:00 to 2026-07-07 13:41:50+00:00
+2026-07-07 19:11:58 | INFO     | __main__ | [BTCUSD] Holding BUY @ 63095.5 | best_price=63095.5
+2026-07-07 19:11:58 | DEBUG    | __main__ | Sleeping for 59.4s
+2026-07-07 19:12:58 | DEBUG    | market_data | [BTCUSD] Fetched 200 candles: 2026-07-07 13:26:20+00:00 to 2026-07-07 13:42:55+00:00
+2026-07-07 19:12:58 | INFO     | __main__ | [BTCUSD] Holding BUY @ 63095.5 | best_price=63095.5
+2026-07-07 19:12:58 | DEBUG    | __main__ | Sleeping for 59.4s
+2026-07-07 19:13:58 | DEBUG    | market_data | [BTCUSD] Fetched 200 candles: 2026-07-07 13:27:20+00:00 to 2026-07-07 13:43:55+00:00
+2026-07-07 19:13:58 | INFO     | __main__ | [BTCUSD] Holding BUY @ 63095.5 | best_price=63101.5
+2026-07-07 19:13:58 | DEBUG    | __main__ | Sleeping for 59.5s
+2026-07-07 19:14:58 | DEBUG    | market_data | [BTCUSD] Fetched 200 candles: 2026-07-07 13:28:20+00:00 to 2026-07-07 13:44:55+00:00
+2026-07-07 19:14:58 | INFO     | __main__ | [BTCUSD] Holding BUY @ 63095.5 | best_price=63135.5
+2026-07-07 19:14:58 | DEBUG    | __main__ | Sleeping for 59.5s
+2026-07-07 19:15:58 | DEBUG    | market_data | [BTCUSD] Fetched 200 candles: 2026-07-07 13:29:20+00:00 to 2026-07-07 13:45:55+00:00
+2026-07-07 19:15:58 | INFO     | __main__ | [BTCUSD] Holding BUY @ 63095.5 | best_price=63200.0
+2026-07-07 19:15:58 | DEBUG    | __main__ | Sleeping for 59.4s
+2026-07-07 19:16:59 | DEBUG    | market_data | [BTCUSD] Fetched 200 candles: 2026-07-07 13:30:20+00:00 to 2026-07-07 13:46:55+00:00
+2026-07-07 19:16:59 | INFO     | __main__ | [BTCUSD] Holding BUY @ 63095.5 | best_price=63342.0
+2026-07-07 19:16:59 | DEBUG    | __main__ | Sleeping for 59.3s
+2026-07-07 19:17:58 | DEBUG    | market_data | [BTCUSD] Fetched 200 candles: 2026-07-07 13:31:20+00:00 to 2026-07-07 13:47:55+00:00
+2026-07-07 19:17:58 | INFO     | __main__ | [BTCUSD] Holding BUY @ 63095.5 | best_price=63342.0
+2026-07-07 19:17:58 | DEBUG    | __main__ | Sleeping for 59.5s
+2026-07-07 19:18:58 | DEBUG    | market_data | [BTCUSD] Fetched 200 candles: 2026-07-07 13:32:20+00:00 to 2026-07-07 13:48:55+00:00
+2026-07-07 19:18:58 | INFO     | __main__ | [BTCUSD] Holding BUY @ 63095.5 | best_price=63342.0
+2026-07-07 19:18:58 | DEBUG    | __main__ | Sleeping for 59.4s
+2026-07-07 19:19:58 | DEBUG    | market_data | [BTCUSD] Fetched 200 candles: 2026-07-07 13:33:15+00:00 to 2026-07-07 13:49:50+00:00
+2026-07-07 19:19:58 | INFO     | __main__ | [BTCUSD] Holding BUY @ 63095.5 | best_price=63342.0
+2026-07-07 19:19:58 | DEBUG    | __main__ | Sleeping for 59.5s
+2026-07-07 19:20:58 | DEBUG    | market_data | [BTCUSD] Fetched 200 candles: 2026-07-07 13:34:20+00:00 to 2026-07-07 13:50:55+00:00
+2026-07-07 19:20:58 | INFO     | __main__ | [BTCUSD] Holding BUY @ 63095.5 | best_price=63350.5
+2026-07-07 19:20:58 | DEBUG    | __main__ | Sleeping for 59.5s
+2026-07-07 19:21:59 | DEBUG    | market_data | [BTCUSD] Fetched 200 candles: 2026-07-07 13:35:20+00:00 to 2026-07-07 13:51:55+00:00
+2026-07-07 19:21:59 | INFO     | __main__ | [BTCUSD] Holding BUY @ 63095.5 | best_price=63350.5
+2026-07-07 19:21:59 | DEBUG    | __main__ | Sleeping for 59.1s
+2026-07-07 19:22:58 | DEBUG    | market_data | [BTCUSD] Fetched 200 candles: 2026-07-07 13:36:15+00:00 to 2026-07-07 13:52:50+00:00
+2026-07-07 19:22:58 | INFO     | __main__ | [BTCUSD] Holding BUY @ 63095.5 | best_price=63350.5
+2026-07-07 19:22:58 | DEBUG    | __main__ | Sleeping for 59.5s
+2026-07-07 19:23:58 | DEBUG    | market_data | [BTCUSD] Fetched 200 candles: 2026-07-07 13:37:20+00:00 to 2026-07-07 13:53:55+00:00
+2026-07-07 19:23:58 | INFO     | __main__ | [BTCUSD] Holding BUY @ 63095.5 | best_price=63350.5
+2026-07-07 19:23:58 | DEBUG    | __main__ | Sleeping for 59.4s
+2026-07-07 19:24:59 | DEBUG    | market_data | [BTCUSD] Fetched 200 candles: 2026-07-07 13:38:20+00:00 to 2026-07-07 13:54:55+00:00
+2026-07-07 19:24:59 | INFO     | __main__ | [BTCUSD] Holding BUY @ 63095.5 | best_price=63350.5
+2026-07-07 19:24:59 | DEBUG    | __main__ | Sleeping for 59.3s
+2026-07-07 19:25:58 | DEBUG    | market_data | [BTCUSD] Fetched 200 candles: 2026-07-07 13:39:20+00:00 to 2026-07-07 13:55:55+00:00
+2026-07-07 19:25:58 | INFO     | __main__ | [BTCUSD] Holding BUY @ 63095.5 | best_price=63350.5
+2026-07-07 19:25:58 | DEBUG    | __main__ | Sleeping for 59.5s
+2026-07-07 19:26:58 | DEBUG    | market_data | [BTCUSD] Fetched 200 candles: 2026-07-07 13:40:20+00:00 to 2026-07-07 13:56:55+00:00
+2026-07-07 19:26:58 | INFO     | __main__ | [BTCUSD] Holding BUY @ 63095.5 | best_price=63350.5
+2026-07-07 19:26:58 | DEBUG    | __main__ | Sleeping for 59.4s
+2026-07-07 19:27:58 | DEBUG    | market_data | [BTCUSD] Fetched 200 candles: 2026-07-07 13:41:20+00:00 to 2026-07-07 13:57:55+00:00
+2026-07-07 19:27:58 | INFO     | __main__ | [BTCUSD] Holding BUY @ 63095.5 | best_price=63350.5
+2026-07-07 19:27:58 | DEBUG    | __main__ | Sleeping for 59.5s
+2026-07-07 19:28:59 | DEBUG    | market_data | [BTCUSD] Fetched 200 candles: 2026-07-07 13:42:20+00:00 to 2026-07-07 13:58:55+00:00
+2026-07-07 19:28:59 | INFO     | __main__ | [BTCUSD] Holding BUY @ 63095.5 | best_price=63350.5
+2026-07-07 19:28:59 | DEBUG    | __main__ | Sleeping for 59.2s
+2026-07-07 19:29:58 | DEBUG    | market_data | [BTCUSD] Fetched 200 candles: 2026-07-07 13:43:20+00:00 to 2026-07-07 13:59:55+00:00
+2026-07-07 19:29:58 | INFO     | __main__ | [BTCUSD] Holding BUY @ 63095.5 | best_price=63350.5
+2026-07-07 19:29:58 | DEBUG    | __main__ | Sleeping for 59.5s
+2026-07-07 19:30:59 | DEBUG    | market_data | [BTCUSD] Fetched 200 candles: 2026-07-07 13:44:20+00:00 to 2026-07-07 14:00:55+00:00
+2026-07-07 19:30:59 | INFO     | __main__ | [BTCUSD] Holding BUY @ 63095.5 | best_price=63350.5
+2026-07-07 19:30:59 | DEBUG    | __main__ | Sleeping for 59.2s
+2026-07-07 19:31:58 | DEBUG    | market_data | [BTCUSD] Fetched 200 candles: 2026-07-07 13:45:15+00:00 to 2026-07-07 14:01:50+00:00
+2026-07-07 19:31:58 | INFO     | __main__ | [BTCUSD] Holding BUY @ 63095.5 | best_price=63350.5
+2026-07-07 19:31:58 | DEBUG    | __main__ | Sleeping for 59.5s
+2026-07-07 19:32:58 | DEBUG    | market_data | [BTCUSD] Fetched 200 candles: 2026-07-07 13:46:20+00:00 to 2026-07-07 14:02:55+00:00
+2026-07-07 19:32:58 | INFO     | __main__ | [BTCUSD] Holding BUY @ 63095.5 | best_price=63350.5
+2026-07-07 19:32:58 | DEBUG    | __main__ | Sleeping for 59.4s
+2026-07-07 19:33:58 | DEBUG    | market_data | [BTCUSD] Fetched 200 candles: 2026-07-07 13:47:20+00:00 to 2026-07-07 14:03:55+00:00
+2026-07-07 19:33:58 | INFO     | __main__ | [BTCUSD] Holding BUY @ 63095.5 | best_price=63350.5
+2026-07-07 19:33:58 | DEBUG    | __main__ | Sleeping for 59.4s
+2026-07-07 19:34:58 | DEBUG    | market_data | [BTCUSD] Fetched 200 candles: 2026-07-07 13:48:20+00:00 to 2026-07-07 14:04:55+00:00
+2026-07-07 19:34:58 | INFO     | __main__ | [BTCUSD] Holding BUY @ 63095.5 | best_price=63350.5
+2026-07-07 19:34:58 | DEBUG    | __main__ | Sleeping for 59.5s
+2026-07-07 19:35:58 | DEBUG    | market_data | [BTCUSD] Fetched 200 candles: 2026-07-07 13:49:20+00:00 to 2026-07-07 14:05:55+00:00
+2026-07-07 19:35:58 | INFO     | __main__ | [BTCUSD] Holding BUY @ 63095.5 | best_price=63350.5
+2026-07-07 19:35:58 | DEBUG    | __main__ | Sleeping for 59.5s
+2026-07-07 19:36:58 | DEBUG    | market_data | [BTCUSD] Fetched 200 candles: 2026-07-07 13:50:20+00:00 to 2026-07-07 14:06:55+00:00
+2026-07-07 19:36:58 | INFO     | __main__ | [BTCUSD] Holding BUY @ 63095.5 | best_price=63350.5
+2026-07-07 19:36:58 | DEBUG    | __main__ | Sleeping for 59.4s
+2026-07-07 19:37:58 | DEBUG    | market_data | [BTCUSD] Fetched 200 candles: 2026-07-07 13:51:20+00:00 to 2026-07-07 14:07:55+00:00
+2026-07-07 19:37:58 | INFO     | __main__ | [BTCUSD] Holding BUY @ 63095.5 | best_price=63350.5
+2026-07-07 19:37:58 | DEBUG    | __main__ | Sleeping for 59.5s
+2026-07-07 19:38:58 | DEBUG    | market_data | [BTCUSD] Fetched 200 candles: 2026-07-07 13:52:15+00:00 to 2026-07-07 14:08:50+00:00
+2026-07-07 19:38:58 | INFO     | __main__ | [BTCUSD] Holding BUY @ 63095.5 | best_price=63350.5
+2026-07-07 19:38:58 | DEBUG    | __main__ | Sleeping for 59.5s
+2026-07-07 19:39:58 | DEBUG    | market_data | [BTCUSD] Fetched 200 candles: 2026-07-07 13:53:20+00:00 to 2026-07-07 14:09:55+00:00
+2026-07-07 19:39:58 | INFO     | __main__ | [BTCUSD] Holding BUY @ 63095.5 | best_price=63350.5
+2026-07-07 19:39:58 | DEBUG    | __main__ | Sleeping for 59.4s
+2026-07-07 19:40:59 | DEBUG    | market_data | [BTCUSD] Fetched 200 candles: 2026-07-07 13:54:15+00:00 to 2026-07-07 14:10:50+00:00
+2026-07-07 19:40:59 | INFO     | __main__ | [BTCUSD] Holding BUY @ 63095.5 | best_price=63350.5
+2026-07-07 19:40:59 | DEBUG    | __main__ | Sleeping for 59.4s
+2026-07-07 19:41:58 | DEBUG    | market_data | [BTCUSD] Fetched 200 candles: 2026-07-07 13:55:20+00:00 to 2026-07-07 14:11:55+00:00
+2026-07-07 19:41:58 | INFO     | __main__ | [BTCUSD] Holding BUY @ 63095.5 | best_price=63350.5
+2026-07-07 19:41:58 | DEBUG    | __main__ | Sleeping for 59.5s
+2026-07-07 19:42:59 | DEBUG    | market_data | [BTCUSD] Fetched 200 candles: 2026-07-07 13:56:20+00:00 to 2026-07-07 14:12:55+00:00
+2026-07-07 19:42:59 | INFO     | __main__ | [BTCUSD] Holding BUY @ 63095.5 | best_price=63350.5
+2026-07-07 19:42:59 | DEBUG    | __main__ | Sleeping for 59.0s
+2026-07-07 19:43:58 | DEBUG    | market_data | [BTCUSD] Fetched 200 candles: 2026-07-07 13:57:15+00:00 to 2026-07-07 14:13:50+00:00
+2026-07-07 19:43:58 | INFO     | __main__ | [BTCUSD] Holding BUY @ 63095.5 | best_price=63350.5
+2026-07-07 19:43:58 | DEBUG    | __main__ | Sleeping for 59.5s
+2026-07-07 19:44:59 | DEBUG    | market_data | [BTCUSD] Fetched 200 candles: 2026-07-07 13:58:20+00:00 to 2026-07-07 14:14:55+00:00
+2026-07-07 19:44:59 | INFO     | __main__ | [BTCUSD] Holding BUY @ 63095.5 | best_price=63350.5
+2026-07-07 19:44:59 | DEBUG    | __main__ | Sleeping for 59.1s
+2026-07-07 19:45:58 | DEBUG    | market_data | [BTCUSD] Fetched 200 candles: 2026-07-07 13:59:20+00:00 to 2026-07-07 14:15:55+00:00
+2026-07-07 19:45:58 | INFO     | __main__ | [BTCUSD] Holding BUY @ 63095.5 | best_price=63350.5
+2026-07-07 19:45:58 | DEBUG    | __main__ | Sleeping for 59.5s
+2026-07-07 19:46:58 | DEBUG    | market_data | [BTCUSD] Fetched 200 candles: 2026-07-07 14:00:20+00:00 to 2026-07-07 14:16:55+00:00
+2026-07-07 19:46:58 | INFO     | __main__ | [BTCUSD] Holding BUY @ 63095.5 | best_price=63350.5
+2026-07-07 19:46:58 | DEBUG    | __main__ | Sleeping for 59.5s
+2026-07-07 19:47:58 | DEBUG    | market_data | [BTCUSD] Fetched 200 candles: 2026-07-07 14:01:20+00:00 to 2026-07-07 14:17:55+00:00
+2026-07-07 19:47:58 | INFO     | __main__ | [BTCUSD] Holding BUY @ 63095.5 | best_price=63350.5
+2026-07-07 19:47:58 | DEBUG    | __main__ | Sleeping for 59.5s
+2026-07-07 19:48:59 | DEBUG    | market_data | [BTCUSD] Fetched 200 candles: 2026-07-07 14:02:20+00:00 to 2026-07-07 14:18:55+00:00
+2026-07-07 19:48:59 | INFO     | __main__ | [BTCUSD] Holding BUY @ 63095.5 | best_price=63350.5
+2026-07-07 19:48:59 | DEBUG    | __main__ | Sleeping for 59.0s
+2026-07-07 19:49:58 | DEBUG    | market_data | [BTCUSD] Fetched 200 candles: 2026-07-07 14:03:20+00:00 to 2026-07-07 14:19:55+00:00
+2026-07-07 19:49:58 | INFO     | __main__ | [BTCUSD] Holding BUY @ 63095.5 | best_price=63350.5
+2026-07-07 19:49:58 | DEBUG    | __main__ | Sleeping for 59.5s
+2026-07-07 19:50:58 | DEBUG    | market_data | [BTCUSD] Fetched 200 candles: 2026-07-07 14:04:20+00:00 to 2026-07-07 14:20:55+00:00
+2026-07-07 19:50:58 | INFO     | __main__ | [BTCUSD] Holding BUY @ 63095.5 | best_price=63350.5
+2026-07-07 19:50:58 | DEBUG    | __main__ | Sleeping for 59.5s
+2026-07-07 19:51:58 | DEBUG    | market_data | [BTCUSD] Fetched 200 candles: 2026-07-07 14:05:20+00:00 to 2026-07-07 14:21:55+00:00
+2026-07-07 19:51:58 | INFO     | __main__ | [BTCUSD] Holding BUY @ 63095.5 | best_price=63350.5
+2026-07-07 19:51:58 | DEBUG    | __main__ | Sleeping for 59.5s
+2026-07-07 19:52:58 | DEBUG    | market_data | [BTCUSD] Fetched 200 candles: 2026-07-07 14:06:20+00:00 to 2026-07-07 14:22:55+00:00
+2026-07-07 19:52:58 | DEBUG    | market_data | [BTCUSD] product_id resolved from cache: 84
+2026-07-07 19:52:59 | INFO     | order_manager | [BTCUSD] All orders cancelled | Response: {'success': True, 'result': {}}
+2026-07-07 19:52:59 | DEBUG    | market_data | [BTCUSD] product_id resolved from cache: 84
+2026-07-07 19:52:59 | INFO     | order_manager | [BTCUSD] Placing order with product_id=84 on base_url=https://cdn-ind.testnet.deltaex.org | USE_TESTNET=True
+2026-07-07 19:52:59 | DEBUG    | order_manager | [BTCUSD] Order payload: product_id=84 (int), size=12 (int), side=sell
+2026-07-07 19:53:00 | INFO     | order_manager | [BTCUSD] Market order placed: SELL 12 lots | Response: {'meta': {}, 'success': True, 'result': {'updated_at': '2026-07-07T14:23:00.075117Z', 'bracket_stop_loss_price': None, 'stop_price': None, 'commission': '0', 'user_id': 57401446, 'meta_data': {'avg_exit_price': '63046.5', 'cashflow': '-0.588', 'entry_price': '63095.50000000', 'exit_price_with_size': [{'price': '63046.00000000', 'size': '4'}, {'price': '63046.50000000', 'size': '4'}, {'price': '63047.00000000', 'size': '4'}], 'fills_pnl_with_margin': [{'margin': '25.23820000', 'pnl': '-0.19800000'}, {'margin': '25.23820000', 'pnl': '-0.19600000'}, {'margin': '25.23820000', 'pnl': '-0.19400000'}], 'ip': '103.70.197.223', 'otc': False, 'pnl': '-0.588', 'roe': '-0.7766005499599812981908376984', 'source': 'api'}, 'bracket_order': None, 'stop_order_type': None, 'client_order_id': None, 'order_type': 'market_order', 'mmp': 'disabled', 'side': 'sell', 'quote_size': None, 'created_at': '2026-07-07T14:23:00.021191Z', 'bracket_take_profit_limit_price': None, 'size': 12, 'average_fill_price': '63046.5', 'paid_commission': '0.44636922', 'bracket_take_profit_price': None, 'limit_price': '0.1', 'reduce_only': False, 'unfilled_size': 0, 'cancellation_reason': None, 'trail_amount': None, 'stop_trigger_method': None, 'bracket_stop_loss_limit_price': None, 'bracket_trail_amount': None, 'product_symbol': 'BTCUSD', 'id': 2165375223, 'margin_mode': 'cross', 'time_in_force': 'ioc', 'state': 'closed', 'product_id': 84}}
+2026-07-07 19:53:00 | INFO     | pnl_tracker | Trade recorded | BUY 12 lots | Entry=63095.5 Exit=63046.5 | Net PnL=-0.00000034 BTC | Reason=EXIT_BAND_FLIP
+2026-07-07 19:53:00 | WARNING  | notifier | Telegram not configured. Skipping notification.
+2026-07-07 19:53:00 | INFO     | __main__ | [BTCUSD] Exit executed: EXIT_BAND_FLIP | BUY entry=63095.5 exit=63046.5 | PnL=-0.000000 BTC
+2026-07-07 19:53:00 | DEBUG    | __main__ | Sleeping for 57.8s
+2026-07-07 19:54:01 | DEBUG    | market_data | [BTCUSD] Fetched 200 candles: 2026-07-07 14:07:20+00:00 to 2026-07-07 14:23:55+00:00
+2026-07-07 19:54:01 | INFO     | __main__ | [BTCUSD] No signal. Waiting for next candle.
+2026-07-07 19:54:01 | DEBUG    | __main__ | Sleeping for 57.3s
+2026-07-07 19:54:58 | DEBUG    | market_data | [BTCUSD] Fetched 200 candles: 2026-07-07 14:08:20+00:00 to 2026-07-07 14:24:55+00:00
+2026-07-07 19:54:58 | INFO     | __main__ | [BTCUSD] No signal. Waiting for next candle.
+2026-07-07 19:54:58 | DEBUG    | __main__ | Sleeping for 59.4s
+2026-07-07 19:55:58 | DEBUG    | market_data | [BTCUSD] Fetched 200 candles: 2026-07-07 14:09:15+00:00 to 2026-07-07 14:25:50+00:00
+2026-07-07 19:55:58 | INFO     | __main__ | [BTCUSD] No signal. Waiting for next candle.
+2026-07-07 19:55:58 | DEBUG    | __main__ | Sleeping for 59.4s
+2026-07-07 19:56:58 | DEBUG    | market_data | [BTCUSD] Fetched 200 candles: 2026-07-07 14:10:20+00:00 to 2026-07-07 14:26:55+00:00
+2026-07-07 19:56:58 | INFO     | __main__ | [BTCUSD] No signal. Waiting for next candle.
+2026-07-07 19:56:58 | DEBUG    | __main__ | Sleeping for 59.4s
+2026-07-07 19:57:59 | DEBUG    | market_data | [BTCUSD] Fetched 200 candles: 2026-07-07 14:11:15+00:00 to 2026-07-07 14:27:50+00:00
+2026-07-07 19:57:59 | INFO     | __main__ | [BTCUSD] No signal. Waiting for next candle.
+2026-07-07 19:57:59 | DEBUG    | __main__ | Sleeping for 59.3s
+2026-07-07 19:58:58 | DEBUG    | market_data | [BTCUSD] Fetched 200 candles: 2026-07-07 14:12:20+00:00 to 2026-07-07 14:28:55+00:00
+2026-07-07 19:58:58 | INFO     | __main__ | [BTCUSD] No signal. Waiting for next candle.
+2026-07-07 19:58:58 | DEBUG    | __main__ | Sleeping for 59.5s
+2026-07-07 19:59:58 | DEBUG    | market_data | [BTCUSD] Fetched 200 candles: 2026-07-07 14:13:20+00:00 to 2026-07-07 14:29:55+00:00
+2026-07-07 19:59:58 | INFO     | __main__ | [BTCUSD] No signal. Waiting for next candle.
+2026-07-07 19:59:58 | DEBUG    | __main__ | Sleeping for 59.4s
+2026-07-07 20:01:01 | DEBUG    | market_data | [BTCUSD] Fetched 200 candles: 2026-07-07 14:14:20+00:00 to 2026-07-07 14:30:55+00:00
+2026-07-07 20:01:01 | INFO     | __main__ | [BTCUSD] No signal. Waiting for next candle.
+2026-07-07 20:01:01 | DEBUG    | __main__ | Sleeping for 57.0s
+2026-07-07 20:01:59 | DEBUG    | market_data | [BTCUSD] Fetched 200 candles: 2026-07-07 14:15:20+00:00 to 2026-07-07 14:31:55+00:00
+2026-07-07 20:01:59 | INFO     | __main__ | [BTCUSD] No signal. Waiting for next candle.
+2026-07-07 20:01:59 | DEBUG    | __main__ | Sleeping for 59.3s
+2026-07-07 20:02:58 | DEBUG    | market_data | [BTCUSD] Fetched 200 candles: 2026-07-07 14:16:20+00:00 to 2026-07-07 14:32:55+00:00
+2026-07-07 20:02:58 | INFO     | __main__ | [BTCUSD] No signal. Waiting for next candle.
+2026-07-07 20:02:58 | DEBUG    | __main__ | Sleeping for 59.5s
+2026-07-07 20:03:58 | DEBUG    | market_data | [BTCUSD] Fetched 200 candles: 2026-07-07 14:17:20+00:00 to 2026-07-07 14:33:55+00:00
+2026-07-07 20:03:58 | INFO     | __main__ | [BTCUSD] No signal. Waiting for next candle.
+2026-07-07 20:03:58 | DEBUG    | __main__ | Sleeping for 59.4s
+2026-07-07 20:04:58 | DEBUG    | market_data | [BTCUSD] Fetched 200 candles: 2026-07-07 14:18:20+00:00 to 2026-07-07 14:34:55+00:00
+2026-07-07 20:04:58 | INFO     | __main__ | [BTCUSD] No signal. Waiting for next candle.
+2026-07-07 20:04:58 | DEBUG    | __main__ | Sleeping for 59.5s
+2026-07-07 20:05:58 | DEBUG    | market_data | [BTCUSD] Fetched 200 candles: 2026-07-07 14:19:20+00:00 to 2026-07-07 14:35:55+00:00
+2026-07-07 20:05:58 | INFO     | __main__ | [BTCUSD] No signal. Waiting for next candle.
+2026-07-07 20:05:58 | DEBUG    | __main__ | Sleeping for 59.4s
+2026-07-07 20:06:58 | DEBUG    | market_data | [BTCUSD] Fetched 200 candles: 2026-07-07 14:20:20+00:00 to 2026-07-07 14:36:55+00:00
+2026-07-07 20:06:58 | INFO     | __main__ | [BTCUSD] No signal. Waiting for next candle.
+2026-07-07 20:06:58 | DEBUG    | __main__ | Sleeping for 59.4s
+2026-07-07 20:07:59 | DEBUG    | market_data | [BTCUSD] Fetched 200 candles: 2026-07-07 14:21:15+00:00 to 2026-07-07 14:37:50+00:00
+2026-07-07 20:07:59 | INFO     | __main__ | [BTCUSD] No signal. Waiting for next candle.
+2026-07-07 20:07:59 | DEBUG    | __main__ | Sleeping for 59.3s
+2026-07-07 20:08:59 | DEBUG    | market_data | [BTCUSD] Fetched 200 candles: 2026-07-07 14:22:20+00:00 to 2026-07-07 14:38:55+00:00
+2026-07-07 20:08:59 | INFO     | __main__ | [BTCUSD] No signal. Waiting for next candle.
+2026-07-07 20:08:59 | DEBUG    | __main__ | Sleeping for 59.4s
+2026-07-07 20:09:59 | DEBUG    | market_data | [BTCUSD] Fetched 200 candles: 2026-07-07 14:23:20+00:00 to 2026-07-07 14:39:55+00:00
+2026-07-07 20:09:59 | INFO     | __main__ | [BTCUSD] No signal. Waiting for next candle.
+2026-07-07 20:09:59 | DEBUG    | __main__ | Sleeping for 59.3s
+2026-07-07 20:27:50 | DEBUG    | market_data | [BTCUSD] Fetched 200 candles: 2026-07-07 14:41:10+00:00 to 2026-07-07 14:57:45+00:00
+2026-07-07 20:27:50 | INFO     | __main__ | [BTCUSD] No signal. Waiting for next candle.
+2026-07-07 20:27:50 | DEBUG    | __main__ | Sleeping for 55.0s
+2026-07-07 20:28:49 | DEBUG    | market_data | [BTCUSD] Fetched 200 candles: 2026-07-07 14:42:10+00:00 to 2026-07-07 14:58:45+00:00
+2026-07-07 20:28:49 | INFO     | __main__ | [BTCUSD] No signal. Waiting for next candle.
+2026-07-07 20:28:49 | DEBUG    | __main__ | Sleeping for 56.0s
+2026-07-07 20:29:46 | DEBUG    | market_data | [BTCUSD] Fetched 200 candles: 2026-07-07 14:43:05+00:00 to 2026-07-07 14:59:40+00:00
+2026-07-07 20:29:46 | INFO     | __main__ | [BTCUSD] No signal. Waiting for next candle.
+2026-07-07 20:29:46 | DEBUG    | __main__ | Sleeping for 58.9s
+2026-07-08 09:12:05 | INFO     | backtester | Fetching 30 days of 15m candles for BTCUSD in batches of 1900...
+2026-07-08 09:12:05 | DEBUG    | backtester | Fetched 1900 candles (batch_end=1783482125)
+2026-07-08 09:12:06 | DEBUG    | backtester | Fetched 979 candles (batch_end=1781771225)
+2026-07-08 09:12:07 | INFO     | backtester | Total candles fetched: 2879
+2026-07-08 09:12:07 | INFO     | backtester | Running backtest: <bound method OrderBlockStrategy.name of <strategies.ob_strategy.OrderBlockStrategy object at 0x0000028C5C98C2D0>> | symbol=BTCUSD | timeframe=15m
+2026-07-08 09:12:07 | INFO     | backtester | Running backtest: <bound method EMACrossoverStrategy.name of <strategies.ema_crossover.EMACrossoverStrategy object at 0x0000028C5D829510>> | symbol=BTCUSD | timeframe=15m
+2026-07-08 09:12:08 | INFO     | backtester | Running backtest: <bound method BollingerBandsStrategy.name of <strategies.bollinger_bands.BollingerBandsStrategy object at 0x0000028C5D1C72D0>> | symbol=BTCUSD | timeframe=15m
+2026-07-08 09:12:51 | INFO     | backtester | Running backtest: VWAP | symbol=BTCUSD | timeframe=15m
+2026-07-08 09:12:51 | INFO     | backtester | Running backtest: Triple EMA | symbol=BTCUSD | timeframe=15m
+2026-07-08 09:12:52 | INFO     | backtester | Running backtest: <bound method FVGStrategy.name of <strategies.fv_strategy.FVGStrategy object at 0x0000028C5CFB4A50>> | symbol=BTCUSD | timeframe=15m
+2026-07-08 09:12:58 | INFO     | backtester | Running backtest: <bound method SMCStrategy.name of SMCStrategy(swing_lookback=5, atr_length=14, atr_multiplier=1.5, trail_activation_atr=2.0, sl_atr_buffer=0.3, ob_strength_period=20, ob_strength_mult=0.3, max_ob_age_candles=30, rr_ratio=2.0, trend_ema_period=50, bos_type=close, choch_type=close, ob_proximity_atr=3.0)> | symbol=BTCUSD | timeframe=15m
+2026-07-08 09:13:13 | INFO     | backtester | Comparison chart saved to logs/backtest_report.png
+2026-07-08 09:21:16 | INFO     | backtester | Fetching 30 days of 15m candles for ETHUSD in batches of 1900...
+2026-07-08 09:21:16 | DEBUG    | backtester | Fetched 1900 candles (batch_end=1783482676)
+2026-07-08 09:21:17 | DEBUG    | backtester | Fetched 979 candles (batch_end=1781771776)
+2026-07-08 09:21:18 | INFO     | backtester | Total candles fetched: 2879
+2026-07-08 09:21:18 | INFO     | backtester | Running backtest: <bound method OrderBlockStrategy.name of <strategies.ob_strategy.OrderBlockStrategy object at 0x0000014FC06929D0>> | symbol=ETHUSD | timeframe=15m
+2026-07-08 09:21:18 | INFO     | backtester | Running backtest: <bound method EMACrossoverStrategy.name of <strategies.ema_crossover.EMACrossoverStrategy object at 0x0000014FC0681410>> | symbol=ETHUSD | timeframe=15m
+2026-07-08 09:21:19 | INFO     | backtester | Running backtest: <bound method BollingerBandsStrategy.name of <strategies.bollinger_bands.BollingerBandsStrategy object at 0x0000014FC0551FD0>> | symbol=ETHUSD | timeframe=15m
+2026-07-08 09:22:01 | INFO     | backtester | Running backtest: VWAP | symbol=ETHUSD | timeframe=15m
+2026-07-08 09:22:02 | INFO     | backtester | Running backtest: Triple EMA | symbol=ETHUSD | timeframe=15m
+2026-07-08 09:22:02 | INFO     | backtester | Running backtest: <bound method FVGStrategy.name of <strategies.fv_strategy.FVGStrategy object at 0x0000014FC0734C90>> | symbol=ETHUSD | timeframe=15m
+2026-07-08 09:22:09 | INFO     | backtester | Running backtest: <bound method SMCStrategy.name of SMCStrategy(swing_lookback=5, atr_length=14, atr_multiplier=1.5, trail_activation_atr=2.0, sl_atr_buffer=0.3, ob_strength_period=20, ob_strength_mult=0.3, max_ob_age_candles=30, rr_ratio=2.0, trend_ema_period=50, bos_type=close, choch_type=close, ob_proximity_atr=3.0)> | symbol=ETHUSD | timeframe=15m
+2026-07-08 09:22:20 | INFO     | backtester | Comparison chart saved to logs/backtest_report.png
+2026-07-08 09:23:44 | INFO     | backtester | Fetching 30 days of 15m candles for BTCUSD in batches of 1900...
+2026-07-08 09:23:44 | DEBUG    | backtester | Fetched 1900 candles (batch_end=1783482824)
+2026-07-08 09:23:45 | DEBUG    | backtester | Fetched 979 candles (batch_end=1781771924)
+2026-07-08 09:23:45 | INFO     | backtester | Total candles fetched: 2879
+2026-07-08 09:23:45 | INFO     | backtester | Running backtest: <bound method FVGStrategy.name of <strategies.fv_strategy.FVGStrategy object at 0x0000026828F1D410>> | symbol=BTCUSD | timeframe=15m
+2026-07-08 09:24:15 | INFO     | backtester | Fetching 30 days of 15m candles for ETHUSD in batches of 1900...
+2026-07-08 09:24:16 | DEBUG    | backtester | Fetched 1900 candles (batch_end=1783482855)
+2026-07-08 09:24:17 | DEBUG    | backtester | Fetched 979 candles (batch_end=1781771955)
+2026-07-08 09:24:17 | INFO     | backtester | Total candles fetched: 2879
+2026-07-08 09:24:17 | INFO     | backtester | Running backtest: <bound method SMCStrategy.name of SMCStrategy(swing_lookback=5, atr_length=14, atr_multiplier=1.5, trail_activation_atr=2.0, sl_atr_buffer=0.3, ob_strength_period=20, ob_strength_mult=0.3, max_ob_age_candles=30, rr_ratio=2.0, trend_ema_period=50, bos_type=close, choch_type=close, ob_proximity_atr=2.0)> | symbol=ETHUSD | timeframe=15m
+2026-07-08 11:21:58 | INFO     | backtester | Fetching 30 days of 15m candles for SOLUSD in batches of 1900...
+2026-07-08 11:21:59 | DEBUG    | backtester | Fetched 1900 candles (batch_end=1783489918)
+2026-07-08 11:22:00 | DEBUG    | backtester | Fetched 979 candles (batch_end=1781779018)
+2026-07-08 11:22:00 | INFO     | backtester | Total candles fetched: 2879
+2026-07-08 11:22:00 | INFO     | backtester | Running backtest: <bound method OrderBlockStrategy.name of <strategies.ob_strategy.OrderBlockStrategy object at 0x000001F571A73450>> | symbol=SOLUSD | timeframe=15m
+2026-07-08 11:22:00 | INFO     | backtester | Running backtest: <bound method EMACrossoverStrategy.name of <strategies.ema_crossover.EMACrossoverStrategy object at 0x000001F571C86510>> | symbol=SOLUSD | timeframe=15m
+2026-07-08 11:22:01 | INFO     | backtester | Running backtest: <bound method BollingerBandsStrategy.name of <strategies.bollinger_bands.BollingerBandsStrategy object at 0x000001F571D24A50>> | symbol=SOLUSD | timeframe=15m
+2026-07-08 11:22:34 | INFO     | backtester | Running backtest: VWAP | symbol=SOLUSD | timeframe=15m
+2026-07-08 11:22:34 | INFO     | backtester | Running backtest: Triple EMA | symbol=SOLUSD | timeframe=15m
+2026-07-08 11:22:34 | INFO     | backtester | Running backtest: <bound method FVGStrategy.name of <strategies.fv_strategy.FVGStrategy object at 0x000001F57228C750>> | symbol=SOLUSD | timeframe=15m
+2026-07-08 11:22:41 | INFO     | backtester | Running backtest: <bound method SMCStrategy.name of SMCStrategy(swing_lookback=5, atr_length=14, atr_multiplier=1.5, trail_activation_atr=2.0, sl_atr_buffer=0.3, ob_strength_period=20, ob_strength_mult=0.3, max_ob_age_candles=30, rr_ratio=2.0, trend_ema_period=50, bos_type=close, choch_type=close, ob_proximity_atr=3.0)> | symbol=SOLUSD | timeframe=15m
+2026-07-08 11:22:52 | INFO     | backtester | Comparison chart saved to logs/backtest_report.png
+2026-07-08 11:23:25 | INFO     | backtester | Fetching 30 days of 1h candles for SOLUSD in batches of 1900...
+2026-07-08 11:23:25 | DEBUG    | backtester | Fetched 720 candles (batch_end=1783490005)
+2026-07-08 11:23:25 | INFO     | backtester | Total candles fetched: 720
+2026-07-08 11:23:25 | INFO     | backtester | Running backtest: <bound method OrderBlockStrategy.name of <strategies.ob_strategy.OrderBlockStrategy object at 0x00000275CEA1E8D0>> | symbol=SOLUSD | timeframe=1h
+2026-07-08 11:23:26 | INFO     | backtester | Running backtest: <bound method EMACrossoverStrategy.name of <strategies.ema_crossover.EMACrossoverStrategy object at 0x00000275CEB74D10>> | symbol=SOLUSD | timeframe=1h
+2026-07-08 11:23:26 | INFO     | backtester | Running backtest: <bound method BollingerBandsStrategy.name of <strategies.bollinger_bands.BollingerBandsStrategy object at 0x00000275CE635C50>> | symbol=SOLUSD | timeframe=1h
+2026-07-08 11:23:32 | INFO     | backtester | Running backtest: VWAP | symbol=SOLUSD | timeframe=1h
+2026-07-08 11:23:32 | INFO     | backtester | Running backtest: Triple EMA | symbol=SOLUSD | timeframe=1h
+2026-07-08 11:23:32 | INFO     | backtester | Running backtest: <bound method FVGStrategy.name of <strategies.fv_strategy.FVGStrategy object at 0x00000275CEBCAE50>> | symbol=SOLUSD | timeframe=1h
+2026-07-08 11:23:34 | INFO     | backtester | Running backtest: <bound method SMCStrategy.name of SMCStrategy(swing_lookback=5, atr_length=14, atr_multiplier=1.5, trail_activation_atr=2.0, sl_atr_buffer=0.3, ob_strength_period=20, ob_strength_mult=0.3, max_ob_age_candles=30, rr_ratio=2.0, trend_ema_period=50, bos_type=close, choch_type=close, ob_proximity_atr=3.0)> | symbol=SOLUSD | timeframe=1h
+2026-07-08 11:23:36 | INFO     | backtester | Comparison chart saved to logs/backtest_report.png
+2026-07-08 11:23:45 | INFO     | backtester | Fetching 30 days of 15m candles for SOLUSD in batches of 1900...
+2026-07-08 11:23:45 | DEBUG    | backtester | Fetched 1900 candles (batch_end=1783490025)
+2026-07-08 11:23:46 | DEBUG    | backtester | Fetched 979 candles (batch_end=1781779125)
+2026-07-08 11:23:46 | INFO     | backtester | Total candles fetched: 2879
+2026-07-08 11:23:46 | INFO     | backtester | Running backtest: <bound method OrderBlockStrategy.name of <strategies.ob_strategy.OrderBlockStrategy object at 0x0000019A9D503A50>> | symbol=SOLUSD | timeframe=15m
+2026-07-08 11:23:46 | INFO     | backtester | Running backtest: <bound method EMACrossoverStrategy.name of <strategies.ema_crossover.EMACrossoverStrategy object at 0x0000019A9D852650>> | symbol=SOLUSD | timeframe=15m
+2026-07-08 11:23:47 | INFO     | backtester | Running backtest: <bound method BollingerBandsStrategy.name of <strategies.bollinger_bands.BollingerBandsStrategy object at 0x0000019A9DD68D90>> | symbol=SOLUSD | timeframe=15m
+2026-07-08 11:24:18 | INFO     | backtester | Running backtest: VWAP | symbol=SOLUSD | timeframe=15m
+2026-07-08 11:24:18 | INFO     | backtester | Running backtest: Triple EMA | symbol=SOLUSD | timeframe=15m
+2026-07-08 11:24:19 | INFO     | backtester | Running backtest: <bound method FVGStrategy.name of <strategies.fv_strategy.FVGStrategy object at 0x0000019A9D75C210>> | symbol=SOLUSD | timeframe=15m
+2026-07-08 11:24:26 | INFO     | backtester | Running backtest: <bound method SMCStrategy.name of SMCStrategy(swing_lookback=5, atr_length=14, atr_multiplier=1.5, trail_activation_atr=2.0, sl_atr_buffer=0.3, ob_strength_period=20, ob_strength_mult=0.3, max_ob_age_candles=30, rr_ratio=2.0, trend_ema_period=50, bos_type=close, choch_type=close, ob_proximity_atr=3.0)> | symbol=SOLUSD | timeframe=15m
+2026-07-08 11:24:37 | INFO     | backtester | Comparison chart saved to logs/backtest_report.png
+2026-07-08 11:27:34 | INFO     | backtester | Fetching 30 days of 15m candles for SOLUSD in batches of 1900...
+2026-07-08 11:27:34 | DEBUG    | backtester | Fetched 1900 candles (batch_end=1783490254)
+2026-07-08 11:27:35 | DEBUG    | backtester | Fetched 979 candles (batch_end=1781779354)
+2026-07-08 11:27:35 | INFO     | backtester | Total candles fetched: 2879
+2026-07-08 11:27:35 | INFO     | backtester | Running backtest: <bound method OrderBlockStrategy.name of <strategies.ob_strategy.OrderBlockStrategy object at 0x000001CDB508FF90>> | symbol=SOLUSD | timeframe=15m
+2026-07-08 11:27:36 | INFO     | backtester | Running backtest: <bound method EMACrossoverStrategy.name of <strategies.ema_crossover.EMACrossoverStrategy object at 0x000001CDB4EF1710>> | symbol=SOLUSD | timeframe=15m
+2026-07-08 11:27:36 | INFO     | backtester | Running backtest: <bound method BollingerBandsStrategy.name of <strategies.bollinger_bands.BollingerBandsStrategy object at 0x000001CDB5485990>> | symbol=SOLUSD | timeframe=15m
+2026-07-08 11:28:10 | INFO     | backtester | Running backtest: VWAP | symbol=SOLUSD | timeframe=15m
+2026-07-08 11:28:11 | INFO     | backtester | Running backtest: Triple EMA | symbol=SOLUSD | timeframe=15m
+2026-07-08 11:28:11 | INFO     | backtester | Running backtest: <bound method FVGStrategy.name of <strategies.fv_strategy.FVGStrategy object at 0x000001CDB54856D0>> | symbol=SOLUSD | timeframe=15m
+2026-07-08 11:28:17 | INFO     | backtester | Running backtest: <bound method SMCStrategy.name of SMCStrategy(swing_lookback=5, atr_length=14, atr_multiplier=1.5, trail_activation_atr=2.0, sl_atr_buffer=0.3, ob_strength_period=20, ob_strength_mult=0.3, max_ob_age_candles=30, rr_ratio=2.0, trend_ema_period=50, bos_type=close, choch_type=close, ob_proximity_atr=3.0)> | symbol=SOLUSD | timeframe=15m
+2026-07-08 11:28:28 | INFO     | backtester | Comparison chart saved to logs/backtest_report.png
+2026-07-08 11:33:02 | INFO     | backtester | Fetching 30 days of 15m candles for SOLUSD in batches of 1900...
+2026-07-08 11:33:03 | DEBUG    | backtester | Fetched 1900 candles (batch_end=1783490582)
+2026-07-08 11:33:03 | DEBUG    | backtester | Fetched 979 candles (batch_end=1781779682)
+2026-07-08 11:33:04 | INFO     | backtester | Total candles fetched: 2879
+2026-07-08 11:33:04 | INFO     | backtester | Running backtest: <bound method OrderBlockStrategy.name of <strategies.ob_strategy.OrderBlockStrategy object at 0x000002B323F0C910>> | symbol=SOLUSD | timeframe=15m
+2026-07-08 11:33:04 | INFO     | backtester | Running backtest: <bound method EMACrossoverStrategy.name of <strategies.ema_crossover.EMACrossoverStrategy object at 0x000002B323F0D590>> | symbol=SOLUSD | timeframe=15m
+2026-07-08 11:33:05 | INFO     | backtester | Running backtest: <bound method BollingerBandsStrategy.name of <strategies.bollinger_bands.BollingerBandsStrategy object at 0x000002B323E5C9D0>> | symbol=SOLUSD | timeframe=15m
+2026-07-08 11:33:54 | INFO     | backtester | Fetching 30 days of 15m candles for SOLUSD in batches of 1900...
+2026-07-08 11:33:54 | DEBUG    | backtester | Fetched 1900 candles (batch_end=1783490634)
+2026-07-08 11:33:55 | DEBUG    | backtester | Fetched 979 candles (batch_end=1781779734)
+2026-07-08 11:33:55 | INFO     | backtester | Total candles fetched: 2879
+2026-07-08 11:33:55 | INFO     | backtester | Running backtest: OrderBlock Strategy | symbol=SOLUSD | timeframe=15m
+2026-07-08 11:33:56 | INFO     | backtester | Running backtest: EMA Crossover (trend=200) | symbol=SOLUSD | timeframe=15m
+2026-07-08 11:33:56 | INFO     | backtester | Running backtest: Bollinger Bands | symbol=SOLUSD | timeframe=15m
+2026-07-08 11:36:57 | INFO     | backtester | Fetching 30 days of 15m candles for SOLUSD in batches of 1900...
+2026-07-08 11:36:58 | DEBUG    | backtester | Fetched 1900 candles (batch_end=1783490817)
+2026-07-08 11:36:59 | DEBUG    | backtester | Fetched 979 candles (batch_end=1781779917)
+2026-07-08 11:37:00 | INFO     | backtester | Total candles fetched: 2879
+2026-07-08 11:37:00 | INFO     | backtester | Running backtest: OrderBlock Strategy | symbol=SOLUSD | timeframe=15m
+2026-07-08 11:37:01 | INFO     | backtester | Running backtest: EMA Crossover (trend=200) | symbol=SOLUSD | timeframe=15m
+2026-07-08 11:37:02 | INFO     | backtester | Running backtest: Bollinger Bands | symbol=SOLUSD | timeframe=15m
+2026-07-08 11:38:26 | INFO     | backtester | Fetching 30 days of 15m candles for SOLUSD in batches of 1900...
+2026-07-08 11:38:26 | DEBUG    | backtester | Fetched 1900 candles (batch_end=1783490906)
+2026-07-08 11:38:27 | DEBUG    | backtester | Fetched 979 candles (batch_end=1781780006)
+2026-07-08 11:38:27 | INFO     | backtester | Total candles fetched: 2879
+2026-07-08 11:38:27 | INFO     | backtester | Running backtest: <bound method OrderBlockStrategy.name of <strategies.ob_strategy.OrderBlockStrategy object at 0x00000262B114E590>> | symbol=SOLUSD | timeframe=15m
+2026-07-08 11:38:28 | INFO     | backtester | Running backtest: <bound method EMACrossoverStrategy.name of <strategies.ema_crossover.EMACrossoverStrategy object at 0x00000262B129FB90>> | symbol=SOLUSD | timeframe=15m
+2026-07-08 11:38:28 | INFO     | backtester | Running backtest: <bound method BollingerBandsStrategy.name of <strategies.bollinger_bands.BollingerBandsStrategy object at 0x00000262B0E2AF90>> | symbol=SOLUSD | timeframe=15m
+2026-07-08 11:38:59 | INFO     | backtester | Fetching 30 days of 1m candles for SOLUSD in batches of 1900...
+2026-07-08 11:38:59 | DEBUG    | backtester | Fetched 1900 candles (batch_end=1783490939)
+2026-07-08 11:39:00 | DEBUG    | backtester | Fetched 1900 candles (batch_end=1783376879)
+2026-07-08 11:39:01 | DEBUG    | backtester | Fetched 1900 candles (batch_end=1783262819)
+2026-07-08 11:39:02 | DEBUG    | backtester | Fetched 1900 candles (batch_end=1783148759)
+2026-07-08 11:39:03 | DEBUG    | backtester | Fetched 1900 candles (batch_end=1783034699)
+2026-07-08 11:39:03 | DEBUG    | backtester | Fetched 1900 candles (batch_end=1782920639)
+2026-07-08 11:39:04 | DEBUG    | backtester | Fetched 1900 candles (batch_end=1782806579)
+2026-07-08 11:39:05 | DEBUG    | backtester | Fetched 1900 candles (batch_end=1782692519)
+2026-07-08 11:39:06 | DEBUG    | backtester | Fetched 1900 candles (batch_end=1782578459)
+2026-07-08 11:39:06 | DEBUG    | backtester | Fetched 1900 candles (batch_end=1782464399)
+2026-07-08 11:39:07 | DEBUG    | backtester | Fetched 1900 candles (batch_end=1782350339)
+2026-07-08 11:39:08 | DEBUG    | backtester | Fetched 1900 candles (batch_end=1782236279)
+2026-07-08 11:39:09 | DEBUG    | backtester | Fetched 1900 candles (batch_end=1782122219)
+2026-07-08 11:39:10 | DEBUG    | backtester | Fetched 1900 candles (batch_end=1782008159)
+2026-07-08 11:39:11 | DEBUG    | backtester | Fetched 1900 candles (batch_end=1781894099)
+2026-07-08 11:39:11 | DEBUG    | backtester | Fetched 1900 candles (batch_end=1781780039)
+2026-07-08 11:39:12 | DEBUG    | backtester | Fetched 1900 candles (batch_end=1781665979)
+2026-07-08 11:39:13 | DEBUG    | backtester | Fetched 1900 candles (batch_end=1781551919)
+2026-07-08 11:39:14 | DEBUG    | backtester | Fetched 1900 candles (batch_end=1781437859)
+2026-07-08 11:39:15 | DEBUG    | backtester | Fetched 1900 candles (batch_end=1781323799)
+2026-07-08 11:39:15 | DEBUG    | backtester | Fetched 1900 candles (batch_end=1781209739)
+2026-07-08 11:39:16 | DEBUG    | backtester | Fetched 1900 candles (batch_end=1781095679)
+2026-07-08 11:39:17 | DEBUG    | backtester | Fetched 1378 candles (batch_end=1780981619)
+2026-07-08 11:39:17 | INFO     | backtester | Total candles fetched: 43178
+2026-07-08 11:39:17 | INFO     | backtester | Running backtest: OrderBlock Strategy | symbol=SOLUSD | timeframe=1m
+2026-07-08 11:39:24 | INFO     | backtester | Running backtest: EMA Crossover (trend=200) | symbol=SOLUSD | timeframe=1m
+2026-07-08 11:39:30 | INFO     | backtester | Running backtest: Bollinger Bands | symbol=SOLUSD | timeframe=1m
+2026-07-08 11:40:54 | INFO     | backtester | Fetching 30 days of 1h candles for SOLUSD in batches of 1900...
+2026-07-08 11:40:55 | DEBUG    | backtester | Fetched 720 candles (batch_end=1783491054)
+2026-07-08 11:40:55 | INFO     | backtester | Total candles fetched: 720
+2026-07-08 11:40:55 | INFO     | backtester | Running backtest: OrderBlock Strategy | symbol=SOLUSD | timeframe=1h
+2026-07-08 11:40:55 | INFO     | backtester | Running backtest: EMA Crossover (trend=200) | symbol=SOLUSD | timeframe=1h
+2026-07-08 11:40:55 | INFO     | backtester | Running backtest: Bollinger Bands | symbol=SOLUSD | timeframe=1h
+2026-07-08 11:42:39 | INFO     | backtester | Fetching 30 days of 1h candles for SOLUSD in batches of 1900...
+2026-07-08 11:42:39 | DEBUG    | backtester | Fetched 720 candles (batch_end=1783491159)
+2026-07-08 11:42:39 | INFO     | backtester | Total candles fetched: 720
+2026-07-08 11:42:39 | INFO     | backtester | Running backtest: OrderBlock Strategy | symbol=SOLUSD | timeframe=1h
+2026-07-08 11:42:40 | INFO     | backtester | Running backtest: EMA Crossover | symbol=SOLUSD | timeframe=1h
+2026-07-08 11:42:40 | INFO     | backtester | Running backtest: Bollinger Bands | symbol=SOLUSD | timeframe=1h
+2026-07-08 11:42:46 | INFO     | backtester | Running backtest: VWAP | symbol=SOLUSD | timeframe=1h
+2026-07-08 11:42:47 | INFO     | backtester | Running backtest: Triple EMA | symbol=SOLUSD | timeframe=1h
+2026-07-08 11:42:47 | INFO     | backtester | Running backtest: FVG Strategy  | symbol=SOLUSD | timeframe=1h
+2026-07-08 11:42:49 | INFO     | backtester | Running backtest: SMCStrategy | symbol=SOLUSD | timeframe=1h
+2026-07-08 11:42:52 | INFO     | backtester | Comparison chart saved to logs/backtest_report.png
+2026-07-08 11:47:04 | INFO     | backtester | Fetching 30 days of 1h candles for SOLUSD in batches of 1900...
+2026-07-08 11:47:05 | DEBUG    | backtester | Fetched 720 candles (batch_end=1783491424)
+2026-07-08 11:47:05 | INFO     | backtester | Total candles fetched: 720
+2026-07-08 11:47:05 | INFO     | backtester | Running backtest: OrderBlock Strategy | symbol=SOLUSD | timeframe=1h
+2026-07-08 11:47:05 | INFO     | backtester | Running backtest: EMA Crossover | symbol=SOLUSD | timeframe=1h
+2026-07-08 11:47:06 | INFO     | backtester | Running backtest: Bollinger Bands | symbol=SOLUSD | timeframe=1h
+2026-07-08 11:47:12 | INFO     | backtester | Running backtest: VWAP | symbol=SOLUSD | timeframe=1h
+2026-07-08 11:47:12 | INFO     | backtester | Running backtest: Triple EMA | symbol=SOLUSD | timeframe=1h
+2026-07-08 11:47:12 | INFO     | backtester | Running backtest: FVG Strategy  | symbol=SOLUSD | timeframe=1h
+2026-07-08 11:47:15 | INFO     | backtester | Running backtest: SMCStrategy | symbol=SOLUSD | timeframe=1h
+2026-07-08 11:47:17 | INFO     | backtester | Comparison chart saved to logs/backtest_report.png
+2026-07-08 11:50:58 | INFO     | backtester | Fetching 30 days of 1h candles for SOLUSD in batches of 1900...
+2026-07-08 11:50:59 | DEBUG    | backtester | Fetched 720 candles (batch_end=1783491658)
+2026-07-08 11:50:59 | INFO     | backtester | Total candles fetched: 720
+2026-07-08 11:50:59 | INFO     | backtester | Running backtest: OrderBlock Strategy | symbol=SOLUSD | timeframe=1h
+2026-07-08 11:50:59 | INFO     | backtester | Running backtest: EMA Crossover | symbol=SOLUSD | timeframe=1h
+2026-07-08 11:50:59 | INFO     | backtester | Running backtest: Bollinger Bands | symbol=SOLUSD | timeframe=1h
+2026-07-08 11:51:07 | INFO     | backtester | Running backtest: VWAP | symbol=SOLUSD | timeframe=1h
+2026-07-08 11:51:08 | INFO     | backtester | Running backtest: Triple EMA | symbol=SOLUSD | timeframe=1h
+2026-07-08 11:51:08 | INFO     | backtester | Running backtest: FVG Strategy  | symbol=SOLUSD | timeframe=1h
+2026-07-08 11:51:10 | INFO     | backtester | Running backtest: SMCStrategy | symbol=SOLUSD | timeframe=1h
+2026-07-08 11:51:12 | INFO     | backtester | Comparison chart saved to logs/backtest_report.png
+2026-07-08 11:51:55 | INFO     | backtester | Fetching 30 days of 15m candles for XRPUSD in batches of 1900...
+2026-07-08 11:51:55 | DEBUG    | backtester | Fetched 1900 candles (batch_end=1783491715)
+2026-07-08 11:51:56 | DEBUG    | backtester | Fetched 979 candles (batch_end=1781780815)
+2026-07-08 11:51:56 | INFO     | backtester | Total candles fetched: 2879
+2026-07-08 11:51:56 | INFO     | backtester | Running backtest: OrderBlock Strategy | symbol=XRPUSD | timeframe=15m

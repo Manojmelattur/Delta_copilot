@@ -7,7 +7,7 @@ import time
 import pandas as pd
 import requests
 
-from config import BASE_URL, PRODUCT_ID, SYMBOL
+import config
 from logger import get_logger
 
 logger = get_logger(__name__)
@@ -59,7 +59,7 @@ def get_product_id(symbol: str) -> int:
         return pid
 
     # 2. Live API lookup — BASE_URL respects USE_TESTNET flag in config
-    url = f"{BASE_URL}/v2/products/{symbol}"
+    url = f"{config.getbaseUrl()}/v2/products/{symbol}"
     try:
         response = requests.get(
             url,
@@ -73,7 +73,9 @@ def get_product_id(symbol: str) -> int:
             raise ValueError(f"API returned failure for symbol '{symbol}': {data}")
 
         pid = int(data["result"]["id"])
-        logger.debug(f"[{symbol}] product_id resolved from API ({BASE_URL}): {pid}")
+        logger.debug(
+            f"[{symbol}] product_id resolved from API ({config.getbaseUrl()}): {pid}"
+        )
 
         # Cache for subsequent calls in this session
         PRODUCT_ID_MAP[symbol] = pid
@@ -90,14 +92,14 @@ def get_product_id(symbol: str) -> int:
 
     # 3. Last-resort fallback to config
     logger.warning(
-        f"[{symbol}] Falling back to config PRODUCT_ID={PRODUCT_ID}. "
+        f"[{symbol}] Falling back to config PRODUCT_ID={config.PRODUCT_ID}. "
         f"This may be incorrect for symbol '{symbol}'."
     )
-    return PRODUCT_ID
+    return config.PRODUCT_ID
 
 
 def fetch_candles(
-    symbol: str = SYMBOL,
+    symbol: str = config.SYMBOL,
     timeframe: str = "15m",
     limit: int = 100,
 ) -> pd.DataFrame:
@@ -122,8 +124,9 @@ def fetch_candles(
     interval_seconds = _get_interval_seconds(resolution)
 
     # Fix 1: Use BASE_URL so testnet/production is respected
-    candle_url = f"{BASE_URL}/v2/history/candles"
-
+    # BASE_URL is derived from config, so testnet/production is respected automatically
+    candle_url = f"{config.getbaseUrl()}/v2/history/candles"
+    # logger.info(f"Fetching candles from {candle_url}")
     # Fix 2: Fetch 2x limit to handle sparse candles (XAUTUSD, low-liquidity symbols)
     fetch_limit = limit * 2
     end_time = int(time.time())

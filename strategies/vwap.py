@@ -24,7 +24,7 @@ class VWAPStrategy(BaseStrategy):
     def __init__(self, period: int = 50, **kwargs):
         self.period = period
 
-    @property
+    # @property
     def name(self) -> str:
         return "VWAP"
 

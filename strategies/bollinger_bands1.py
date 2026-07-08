@@ -52,7 +52,7 @@ class BollingerBandsStrategy(BaseStrategy):
         self.trailing_active = False
         self.trail_stop = None
 
-    @property
+    # @property
     def name(self) -> str:
         return "Bollinger Bands"
 

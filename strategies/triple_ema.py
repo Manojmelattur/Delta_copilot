@@ -29,7 +29,7 @@ class TripleEMAStrategy(BaseStrategy):
         self._prev_bull = False
         self._prev_bear = False
 
-    @property
+    # @property
     def name(self) -> str:
         return "Triple EMA"
 

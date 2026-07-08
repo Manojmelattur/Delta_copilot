@@ -7,10 +7,12 @@ import hmac
 import json
 import time
 from urllib.parse import urlencode
+from venv import logger
 
 import requests
 
-from config import API_KEY, API_SECRET, BASE_URL
+# from config import API_KEY, API_SECRET, BASE_URL
+import config
 
 
 def generate_signature(secret, message):
@@ -30,10 +32,10 @@ def get_headers(method, path, query_string="", payload=""):
     """
     timestamp = str(int(time.time()))
     signature_data = method + timestamp + path + query_string + payload
-    signature = generate_signature(API_SECRET, signature_data)
+    signature = generate_signature(config.getAPI_SECRET(), signature_data)
 
     return {
-        "api-key": API_KEY,
+        "api-key": config.getAPI_KEY(),
         "timestamp": timestamp,
         "signature": signature,
         "User-Agent": "python-rest-client",
@@ -48,8 +50,10 @@ def signed_get(path, params=None):
         query_string = "?" + urlencode(params)  # FIX: include leading '?'
 
     headers = get_headers("GET", path, query_string=query_string)
-    url = BASE_URL + path + (query_string if query_string else "")  # FIX: no double '?'
-
+    url = (
+        config.getbaseUrl() + path + (query_string if query_string else "")
+    )  # FIX: no double '?'
+    logger.info(f"Fetching from  2 {url}")
     try:
         response = requests.get(url, headers=headers, timeout=(3, 27))
         response.raise_for_status()
@@ -71,7 +75,7 @@ def signed_delete(path, params=None):
         body = json.dumps(params, separators=(",", ":"))
 
     headers = get_headers("DELETE", path, query_string="", payload=body)
-    url = BASE_URL + path
+    url = config.getbaseUrl() + path
 
     try:
         response = requests.delete(url, headers=headers, data=body, timeout=(3, 27))
@@ -87,7 +91,7 @@ def signed_post(path, payload: dict):
     """Authenticated POST request."""
     body = json.dumps(payload, separators=(",", ":"))  # compact, no spaces
     headers = get_headers("POST", path, query_string="", payload=body)
-    url = BASE_URL + path
+    url = config.getbaseUrl() + path
 
     try:
         response = requests.post(url, headers=headers, data=body, timeout=(3, 27))
@@ -101,7 +105,7 @@ def signed_post(path, payload: dict):
 
 def public_get(path, params=None):
     """Unauthenticated GET request (for public endpoints like candles)."""
-    url = BASE_URL + path
+    url = config.getbaseUrl() + path
     response = requests.get(url, params=params, timeout=(3, 27))
     response.raise_for_status()
     return response.json()

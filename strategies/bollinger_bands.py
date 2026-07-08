@@ -178,18 +178,21 @@ class BollingerBandsStrategy(BaseStrategy):
     # -------------------------------------------------------------------------
     # Strategy metadata
     # -------------------------------------------------------------------------
+    # @property
+    def name(self):
+        return "Bollinger Bands Strategy"
 
-    def name(self) -> str:
-        return (
-            f"Bollinger Bands(period={self.period}, std={self.std}, "
-            f"trail_activation_pct={self.trail_activation_pct * 100}, "
-            f"trail_pct={self.trail_pct * 100}, "
-            f"stop_loss_pct={self.stop_loss_pct * 100}, "
-            f"take_profit_pct={self.take_profit_pct * 100}, "
-            f"tp_extension_pct={self.tp_extension_pct * 100}, "
-            f"volume_period={self.volume_period}, "
-            f"volume_multiplier={self.volume_multiplier})"
-        )
+    # def name(self) -> str:
+    #     return (
+    #         f"Bollinger Bands(period={self.period}, std={self.std}, "
+    #         f"trail_activation_pct={self.trail_activation_pct * 100}, "
+    #         f"trail_pct={self.trail_pct * 100}, "
+    #         f"stop_loss_pct={self.stop_loss_pct * 100}, "
+    #         f"take_profit_pct={self.take_profit_pct * 100}, "
+    #         f"tp_extension_pct={self.tp_extension_pct * 100}, "
+    #         f"volume_period={self.volume_period}, "
+    #         f"volume_multiplier={self.volume_multiplier})"
+    #     )
 
     def get_params(self) -> dict:
         return {

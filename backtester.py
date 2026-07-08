@@ -344,7 +344,7 @@ def run_backtest(
         return [], {}
 
     logger.info(
-        f"Running backtest: {strategy.name} | symbol={symbol} | timeframe={timeframe}"
+        f"Running backtest: {strategy.name()} | symbol={symbol} | timeframe={timeframe}"
     )
 
     # -----------------------------------------------------------------
@@ -621,7 +621,7 @@ def _calculate_max_drawdown(trades: list) -> float:
 def _print_summary(trades: list, df: pd.DataFrame, strategy) -> dict:
     """Print and return backtest performance summary with exit reason breakdown."""
     if not trades:
-        print(f"\n[{strategy.name}] No trades generated.")
+        print(f"\n[{strategy.name()}] No trades generated.")
         return {}
 
     total_trades = len(trades)
@@ -657,7 +657,7 @@ def _print_summary(trades: list, df: pd.DataFrame, strategy) -> dict:
         }
 
     summary = {
-        "strategy": str(strategy),
+        "strategy": str(strategy.name()),
         "total_trades": total_trades,
         "wins": len(wins),
         "losses": len(losses),
@@ -672,7 +672,7 @@ def _print_summary(trades: list, df: pd.DataFrame, strategy) -> dict:
     }
 
     print(f"\n{'=' * 55}")
-    print(f"  {strategy.name} - BACKTEST RESULTS")
+    print(f"  {strategy.name()} - BACKTEST RESULTS")
     print(f"  Params : {strategy.get_params()}")
     print(f"{'=' * 55}")
     print(f"  Period       : {summary['period_start']} to {summary['period_end']}")
@@ -716,7 +716,9 @@ import re
 
 def _get_strategy_name(strategy) -> str:
     """
-    Safely resolve strategy name whether it is a @property or plain method.
+    Safely resolve strategy name whether it is a
+
+    or plain method.
     Extracts clean name from bound method string if needed.
     """
     name = strategy.name

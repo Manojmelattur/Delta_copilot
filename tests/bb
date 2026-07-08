@@ -13,3 +13,8 @@
  py run_backtest.py --strategy bollinger_bands --period 20 --std 2.2 --symbol DOGEUSD --bb-stop-loss 1.0 --bb-trail 0.8 --bb-take-profit 1.5 --timeframe 15m --days 90
  py run_backtest.py --strategy bollinger_bands --period 20 --std 2.2 --symbol DOGEUSD --bb-stop-loss 1.0 --bb-trail 0.8 --bb-take-profit 1.5 --timeframe 1h --days 90
  py run_backtest.py --strategy bollinger_bands --period 20 --std 2.2 --symbol DOGEUSD --bb-stop-loss 1.0 --bb-trail 0.8 --bb-take-profit 1.5 --timeframe 30m --days 90
+ py bot.py --strategy bollinger_bands --period 20 --std 2.2 --symbol DOGEUSD --bb-stop-loss 1.0 --bb-trail 0.8 --bb-take-profit 1.5 --timeframe 15m
+
+
+
+ py bot.py  --mode paper --lot 12  --strategy bollinger_bands --period 20 --std 2.2 --symbol BTCUSD --bb-stop-loss 1.0 --bb-trail 0.8 --bb-take-profit 1.5 --timeframe 5s

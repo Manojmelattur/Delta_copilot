@@ -3,10 +3,10 @@ import hmac
 import time
 
 import requests
-
-API_KEY = "JKRVuRbKjbLKnn1OpuTMEUM2w4N1Mj"
-API_SECRET = "NwvgN73CWs83RV2BCdmREjiArQDEJR60CJBiTBEFPDXuNs33L7U43RH6ytPz"
-BASE_URL = "https://cdn-ind.testnet.deltaex.org"
+import config
+# API_KEY = "JKRVuRbKjbLKnn1OpuTMEUM2w4N1Mj"
+# API_SECRET = "NwvgN73CWs83RV2BCdmREjiArQDEJR60CJBiTBEFPDXuNs33L7U43RH6ytPz"
+# BASE_URL = "https://cdn-ind.testnet.deltaex.org"
 
 
 def generate_signature(secret, message):
@@ -22,18 +22,18 @@ query_string = "?product_id=27&state=open"
 payload = ""
 
 signature = generate_signature(
-    API_SECRET, method + timestamp + path + query_string + payload
+    config.API_SECRET, method + timestamp + path + query_string + payload
 )
 
 headers = {
-    "api-key": API_KEY,
+    "api-key": config.API_KEY,
     "timestamp": timestamp,
     "signature": signature,
     "Content-Type": "application/json",
 }
 
 resp = requests.get(
-    f"{BASE_URL}{path}",
+    f"{config.getbaseUrl()}{path}",
     params={"product_id": 27, "state": "open"},
     headers=headers,
     timeout=10,

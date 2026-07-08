@@ -166,16 +166,7 @@ class FVGStrategy(BaseStrategy):
     # -------------------------------------------------------------------------
 
     def name(self) -> str:
-        return (
-            f"FVG Strategy("
-            f"min_fvg_size_pct={self.min_fvg_size_pct * 100}, "
-            f"max_fvg_age_candles={self.max_fvg_age_candles}, "
-            f"trail_activation_pct={self.trail_activation_pct * 100}, "
-            f"trail_pct={self.trail_pct * 100}, "
-            f"stop_loss_pct={self.stop_loss_pct * 100}, "
-            f"take_profit_pct={self.take_profit_pct * 100}, "
-            f"tp_extension_pct={self.tp_extension_pct * 100})"
-        )
+        return "FVG Strategy "
 
     def get_params(self) -> dict:
         return {

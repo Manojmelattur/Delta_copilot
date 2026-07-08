@@ -8,20 +8,21 @@ import sys
 import time
 from datetime import date, datetime
 
-from strategies.smc_strategy import SMCStrategy
-
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 
 import logging
 
+import config
 from config import (
     BACKTEST_DAYS,
     ORDER_SIZE,
     POLL_INTERVAL,
+    PRODUCTION_BASE_URL,
     STOP_LOSS_PCT,
     SYMBOL,
     TAKE_PROFIT_PCT,
     TAKER_FEE,
+    TESTNET_BASE_URL,
 )
 from logger import get_logger
 from market_data import fetch_candles
@@ -93,6 +94,35 @@ Available strategies:
 Available timeframes:
   1m, 3m, 5m, 15m, 30m, 1h, 2h, 4h, 6h, 12h, 1d, 1w
         """,
+    )
+
+    # --- API ---
+    parser.add_argument(
+        "--api-key",
+        type=str,
+        required=False,
+        help="API key for trading -- if not provided, credentials are read from environment variables",
+    )
+    parser.add_argument(
+        "--api-secret",
+        type=str,
+        required=False,
+        help="API secret for trading -- if not provided, credentials are read from environment variables",
+    )
+
+    # --- Mode and lot size ---
+    parser.add_argument(
+        "--mode",
+        type=str,
+        required=True,
+        choices=["live", "paper"],
+        help="Trade mode: live (production) or paper (testnet)",
+    )
+    parser.add_argument(
+        "--lot",
+        type=int,
+        required=True,
+        help="Lot size",
     )
 
     # --- Strategy selection ---
@@ -373,25 +403,21 @@ def build_strategy_params(args) -> dict:
             "volume_period": args.bb_volume_period,
             "volume_multiplier": args.bb_volume_multiplier,
         }
-
     elif args.strategy == "ema_crossover":
         return {
             "fast": args.fast,
             "slow": args.slow,
         }
-
     elif args.strategy == "triple_ema":
         return {
             "fast": args.fast,
             "mid": args.mid,
             "slow": args.slow,
         }
-
     elif args.strategy == "vwap":
         return {
             "period": args.period,
         }
-
     elif args.strategy == "fvg":
         return {
             "min_fvg_size_pct": args.fvg_min_size,
@@ -402,9 +428,6 @@ def build_strategy_params(args) -> dict:
             "take_profit_pct": args.fvg_take_profit,
             "tp_extension_pct": args.fvg_tp_extension,
         }
-
-    # FIX 1: Return params dict instead of constructing SMCStrategy locally.
-    # get_strategy() will construct the SMCStrategy object using these params.
     elif args.strategy == "smc":
         return {
             "swing_lookback": args.smc_swing_lookback,
@@ -423,7 +446,6 @@ def build_strategy_params(args) -> dict:
             "structure_lookback": args.smc_structure_lookback,
             "ob_proximity_atr": args.smc_ob_proximity_atr,
         }
-
     elif args.strategy == "ob":
         return {
             "atr_length": args.ob_atr_length,
@@ -435,7 +457,6 @@ def build_strategy_params(args) -> dict:
             "sl_atr_buffer": args.ob_sl_buffer,
             "max_ob_age_candles": args.ob_max_age,
         }
-
     return {}
 
 
@@ -444,12 +465,25 @@ def build_strategy_params(args) -> dict:
 # =============================================================================
 
 
-def run_bot(strategy, poll_interval: int, timeframe: str = "15m", symbol: str = SYMBOL):
+def run_bot(
+    strategy,
+    poll_interval: int,
+    timeframe: str = "15m",
+    symbol: str = SYMBOL,
+    lot: int = 1,
+    papertrade: bool = True,
+):
     logger.info("=" * 55)
-    logger.info(f"  Strategy Bot Starting: {strategy}")
+    logger.info(f"  Strategy Bot Starting: {strategy.name()}")
     logger.info(f"  Symbol       : {symbol}")
     logger.info(f"  Poll Interval: {poll_interval}s")
     logger.info(f"  Timeframe    : {timeframe}")
+    config.ORDER_SIZE = lot
+    logger.info(f"  Lot Size     : {config.ORDER_SIZE}")
+    t = "paper" if papertrade else "live"
+    logger.info(f"  Live/Paper   : {t}")
+    logger.info(f"  Base URL     : {config.getbaseUrl()}")
+    logger.info(f"  API Key      : {config.getAPI_KEY()[:6]}******")
     logger.info("=" * 55)
 
     internal_position = _restore_position_on_startup(symbol)
@@ -666,7 +700,7 @@ def _execute_entry(
     signal: str, candle_dict: dict, strategy, symbol: str
 ) -> dict | None:
     side = signal
-    response = place_market_order(side, ORDER_SIZE, symbol)
+    response = place_market_order(side, config.ORDER_SIZE, symbol)
 
     if response and response.get("result"):
         entry_price = float(
@@ -679,15 +713,9 @@ def _execute_entry(
             "best_price": entry_price,
             "entry_time": datetime.utcnow().isoformat(),
             "symbol": symbol,
-            "size": ORDER_SIZE,
+            "size": config.ORDER_SIZE,
         }
 
-        # ------------------------------------------------------------------
-        # OB / SMC strategy: inject SL/TP/ATR from strategy instance into
-        # position. get_last_entry_levels() returns the values computed by
-        # get_signal() moments before this call. For all other strategies
-        # returns {}.
-        # ------------------------------------------------------------------
         if hasattr(strategy, "get_last_entry_levels"):
             ob_levels = strategy.get_last_entry_levels()
             if ob_levels:
@@ -695,9 +723,6 @@ def _execute_entry(
                 position["tp_price"] = ob_levels.get("_ob_tp_price")
                 position["atr_at_entry"] = ob_levels.get("_ob_atr_at_entry")
 
-                # FIX 2: Guard None values before applying format specifiers.
-                # ob_levels may contain keys with None values if the strategy
-                # did not compute them, which causes NoneType.__format__ crash.
                 sl_val = position.get("sl_price")
                 tp_val = position.get("tp_price")
                 atr_val = position.get("atr_at_entry")
@@ -716,13 +741,9 @@ def _execute_entry(
                         f"Raw levels: {ob_levels}"
                     )
 
-        # Notify strategy a position is now open
         if hasattr(strategy, "notify_entry"):
             strategy.notify_entry(0)
 
-        # Display SL/TP for notification
-        # For OB/SMC: use pre-computed absolute prices
-        # For others: compute from percentage attributes
         if position.get("sl_price") is not None:
             sl = round(position["sl_price"], 1)
             tp = round(position["tp_price"], 1)
@@ -736,7 +757,7 @@ def _execute_entry(
                 sl = round(entry_price * (1 + sl_pct / 100), 1)
                 tp = round(entry_price * (1 - tp_pct / 100), 1)
 
-        notify_trade_entry(side, ORDER_SIZE, entry_price, sl, tp)
+        notify_trade_entry(side, config.ORDER_SIZE, entry_price, sl, tp)
         logger.info(
             f"[{symbol}] Entry executed: {side.upper()} @ {entry_price} | SL={sl} TP={tp}"
         )
@@ -758,7 +779,7 @@ def _execute_exit(
     current_side = internal_position["side"]
     entry_price = internal_position["entry_price"]
     exit_side = "sell" if current_side == "buy" else "buy"
-    size = internal_position.get("size", ORDER_SIZE)
+    size = internal_position.get("size", config.ORDER_SIZE)
 
     cancel_all_orders(symbol)
     time.sleep(0.3)
@@ -816,13 +837,9 @@ def _get_candle_and_indicators(df, i: int) -> tuple[dict, dict]:
     row = df.iloc[i]
     candle_dict = row.to_dict()
 
-    # Pass ALL columns as indicators (matches backtester _get_candle_and_indicators)
     indicators_dict = row.to_dict()
-
-    # Always inject current candle index for hold-period guards
     indicators_dict["current_idx"] = i
 
-    # EMA crossover: inject previous row values
     if i > 0:
         prev_row = df.iloc[i - 1]
         for col in ["ema_fast", "ema_slow"]:
@@ -838,10 +855,14 @@ def _get_candle_and_indicators(df, i: int) -> tuple[dict, dict]:
 def _restore_position_on_startup(symbol: str) -> dict | None:
     """
     Check the exchange for an open position on startup.
+    Passes symbol to get_open_position() so the correct product ID is resolved
+    dynamically for whichever environment (testnet/production) is active.
     Returns a position dict if open position found, None otherwise.
     """
     try:
-        position_data = get_open_position()
+        # FIX: Pass symbol so get_open_position resolves the correct product_id
+        # via get_product_id() rather than using the static config.PRODUCT_ID fallback.
+        position_data = get_open_position(symbol)
         if position_data is None:
             return None
 
@@ -853,7 +874,7 @@ def _restore_position_on_startup(symbol: str) -> dict | None:
         if entry_price == 0:
             return None
 
-        side = "buy" if float(position_data.get("size", 0)) > 0 else "sell"
+        side = "buy" if size > 0 else "sell"
 
         return {
             "side": side,
@@ -888,16 +909,41 @@ def _sleep(loop_start: float, interval: int):
 
 if __name__ == "__main__":
     args = parse_args()
+
+    # -------------------------------------------------------------------------
+    # FIX: Apply environment switching BEFORE run_bot() is called and BEFORE
+    # any submodule makes an API call. All submodules use config.getbaseUrl(),
+    # config.getAPI_KEY(), config.getAPI_SECRET() which read USE_TESTNET at
+    # call time — so setting it here ensures every subsequent call uses the
+    # correct environment.
+    # -------------------------------------------------------------------------
+    #
+    #
+
+    config.USE_TESTNET = args.mode == "paper"
+    import market_data
+
+    market_data.PRODUCT_ID_MAP.clear()
+
+    # Override credentials from CLI if provided
+    if args.api_key:
+        if config.USE_TESTNET:
+            config.API_KEY_TESTNET = args.api_key
+        else:
+            config.API_KEY = args.api_key
+
+    if args.api_secret:
+        if config.USE_TESTNET:
+            config.API_SECRET_TESTNET = args.api_secret
+        else:
+            config.API_SECRET = args.api_secret
+
     strategy_params = build_strategy_params(args)
     strategy = get_strategy(args.strategy, **strategy_params)
-    poll_interval = args.poll_interval if args.poll_interval else POLL_INTERVAL
+    poll_interval = args.poll_interval if args.poll_interval else config.POLL_INTERVAL
     timeframe = args.timeframe
-    symbol = args.symbol.upper() if args.symbol else SYMBOL
+    symbol = args.symbol.upper() if args.symbol else config.SYMBOL
+    lot = args.lot
+    mode = config.USE_TESTNET
 
-    logger.info(f"Symbol   : {symbol}")
-    logger.info(f"Strategy : {strategy}")
-    logger.info(f"Params   : {strategy_params}")
-    logger.info(f"Poll     : {poll_interval}s")
-    logger.info(f"Timeframe: {timeframe}")
-
-    run_bot(strategy, poll_interval, timeframe, symbol)
+    run_bot(strategy, poll_interval, timeframe, symbol, lot, mode)

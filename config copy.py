@@ -3,6 +3,8 @@
 # =============================================================================
 
 # --- Telegram ---
+from numpy._core.numerictypes import ushort
+
 TELEGRAM_BOT_TOKEN = "your_telegram_bot_token_here"
 TELEGRAM_CHAT_ID = "your_telegram_chat_id_here"
 
@@ -20,19 +22,22 @@ API_SECRET = "kNoyZWnfdYOLc0VE67hpQkVDcTnczjyNb7aPH8xNkbxFwSAUj8n7a5XVer8R"
 TESTNET_BASE_URL = "https://cdn-ind.testnet.deltaex.org"
 PRODUCTION_BASE_URL = "https://api.india.delta.exchange"
 
+BASE_URL = TESTNET_BASE_URL if USE_TESTNET else PRODUCTION_BASE_URL
 
 # --- Product Settings ---
 # PRODUCT_ID is used only as a last-resort fallback when symbol lookup fails.
-# get_product_id() in market_data.py resolves the correct ID automatically
-# from whichever environment (testnet/production) is active at runtime.
-# Confirmed production product IDs (from Delta Exchange API):
+# get_product_id() in market_data.py resolves the correct ID automatically.
+# Confirmed product IDs (from Delta Exchange API):
 #   BTCUSD  : 27
 #   ETHUSD  : 3136
 #   XAUTUSD : 131253
-# NOTE: Testnet product IDs differ from production. Do not hardcode testnet IDs
-# here — get_product_id() resolves the correct ID from the live API at runtime.
 SYMBOL = "BTCUSD"
-PRODUCT_ID = 27  # Production fallback only. Resolved dynamically at runtime.
+if USE_TESTNET:
+    PRODUCT_ID = 84  # FIX: was 84 (incorrect). Correct BTCUSD product_id is 27.
+else:
+    PRODUCT_ID = 27  # FIX: was 84 (incorrect). Correct BTCUSD product_id is 27.
+
+# PRODUCT_ID = 27  # FIX: was 84 (incorrect). Correct BTCUSD product_id is 27.
 
 # --- Strategy Settings ---
 EMA_FAST = 9
@@ -63,33 +68,13 @@ BACKTEST_CHART_FILE = "logs/backtest_report.png"
 PNL_CHART_FILE = "logs/pnl_chart.png"
 
 
-# =============================================================================
-# Runtime accessor functions
-# These read the module-level USE_TESTNET flag at call time, so they always
-# return the correct value even after USE_TESTNET is changed at runtime
-# (e.g. when --mode paper is passed via CLI).
-# =============================================================================
-
-
-def getbaseUrl() -> str:
+def getbaseUrl():
     return TESTNET_BASE_URL if USE_TESTNET else PRODUCTION_BASE_URL
 
 
-def getAPI_KEY() -> str:
+def getAPI_KEY():
     return API_KEY_TESTNET if USE_TESTNET else API_KEY
 
 
-def getAPI_SECRET() -> str:
+def getAPI_SECRET():
     return API_SECRET_TESTNET if USE_TESTNET else API_SECRET
-
-
-def getPRODUCT_ID() -> int:
-    """
-    Returns the fallback PRODUCT_ID for the current environment.
-    This is only used as a last resort — get_product_id() in market_data.py
-    resolves the correct ID dynamically from the API.
-    NOTE: Testnet product IDs differ from production. The fallback value here
-    is the production ID. If the dynamic lookup fails on testnet, the fallback
-    will be wrong — ensure network connectivity so dynamic lookup succeeds.
-    """
-    return PRODUCT_ID

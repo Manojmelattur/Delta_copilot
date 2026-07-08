@@ -78,7 +78,7 @@ class TripleEMAVWAPStrategy(BaseStrategy):
         self._prev_close = None
         self._prev_vwap = None
 
-    @property
+    # @property
     def name(self) -> str:
         return "Triple EMA + VWAP"
 

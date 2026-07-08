@@ -249,19 +249,7 @@ class OrderBlockStrategy(BaseStrategy):
     # -------------------------------------------------------------------------
 
     def name(self) -> str:
-        return (
-            f"OrderBlock Strategy("
-            f"atr_length={self.atr_length}, "
-            f"atr_multiplier={self.atr_multiplier}, "
-            f"trail_activation_atr={self.trail_activation_atr}, "
-            f"ob_strength_period={self.ob_strength_period}, "
-            f"ob_strength_mult={self.ob_strength_mult}, "
-            f"rr_ratio={self.rr_ratio}, "
-            f"sl_atr_buffer={self.sl_atr_buffer}, "
-            f"max_ob_age_candles={self.max_ob_age_candles}, "
-            f"trend_ema_period={self.trend_ema_period}, "
-            f"min_atr_threshold={self.min_atr_threshold})"
-        )
+        return "OrderBlock Strategy"
 
     def get_params(self) -> dict:
         return {

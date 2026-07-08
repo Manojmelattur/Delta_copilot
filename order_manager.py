@@ -5,15 +5,17 @@ import json
 
 import requests
 
+import config
 from auth import get_headers, signed_delete, signed_get, signed_post
-from config import BASE_URL, ORDER_SIZE, PRODUCT_ID, STOP_LOSS_PCT, TAKE_PROFIT_PCT
+
+# from config import BASE_URL, ORDER_SIZE, PRODUCT_ID, STOP_LOSS_PCT, TAKE_PROFIT_PCT
 from logger import get_logger
 from market_data import get_product_id  # single shared implementation
 
 logger = get_logger(__name__)
 
 
-def place_market_order(side: str, size: int = ORDER_SIZE, symbol: str = None):
+def place_market_order(side: str, size: int = config.ORDER_SIZE, symbol: str = None):
     """
     Place a market order.
 
@@ -25,7 +27,14 @@ def place_market_order(side: str, size: int = ORDER_SIZE, symbol: str = None):
     Returns:
         API response dict or None on failure
     """
-    product_id = get_product_id(symbol) if symbol else PRODUCT_ID
+    # Always resolve product_id dynamically — get_product_id() uses config.getbaseUrl()
+    # at runtime so it automatically hits the correct environment (testnet or production)
+    product_id = get_product_id(symbol) if symbol else config.PRODUCT_ID
+
+    logger.info(
+        f"[{symbol or 'default'}] Placing order with product_id={int(product_id)} on "
+        f"base_url={config.getbaseUrl()} | USE_TESTNET={config.USE_TESTNET}"
+    )
 
     payload = {
         "product_id": int(product_id),  # force int — API rejects strings/floats
@@ -108,7 +117,7 @@ def place_bracket_order(
 
     payload_json = json.dumps(payload)
     headers = get_headers("POST", "/v2/orders/bracket", "", payload_json)
-    url = f"{BASE_URL}/v2/orders/bracket"
+    url = f"{config.getbaseUrl()}/v2/orders/bracket"
 
     try:
         response = requests.post(
@@ -130,14 +139,13 @@ def cancel_all_orders(symbol: str = None):
     Cancel all open orders (limit + stop) for the given symbol.
     Falls back to config PRODUCT_ID if symbol not provided.
     """
-    product_id = get_product_id(symbol) if symbol else PRODUCT_ID
+    product_id = get_product_id(symbol) if symbol else config.PRODUCT_ID
 
     params = {
         "product_id": product_id,
         "cancel_stop_orders": "true",
         "cancel_limit_orders": "true",
     }
-    # response = signed_delete("/v2/orders/all", params=params)
 
     try:
         response = signed_delete("/v2/orders/all", params=params)

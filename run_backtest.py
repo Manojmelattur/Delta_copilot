@@ -602,7 +602,7 @@ OB timeframe guidance:
 
         strategy = get_strategy(args.strategy, **strategy_params)
         print_header(
-            strategy.name,
+            strategy.name(),
             args.symbol,
             args.days,
             args.timeframe,
